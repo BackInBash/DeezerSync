@@ -1,2 +1,6 @@
 # DeezerSync
-Application to Sync Soundcloud Playlists to Deezer
+Application to Sync Playlists to Deezer
+
+## Supported Platforms
++ SoundCloud
++ Spotify
