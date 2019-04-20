@@ -33,14 +33,14 @@ namespace DeezerSync.SoundCloud
 
             foreach(var i in playlistdata){
                 var trackinfo = i.Tracks;
-                List<StandardTitle> titles = new List<StandardTitle>();
+                List<StandardTitle> track = new List<StandardTitle>();
 
                 foreach(var a in trackinfo)
                 {
                     try
                     {
                         var userinfo = a.User;
-                        titles.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title });
+                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title });
 
                     }
                     catch(Exception e)
@@ -49,7 +49,7 @@ namespace DeezerSync.SoundCloud
                     }
                 }
 
-                Program.Playlists.Add(new StandardPlaylist { description = i.Description ?? string.Empty, title = i.Title, provider = "soundcloud", titel = titles });
+                Program.Playlists.Add(new StandardPlaylist { description = i.Description ?? string.Empty, title = i.Title, provider = "soundcloud", tracks = track });
             }
         }
     }

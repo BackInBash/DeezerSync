@@ -21,6 +21,7 @@ namespace DeezerSync.Deezer.API
         private readonly string method = "method=";
         private readonly string cid = "cid=";
 
+        internal string userid;
         private string apiKey;
         private string csfrsid;
         private string secret = "";
@@ -122,10 +123,12 @@ namespace DeezerSync.Deezer.API
             if (welcome.Results.User.UserId > 0)
             {
                 // Check for Valid API Key
-                if (!string.IsNullOrEmpty(welcome.Results.CheckForm))
+                if (!string.IsNullOrEmpty(welcome.Results.CheckForm) && welcome.Results.User.UserId != 0)
                 {
                     // Write API Key to Var
                     apiKey = api_token + welcome.Results.CheckForm;
+                    // Write UserID to Var
+                    userid = welcome.Results.User.UserId.ToString();
                 }
                 else
                 {

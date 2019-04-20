@@ -19,9 +19,45 @@ namespace DeezerSync.Deezer
         /// Get a List of all Playlists
         /// </summary>
         /// <returns></returns>
-        public List<string> GetPlaylists()
+        public List<StandardPlaylist> GetAllPlaylists()
         {
-            return null;
+            RequestAllPlaylists playlists = new RequestAllPlaylists()
+            {
+                nb = 40,
+                tab = "playlists",
+                user_id = l.userid
+            };
+
+            string json = JsonConvert.SerializeObject(playlists, Formatting.None);
+            string jsonresult = l.DeezerRequest("deezer.pageProfile", json);
+
+            var result = (dynamic)null;
+
+            try
+            {
+                result = DeezerSync.Deezer.API.Model.AllPlaylists.Request.FromJson(jsonresult);
+            }
+            catch (JsonSerializationException)
+            {
+                try
+                {
+                    result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
+                    throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }
+
+            List<StandardPlaylist> playlist = new List<StandardPlaylist>();
+
+            foreach(var i in result.Results.Tab.Playlists.Data)
+            {
+                playlist.Add(new StandardPlaylist { description = string.Empty, provider = "deezer", title = i.Title, tracks = GetAllTracksInPlaylist(i.PlaylistId) });
+            }
+
+            return playlist;
         }
 
         /// <summary>
@@ -29,14 +65,14 @@ namespace DeezerSync.Deezer
         /// </summary>
         /// <param name="PlaylistID">ID of an existing Playlist</param>
         /// <returns></returns>
-        public List<StandardTitle> GetAllTracksInPlaylist(long PlaylistID)
+        private List<StandardTitle> GetAllTracksInPlaylist(string PlaylistID)
         {
             RequestPlaylistData playlist = new RequestPlaylistData()
             {
                  header = true,
                  lang = "de",
                  nb = 40,
-                 playlist_id = PlaylistID.ToString(),
+                 playlist_id = PlaylistID,
                  start = 0,
                  tab = 0,
                  tags = true
@@ -44,7 +80,7 @@ namespace DeezerSync.Deezer
 
             string json = JsonConvert.SerializeObject(playlist, Formatting.None);
             string jsonresult = l.DeezerRequest("deezer.pagePlaylist", json);
-            Console.WriteLine(jsonresult);
+
             var result = (dynamic)null;
 
             try
