@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using DeezerSync.Model;
 using SoundCloud.Api.Entities;
 
 namespace DeezerSync.SoundCloud

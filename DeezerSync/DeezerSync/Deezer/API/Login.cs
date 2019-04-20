@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Net;
-using System.Text;
 using System.Threading;
 using static DeezerSync.Deezer.API.Model.UserDataModel;
 
@@ -48,7 +46,7 @@ namespace DeezerSync.Deezer.API
                 request.ContentType = "application/json; charset=utf-8";
             }
 
-            // User Agent: Chrome Version 70.0.3538.110
+            // User Agent: Chrome Version 72.0.3626.121
             request.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36";
             request.Headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36";
             request.Headers["Cache-Control"] = "max-age=0";
@@ -57,6 +55,7 @@ namespace DeezerSync.Deezer.API
             request.Headers["cookie"] = "arl=" + secret+ "; sid="+csfrsid;
 
             var content = string.Empty;
+            request.CookieContainer = new CookieContainer();
 
             try
             {
@@ -70,6 +69,16 @@ namespace DeezerSync.Deezer.API
 
                 using (var response = (HttpWebResponse)request.GetResponse())
                 {
+                    if (string.IsNullOrEmpty(csfrsid))
+                    {
+                        foreach (Cookie cook in response.Cookies)
+                        {
+                            if (cook.Name.Equals("sid"))
+                            {
+                                csfrsid = cook.Value;
+                            }
+                        }
+                    }
                     using (var stream = response.GetResponseStream())
                     {
                         using (var sr = new StreamReader(stream))

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DeezerSync.Deezer.API.Model
 {
-    class CreatePlaylist
+    public partial class CreatePlaylist
     {
         public string title;
         public string description;
