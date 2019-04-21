@@ -9,17 +9,13 @@ namespace DeezerSync.Deezer
 {
     class Playlist
     {
-        protected Login l = null;
-        public Playlist()
-        {
-            l = new Login();
-        }
+        protected static Login l = new Login();
 
         /// <summary>
         /// Get a List of all Playlists
         /// </summary>
         /// <returns></returns>
-        public List<StandardPlaylist> GetAllPlaylists()
+        public static List<StandardPlaylist> GetAllPlaylists()
         {
             RequestAllPlaylists playlists = new RequestAllPlaylists()
             {
@@ -54,7 +50,7 @@ namespace DeezerSync.Deezer
 
             foreach(var i in result.Results.Tab.Playlists.Data)
             {
-                playlist.Add(new StandardPlaylist { description = string.Empty, provider = "deezer", title = i.Title, tracks = GetAllTracksInPlaylist(i.PlaylistId) });
+                playlist.Add(new StandardPlaylist { description = string.Empty, provider = "deezer", title = i.Title, tracks = GetAllTracksInPlaylist(i.PlaylistId), id = i.PlaylistId });
             }
 
             return playlist;
@@ -65,7 +61,7 @@ namespace DeezerSync.Deezer
         /// </summary>
         /// <param name="PlaylistID">ID of an existing Playlist</param>
         /// <returns></returns>
-        private List<StandardTitle> GetAllTracksInPlaylist(string PlaylistID)
+        private static List<StandardTitle> GetAllTracksInPlaylist(string PlaylistID)
         {
             RequestPlaylistData playlist = new RequestPlaylistData()
             {
@@ -82,7 +78,7 @@ namespace DeezerSync.Deezer
             string jsonresult = l.DeezerRequest("deezer.pagePlaylist", json);
 
             var result = (dynamic)null;
-
+            
             try
             {
                 result = DeezerSync.Deezer.API.Model.PlaylistDataModel.Welcome.FromJson(jsonresult);
@@ -92,7 +88,7 @@ namespace DeezerSync.Deezer
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                    throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
+                    throw new Exception("ERROR: " + result.Error.ToString());
                 }
                 catch (Exception ex)
                 {
@@ -104,7 +100,7 @@ namespace DeezerSync.Deezer
 
             foreach(var track in result.Results.Songs.Data)
             {
-                titles.Add(new StandardTitle { title = track.SngTitle, description = string.Empty, duration = (int)track.Duration, genre = string.Empty, username = track.ArtName, labelname = string.Empty });
+                titles.Add(new StandardTitle { title = track.SngTitle, description = string.Empty, duration = (int)track.Duration, genre = string.Empty, username = track.ArtName, labelname = string.Empty, id = (long)track.SngId });
             }
             return titles;
         }
@@ -115,7 +111,7 @@ namespace DeezerSync.Deezer
         /// <param name="PlaylistID">ID of an existing Playlist</param>
         /// <param name="TrackIDs">An array filled with TrackIDs</param>
         /// <returns></returns>
-        public bool AddSongsToPlaylist(long PlaylistID, long[] TrackIDs)
+        public static bool AddSongsToPlaylist(string PlaylistID, List<long> TrackIDs)
         {
             List<List<long>> myList = new List<List<long>>();
             foreach (long l in TrackIDs)
@@ -125,7 +121,7 @@ namespace DeezerSync.Deezer
 
             AddSongsToPlaylist songstoplaylist = new AddSongsToPlaylist()
             {
-                playlist_id = PlaylistID.ToString(),
+                playlist_id = PlaylistID,
                 offset = -1,
                 songs = myList
             };
@@ -144,7 +140,7 @@ namespace DeezerSync.Deezer
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                    throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
+                    throw new Exception("ERROR: " + result.error.toString());
                 }
                 catch (Exception ex)
                 {
@@ -161,7 +157,7 @@ namespace DeezerSync.Deezer
         /// <param name="name">Playlist Name</param>
         /// <param name="description">(optional) Playlist description</param>
         /// <returns></returns>
-        public long CreatePlaylist(string name, string description = "")
+        public static long CreatePlaylist(string name, string description = "")
         {
             CreatePlaylist playlist = new CreatePlaylist()
             {

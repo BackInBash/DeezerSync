@@ -12,6 +12,7 @@ namespace DeezerSync.Model
         public string title { get; set; }                   // The track title
         public string username { get; set; }                // The username from the uploader
         public string labelname { get; set; }               // The lable of the uploader
+        public long id { get; set; }                        // Track ID
 
     }
 }

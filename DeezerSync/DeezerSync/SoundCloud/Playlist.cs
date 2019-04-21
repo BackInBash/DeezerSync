@@ -27,11 +27,12 @@ namespace DeezerSync.SoundCloud
         /// <summary>
         /// Save all Playlist Data to Standard List
         /// </summary>
-        public async Task SetStandardPlaylists()
+        public async Task<List<StandardPlaylist>> GetStandardPlaylists()
         {
             var playlistdata = await GetPlaylists();
+            List<StandardPlaylist> pl = new List<StandardPlaylist>();
 
-            foreach(var i in playlistdata){
+            foreach (var i in playlistdata){
                 var trackinfo = i.Tracks;
                 List<StandardTitle> track = new List<StandardTitle>();
 
@@ -40,17 +41,18 @@ namespace DeezerSync.SoundCloud
                     try
                     {
                         var userinfo = a.User;
-                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title });
+                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title, id = (long)i.Id });
 
                     }
                     catch(Exception e)
                     {
-                        Console.WriteLine(e.Message);
+                        throw new Exception(e.Message);
                     }
                 }
-
-                Program.Playlists.Add(new StandardPlaylist { description = i.Description ?? string.Empty, title = i.Title, provider = "soundcloud", tracks = track });
+                
+                pl.Add(new StandardPlaylist { description = i.Description ?? string.Empty, title = i.Title, provider = "soundcloud", tracks = track, id = i.Id.ToString() });
             }
+            return pl;
         }
     }
 }

@@ -10,11 +10,10 @@ namespace DeezerSync
 
         static void Main(string[] args)
         {
-            //SoundCloud.playlist pl = new SoundCloud.playlist();
-            Deezer.Playlist dpl = new Deezer.Playlist();
+            SoundCloud.playlist pl = new SoundCloud.playlist();
 
-            //pl.SetStandardPlaylists().Wait();
-            var res = dpl.GetAllPlaylists();
+            Deezer.Search s = new Deezer.Search(pl.GetStandardPlaylists().Result, Deezer.Playlist.GetAllPlaylists());
+            s.Title();
         }
     }
 }
