@@ -18,6 +18,7 @@ Application to Sync Playlists to Deezer
    https://api.deezer.com/search?q=artist:"Dharma Worldwide" track:"KRIMSONN - AUBURN LULLABY"
    https://api.deezer.com/search?q=artist:"Monstercat" track:"Notaker - Into The Light (feat. Karra)"
    ```
+1. If results < 0 try filter with Duration
 1. Remove unwantet chars `&`
 1. Remove unwantet details `[OUT NOW]` & `(TNT Remix)` // Filter for `Remix` and save remix artist for next query 
    ```
