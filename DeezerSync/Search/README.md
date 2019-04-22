@@ -25,7 +25,7 @@ Step 3: Track: Kill Paris I  Dream of You
 
 Step 1: Artist: SLUMBERJACK Track: SLUMBERJACK X Troyboi - Solid
 Step 2: Artist: SLUMBERJACK X Troyboi  Track:  Solid
-Step 3: Track: SLUMBERJACK SLUMBERJACK X Troyboi - Solid
+Step 3: Track: SLUMBERJACK X Troyboi - Solid
 
 Step 1: Artist: Made By Tsuki Track: Made By Tsuki  Wheezly - Scream [DIM MAK]
 Step 2: Artist: Made By Tsuki  Wheezly  Track:  Scream [DIM MAK]
@@ -37,7 +37,7 @@ Step 3: Track: Monstercat Lil Hank - Hank's Back
 
 Step 1: Artist: KLOUD Track: KLOUD - Save The World
 Step 2: Artist: KLOUD  Track:  Save The World
-Step 3: Track: KLOUD KLOUD - Save The World
+Step 3: Track: KLOUD - Save The World
 
 Step 1: Artist: Dharma Worldwide Track: KRIMSONN - AUBURN LULLABY
 Step 2: Artist: KRIMSONN  Track:  AUBURN LULLABY
@@ -45,14 +45,14 @@ Step 3: Track: Dharma Worldwide KRIMSONN - AUBURN LULLABY
 
 Step 1: Artist: MR.BLACK Track: MR.BLACK  TripL - Turning Back
 Step 2: Artist: MR.BLACK  TripL  Track:  Turning Back
-Step 3: Track: MR.BLACK MR.BLACK & TripL - Turning Back
+Step 3: Track: MR.BLACK & TripL - Turning Back
 
 Step 1: Artist: Monstercat Track: Notaker - Into The Light (feat. Karra)
 Step 2: Artist: Notaker  Track:  Into The Light (feat. Karra)
 Step 3: Track: Monstercat Notaker - Into The Light
 
 Step 1: Artist: Monstercat Track: FWLR  A-SHO - Cave Me In
-Step 2: Artist: FWLR  A Track: SHO 
+Step 2: Artist: FWLR  A Track: SHO - Cave Me In
 Step 3: Track: Monstercat FWLR & A-SHO - Cave Me In
 
 Step 1: Artist: Spinnin' Records Track: Quintino - Can't Bring Me Down [OUT NOW]
@@ -65,11 +65,11 @@ Step 3: Track: Kill Paris Fizzy Lifting Drink
 
 Step 1: Artist: KDrew Track: KDrew - Sometimes
 Step 2: Artist: KDrew  Track:  Sometimes
-Step 3: Track: KDrew KDrew - Sometimes
+Step 3: Track: KDrew - Sometimes
 
 Step 1: Artist: KLOUD Track: KLOUD - Raise Your Weapon
 Step 2: Artist: KLOUD  Track:  Raise Your Weapon
-Step 3: Track: KLOUD KLOUD - Raise Your Weapon
+Step 3: Track: KLOUD - Raise Your Weapon
 
 Step 1: Artist: ATLAST Track: Swedish House Mafia - Greyhound (ATLAST Remix)
 Step 2: Artist: Swedish House Mafia  Track:  Greyhound (ATLAST Remix)
@@ -85,11 +85,11 @@ Step 3: Track: Monstercat F.O.O.L - Carry On
 
 Step 1: Artist: Rootkit Track: Rootkit - Summit
 Step 2: Artist: Rootkit  Track:  Summit
-Step 3: Track: Rootkit Rootkit - Summit
+Step 3: Track: Rootkit - Summit
 
 Step 1: Artist: SLANDER Track: SLANDER  RIOT - YOU DON'T EVEN KNOW ME
 Step 2: Artist: SLANDER  RIOT  Track:  YOU DON'T EVEN KNOW ME
-Step 3: Track: SLANDER SLANDER & RIOT - YOU DON'T EVEN KNOW ME
+Step 3: Track: SLANDER & RIOT - YOU DON'T EVEN KNOW ME
 
 Step 1: Artist: Monstercat Track: Crankdat  Tisoki - Wobble
 Step 2: Artist: Crankdat  Tisoki  Track:  Wobble
@@ -109,7 +109,7 @@ Step 3: Track: Monstercat Au5 & Nytrix - Only In A Dream
 
 Step 1: Artist: SLANDER Track: SLANDER  SPAG HEDDY - RUNNING TO YOU FT. ELLE VEE
 Step 2: Artist: SLANDER  SPAG HEDDY  Track:  RUNNING TO YOU FT. ELLE VEE
-Step 3: Track: SLANDER SLANDER & SPAG HEDDY - RUNNING TO YOU FT. ELLE VEE
+Step 3: Track: SLANDER & SPAG HEDDY - RUNNING TO YOU FT. ELLE VEE
 
 Step 1: Artist: AERO CHORD Track: AERO CHORD - PLAY YOUR PART [MUSIC VIDEO BELOW] [MONSTERCAT]
 Step 2: Artist: AERO CHORD  Track:  PLAY YOUR PART [MUSIC VIDEO BELOW] [MONSTERCAT]
@@ -149,7 +149,7 @@ Step 3: Track: Monstercat Pixel Terror - Ultima
 
 Step 1: Artist: Au5 Track: Au5 - Activate
 Step 2: Artist: Au5  Track:  Activate
-Step 3: Track: Au5 Au5 - Activate
+Step 3: Track: Au5 - Activate
 
 Step 1: Artist: Monstercat Track: Bossfight - Badmash
 Step 2: Artist: Bossfight  Track:  Badmash
@@ -164,8 +164,8 @@ Step 2: Artist: Pegboard Nerds  Track:  Gunslinga (feat. MC Mota)
 Step 3: Track: Monstercat Pegboard Nerds - Gunslinga
 
 Step 1: Artist: Skrillex Track: Skrillex - Skrillex - Summit feat Ellie Goulding
-Step 2: Artist: Skrillex  Track:  Skrillex 
-Step 3: Track: Skrillex Skrillex - Skrillex - Summit feat Ellie Goulding
+Step 2: Artist: Skrillex  Track:  Skrillex - Summit feat Ellie Goulding
+Step 3: Track: Skrillex - Skrillex - Summit feat Ellie Goulding
 
 Step 1: Artist: MXMS Track: After Night
 Step 2: Artist: MXMS Track: After Night
@@ -217,11 +217,11 @@ Step 3: Track: 3LAU Walk Away
 
 Step 1: Artist: ILLENIUM Track: ILLENIUM - Crashing (ft. Bahari)
 Step 2: Artist: ILLENIUM  Track:  Crashing (ft. Bahari)
-Step 3: Track: ILLENIUM ILLENIUM - Crashing
+Step 3: Track: ILLENIUM - Crashing
 
 Step 1: Artist: Galantis Track: Galantis - Bones (feat. OneRepublic)
 Step 2: Artist: Galantis  Track:  Bones (feat. OneRepublic)
-Step 3: Track: Galantis Galantis - Bones
+Step 3: Track: Galantis - Bones
 
 Step 1: Artist: Monstercat Track: Notaker - Into The Light (feat. Karra)
 Step 2: Artist: Notaker  Track:  Into The Light (feat. Karra)
@@ -237,7 +237,7 @@ Step 3: Track: Zedd 365
 
 Step 1: Artist: 3LAU Track: 3LAU  Justin Caruso feat. Iselin - Better With You
 Step 2: Artist: 3LAU  Justin Caruso feat. Iselin  Track:  Better With You
-Step 3: Track: 3LAU 3LAU & Justin Caruso feat. Iselin - Better With You
+Step 3: Track: 3LAU & Justin Caruso feat. Iselin - Better With You
 
 Step 1: Artist: Monstercat Track: Rootkit - Voyage
 Step 2: Artist: Rootkit  Track:  Voyage
@@ -257,11 +257,11 @@ Step 3: Track: R3HAB
 
 Step 1: Artist: ford. Track: ford. - Bedford Falls
 Step 2: Artist: ford.  Track:  Bedford Falls
-Step 3: Track: ford. ford. - Bedford Falls
+Step 3: Track: ford. - Bedford Falls
 
 Step 1: Artist: ford. Track: ford. - Lazy Sad (feat. Sophie Meiers  Hanz)
 Step 2: Artist: ford.  Track:  Lazy Sad (feat. Sophie Meiers  Hanz)
-Step 3: Track: ford. ford. - Lazy Sad
+Step 3: Track: ford. - Lazy Sad
 
 Step 1: Artist: FELIX CARTAL Track: Hold Tight
 Step 2: Artist: FELIX CARTAL Track: Hold Tight
@@ -269,7 +269,7 @@ Step 3: Track: FELIX CARTAL Hold Tight
 
 Step 1: Artist: ford. Track: ford. - Who's to Say
 Step 2: Artist: ford.  Track:  Who's to Say
-Step 3: Track: ford. ford. - Who's to Say
+Step 3: Track: ford. - Who's to Say
 
 Step 1: Artist: 3LAU Track: Walk Away (feat. Luna Aura)
 Step 2: Artist: 3LAU Track: Walk Away (feat. Luna Aura)
@@ -320,7 +320,7 @@ Step 2: Artist: HOME Track: Ableton Wavetable Test
 Step 3: Track: HOME Ableton Wavetable Test
 
 Step 1: Artist: HOME Track: 1 - 5-18(3)
-Step 2: Artist: 1  Track:  5
+Step 2: Artist: 1  Track:  5-18(3)
 Step 3: Track: HOME 1 - 5-18
 
 Step 1: Artist: HOME Track: Wizards
@@ -361,7 +361,7 @@ Step 3: Track: LUZCID Sing Me To Sleep
 
 Step 1: Artist: ford. Track: ford. - Sirens
 Step 2: Artist: ford.  Track:  Sirens
-Step 3: Track: ford. ford. - Sirens
+Step 3: Track: ford. - Sirens
 
 Step 1: Artist: FELIX CARTAL Track: Worry (feat. Victoria Zaro)
 Step 2: Artist: FELIX CARTAL Track: Worry (feat. Victoria Zaro)
@@ -393,7 +393,7 @@ Step 3: Track: EMMX Hopeless
 
 Step 1: Artist: R3HAB Track: R3HAB X Waysons - Tell Me It's OK
 Step 2: Artist: R3HAB X Waysons  Track:  Tell Me It's OK
-Step 3: Track: R3HAB R3HAB X Waysons - Tell Me It's OK
+Step 3: Track: R3HAB X Waysons - Tell Me It's OK
 
 Step 1: Artist: Monstercat Track: Au5 - The Journey (feat. Trove)
 Step 2: Artist: Au5  Track:  The Journey (feat. Trove)
@@ -401,11 +401,11 @@ Step 3: Track: Monstercat Au5 - The Journey
 
 Step 1: Artist: Conro Track: Conro - Trippin
 Step 2: Artist: Conro  Track:  Trippin
-Step 3: Track: Conro Conro - Trippin
+Step 3: Track: Conro - Trippin
 
 Step 1: Artist: Soulero Track: Soulero - Paradise
 Step 2: Artist: Soulero  Track:  Paradise
-Step 3: Track: Soulero Soulero - Paradise
+Step 3: Track: Soulero - Paradise
 
 Step 1: Artist: Monstercat Track: Bad Computer - Voyage (feat. Savoi)
 Step 2: Artist: Bad Computer  Track:  Voyage (feat. Savoi)
@@ -465,7 +465,7 @@ Step 3: Track: Monstercat Gammer - Beam Of Light
 
 Step 1: Artist: STALKER Track: STALKER  Romy Wave - Rolling Tide (Original Mix)
 Step 2: Artist: STALKER  Romy Wave  Track:  Rolling Tide (Original Mix)
-Step 3: Track: STALKER STALKER & Romy Wave - Rolling Tide
+Step 3: Track: STALKER & Romy Wave - Rolling Tide
 
 Step 1: Artist: Wonderlust Track: Lexy Panterra  Rob James - Deep End (Cloudsz Remix)
 Step 2: Artist: Lexy Panterra  Rob James  Track:  Deep End (Cloudsz Remix)
@@ -556,8 +556,8 @@ Step 2: Artist: Charlie Puth  Track:  How Long (Two Friends Remix)
 Step 3: Track: How Long
 
 Step 1: Artist: Dimatik Track: Timmy Trumpet  Savage- Deja-Vu (Dimatik  Overdrive Remix) #1 on Beatport Hard Dance!
-Step 2: Artist: Timmy Trumpet  Savage Track:  Deja
-Step 3: Track: Deja
+Step 2: Artist: Timmy Trumpet  Savage Track:  Deja-Vu (Dimatik  Overdrive Remix) #1 on Beatport Hard Dance!
+Step 3: Track: Deja-Vu  #1 on Beatport Hard Dance!
 
 Step 1: Artist: SAMAHTA Track: secret weapon (feat. molly moore)
 Step 2: Artist: SAMAHTA Track: secret weapon (feat. molly moore)
@@ -577,15 +577,15 @@ Step 3: Track: Jaroslav Beck ESCAPE
 
 Step 1: Artist: KDrew Track: KDrew  HVNNIBVL - Body of Gold
 Step 2: Artist: KDrew  HVNNIBVL  Track:  Body of Gold
-Step 3: Track: KDrew KDrew & HVNNIBVL - Body of Gold
+Step 3: Track: KDrew & HVNNIBVL - Body of Gold
 
 Step 1: Artist: 1788-L Track: Daft Punk - Rinzler ( 1 7 8 8 - L / R E M I X )
-Step 2: Artist: Daft Punk  Track:  Rinzler ( 1 7 8 8 
+Step 2: Artist: Daft Punk  Track:  Rinzler ( 1 7 8 8 - L / R E M I X )
 Step 3: Track: 1788-L Daft Punk - Rinzler
 
 Step 1: Artist: KLOUD Track: KLOUD - In For The Kill
 Step 2: Artist: KLOUD  Track:  In For The Kill
-Step 3: Track: KLOUD KLOUD - In For The Kill
+Step 3: Track: KLOUD - In For The Kill
 
 Step 1: Artist: Monstercat Track: Koven - My Love
 Step 2: Artist: Koven  Track:  My Love
@@ -640,7 +640,7 @@ Step 2: Artist: TIMMY TRUMPET  JETFIRE  Track:  FLAMENCO (FEAT. RAGE)
 Step 3: Track: Dharma Worldwide TIMMY TRUMPET & JETFIRE - FLAMENCO
 
 Step 1: Artist: CRWNS Track: S-T-A-Y
-Step 2: Artist: CRWNS Track: T
+Step 2: Artist: CRWNS Track: T-A-Y
 Step 3: Track: CRWNS S-T-A-Y
 
 Step 1: Artist: BOUGENVILLA Track: Utami
@@ -669,11 +669,11 @@ Step 3: Track: Selekio
 
 Step 1: Artist: R3HAB Track: R3HAB x Skytech - What You Do
 Step 2: Artist: R3HAB x Skytech  Track:  What You Do
-Step 3: Track: R3HAB R3HAB x Skytech - What You Do
+Step 3: Track: R3HAB x Skytech - What You Do
 
 Step 1: Artist: KSHMR Track: KSHMR - Carry Me Home (ft. Jake Reese) [OUT NOW]
 Step 2: Artist: KSHMR  Track:  Carry Me Home (ft. Jake Reese) [OUT NOW]
-Step 3: Track: KSHMR KSHMR - Carry Me Home
+Step 3: Track: KSHMR - Carry Me Home
 
 Step 1: Artist: Prime Ordnance Track: Conro - Take Me There (Prime Ordnance Bootleg)
 Step 2: Artist: Conro  Track:  Take Me There (Prime Ordnance Bootleg)
@@ -721,7 +721,7 @@ Step 3: Track: Monstercat MYRNE & Grant - Fault
 
 Step 1: Artist: KSHMR Track: KSHMR  7 Skies - Neverland [OUT NOW]
 Step 2: Artist: KSHMR  7 Skies  Track:  Neverland [OUT NOW]
-Step 3: Track: KSHMR KSHMR & 7 Skies - Neverland
+Step 3: Track: KSHMR & 7 Skies - Neverland
 
 Step 1: Artist: Monstercat Track: Koven - Voices
 Step 2: Artist: Koven  Track:  Voices
@@ -761,10 +761,10 @@ Step 3: Track: Monstercat MEMBA - Stand Off
 
 Step 1: Artist: Dropgun Track: Dropgun - Earthquake (Original Mix)
 Step 2: Artist: Dropgun  Track:  Earthquake (Original Mix)
-Step 3: Track: Dropgun Dropgun - Earthquake
+Step 3: Track: Dropgun - Earthquake
 
 Step 1: Artist: Trap Nation Track: T-Mass - Who I Am
-Step 2: Artist: Trap Nation Track: Mass 
+Step 2: Artist: Trap Nation Track: Mass - Who I Am
 Step 3: Track: Trap Nation T-Mass - Who I Am
 
 Step 1: Artist: Adventure Club Track: Superhero Selects: Episode 1
@@ -921,7 +921,7 @@ Step 3: Track: Wakaan Minnesota - Dark Crystal
 
 Step 1: Artist: Au5 Track: Au5 - The Zero Point (Ft. Holly Drummond)
 Step 2: Artist: Au5  Track:  The Zero Point (Ft. Holly Drummond)
-Step 3: Track: Au5 Au5 - The Zero Point
+Step 3: Track: Au5 - The Zero Point
 
 Step 1: Artist: ACRAZE Track: SPARTA
 Step 2: Artist: ACRAZE Track: SPARTA
@@ -952,8 +952,8 @@ Step 2: Artist: Autograf  Track:  Dead Soon (Birthdayy Partyy Remix) (ft. Lils  
 Step 3: Track: Dead Soon
 
 Step 1: Artist: ILLENIUM Track: ILLENIUM, Said The Sky, 1 7 8 8 - L, Kerli - Sound of Where'd U Go [VIP Edit]
-Step 2: Artist: ILLENIUM, Said The Sky, 1 7 8 8  Track:  L, Kerli 
-Step 3: Track: ILLENIUM ILLENIUM, Said The Sky, 1 7 8 8 - L, Kerli - Sound of Where'd U Go
+Step 2: Artist: ILLENIUM, Said The Sky, 1 7 8 8  Track:  L, Kerli - Sound of Where'd U Go [VIP Edit]
+Step 3: Track: ILLENIUM, Said The Sky, 1 7 8 8 - L, Kerli - Sound of Where'd U Go
 
 Step 1: Artist: Crystal Skies Track: Seven Lions - Calling You Home (Crystal Skies Remix)
 Step 2: Artist: Seven Lions  Track:  Calling You Home (Crystal Skies Remix)
@@ -985,7 +985,7 @@ Step 3: Track: The Drop
 
 Step 1: Artist: Excision Track: Excision x Illenium - Gold (Stupid Love) feat Shallows
 Step 2: Artist: Excision x Illenium  Track:  Gold (Stupid Love) feat Shallows
-Step 3: Track: Excision Excision x Illenium - Gold  feat Shallows
+Step 3: Track: Excision x Illenium - Gold  feat Shallows
 
 Step 1: Artist: Pegboard Nerds Track: Purple People Eater
 Step 2: Artist: Pegboard Nerds Track: Purple People Eater
@@ -997,7 +997,7 @@ Step 3: Track: Crystal Skies Au5 & Crystal Skies - Cataclysm
 
 Step 1: Artist: Dirtyphonics Track: Dirtyphonics - Scorpion
 Step 2: Artist: Dirtyphonics  Track:  Scorpion
-Step 3: Track: Dirtyphonics Dirtyphonics - Scorpion
+Step 3: Track: Dirtyphonics - Scorpion
 
 Step 1: Artist: Monstercat Track: Notaker - The Storm
 Step 2: Artist: Notaker  Track:  The Storm
@@ -1113,7 +1113,7 @@ Step 3: Track: Come Back For You
 
 Step 1: Artist: Kasbo Track: Kasbo - Aldrig Mer (feat. Tender)
 Step 2: Artist: Kasbo  Track:  Aldrig Mer (feat. Tender)
-Step 3: Track: Kasbo Kasbo - Aldrig Mer
+Step 3: Track: Kasbo - Aldrig Mer
 
 Step 1: Artist: Zedd Track: The Middle
 Step 2: Artist: Zedd Track: The Middle
@@ -1149,7 +1149,7 @@ Step 3: Track: Monstercat SLANDER - Happy Now
 
 Step 1: Artist: Vicetone Track: Vicetone - Way Back (feat. Cozi Zuehlsdorff)
 Step 2: Artist: Vicetone  Track:  Way Back (feat. Cozi Zuehlsdorff)
-Step 3: Track: Vicetone Vicetone - Way Back
+Step 3: Track: Vicetone - Way Back
 
 Step 1: Artist: Monstercat Track: LVTHER - Friends Again (feat. Claire Ridgely)
 Step 2: Artist: LVTHER  Track:  Friends Again (feat. Claire Ridgely)
@@ -1189,7 +1189,7 @@ Step 3: Track: Lost Kings When We Were Young
 
 Step 1: Artist: R3HAB Track: R3HAB x Conor Maynard - Hold On Tight
 Step 2: Artist: R3HAB x Conor Maynard  Track:  Hold On Tight
-Step 3: Track: R3HAB R3HAB x Conor Maynard - Hold On Tight
+Step 3: Track: R3HAB x Conor Maynard - Hold On Tight
 
 Step 1: Artist: Midnight Kids Track: Louis The Child - Last To Leave Feat. Caroline Ailin (Midnight Kids Remix)
 Step 2: Artist: Louis The Child  Track:  Last To Leave Feat. Caroline Ailin (Midnight Kids Remix)
@@ -1205,11 +1205,11 @@ Step 3: Track: New Dawn TwoWorldsApart X Satellite Empire - Let Me Drown
 
 Step 1: Artist: SLANDER Track: SLANDER  BRET JAMES - SLOW MOTION
 Step 2: Artist: SLANDER  BRET JAMES  Track:  SLOW MOTION
-Step 3: Track: SLANDER SLANDER & BRET JAMES - SLOW MOTION
+Step 3: Track: SLANDER & BRET JAMES - SLOW MOTION
 
 Step 1: Artist: KDrew Track: KDrew  Indiginis - Never Gonna Wait
 Step 2: Artist: KDrew  Indiginis  Track:  Never Gonna Wait
-Step 3: Track: KDrew KDrew & Indiginis - Never Gonna Wait
+Step 3: Track: KDrew & Indiginis - Never Gonna Wait
 
 Step 1: Artist: Martin Garrix Track: Martin Garrix Feat. Khalid - Ocean
 Step 2: Artist: Martin Garrix Feat. Khalid  Track:  Ocean
@@ -1225,7 +1225,7 @@ Step 3: Track: tofû Skyvoice - You & I
 
 Step 1: Artist: TELYKast Track: TELYKast - Summertime (feat. Rachel Raquel)
 Step 2: Artist: TELYKast  Track:  Summertime (feat. Rachel Raquel)
-Step 3: Track: TELYKast TELYKast - Summertime
+Step 3: Track: TELYKast - Summertime
 
 Step 1: Artist: Wonderlust Track: Alarmin - Cosmic (feat. Danelle)
 Step 2: Artist: Alarmin  Track:  Cosmic (feat. Danelle)
@@ -1273,7 +1273,7 @@ Step 3: Track: EKALI Forgot How To Dream ft. K.Flay
 
 Step 1: Artist: 10K Track: 10K - Reflections
 Step 2: Artist: 10K  Track:  Reflections
-Step 3: Track: 10K 10K - Reflections
+Step 3: Track: 10K - Reflections
 
 Step 1: Artist: Vicetone Track: Something Strange (feat. Haley Reinhart)
 Step 2: Artist: Vicetone Track: Something Strange (feat. Haley Reinhart)
@@ -1301,7 +1301,7 @@ Step 3: Track: Saavan Hide
 
 Step 1: Artist: Au5 Track: Au5 - Cosmoscope
 Step 2: Artist: Au5  Track:  Cosmoscope
-Step 3: Track: Au5 Au5 - Cosmoscope
+Step 3: Track: Au5 - Cosmoscope
 
 Step 1: Artist: Kasbo Track: Jai Wolf - Indian Summer (Kasbo Remix)
 Step 2: Artist: Jai Wolf  Track:  Indian Summer (Kasbo Remix)
@@ -1373,7 +1373,7 @@ Step 3: Track: Virtual Riot Virtual Riot - Lost It Ft. Pearl Andersson
 
 Step 1: Artist: Vicetone Track: Vicetone - Collide (feat. Rosi Golan)
 Step 2: Artist: Vicetone  Track:  Collide (feat. Rosi Golan)
-Step 3: Track: Vicetone Vicetone - Collide
+Step 3: Track: Vicetone - Collide
 
 Step 1: Artist: ILLENIUM Track: Illenium  Said The Sky - Where'd U Go
 Step 2: Artist: Illenium  Said The Sky  Track:  Where'd U Go
@@ -1449,7 +1449,7 @@ Step 3: Track: Monstercat PYLOT - Shadowtask
 
 Step 1: Artist: WW Track: WW - Whatcha Need
 Step 2: Artist: WW  Track:  Whatcha Need
-Step 3: Track: W&W W&W - Whatcha Need
+Step 3: Track: W&W - Whatcha Need
 
 Step 1: Artist: Monstercat Track: Gareth Emery  Standerwick - Saving Light (feat. HALIENE)
 Step 2: Artist: Gareth Emery  Standerwick  Track:  Saving Light (feat. HALIENE)
@@ -1465,7 +1465,7 @@ Step 3: Track: Anywhere You Go
 
 Step 1: Artist: Throttle Track: Throttle - Hit The Road Jack
 Step 2: Artist: Throttle  Track:  Hit The Road Jack
-Step 3: Track: Throttle Throttle - Hit The Road Jack
+Step 3: Track: Throttle - Hit The Road Jack
 
 Step 1: Artist: ILLENIUM Track: Illenium - Fractures (ft. Nevve)
 Step 2: Artist: Illenium  Track:  Fractures (ft. Nevve)
@@ -1481,7 +1481,7 @@ Step 3: Track: Vincent
 
 Step 1: Artist: Grant Track: Grant - Constellations (feat. Jessi Mason)
 Step 2: Artist: Grant  Track:  Constellations (feat. Jessi Mason)
-Step 3: Track: Grant Grant - Constellations
+Step 3: Track: Grant - Constellations
 
 Step 1: Artist: Monstercat Track: WRLD - Everything (feat. Ashdown)
 Step 2: Artist: WRLD  Track:  Everything (feat. Ashdown)
@@ -1537,7 +1537,7 @@ Step 3: Track: Without You
 
 Step 1: Artist: Dirtyphonics Track: Dirtyphonics - Boombox
 Step 2: Artist: Dirtyphonics  Track:  Boombox
-Step 3: Track: Dirtyphonics Dirtyphonics - Boombox
+Step 3: Track: Dirtyphonics - Boombox
 
 Step 1: Artist: LℤRD Track: 3LAU  Said The Sky - Fire (LZRD Remix)
 Step 2: Artist: 3LAU  Said The Sky  Track:  Fire (LZRD Remix)
@@ -1561,7 +1561,7 @@ Step 3: Track: Jungle
 
 Step 1: Artist: KDrew Track: KDrew - Back To You
 Step 2: Artist: KDrew  Track:  Back To You
-Step 3: Track: KDrew KDrew - Back To You
+Step 3: Track: KDrew - Back To You
 
 Step 1: Artist: Triarchy Track: The Chainsmokers Ft. Jhené Aiko - Wake Up Alone (Triarchy Remix)
 Step 2: Artist: The Chainsmokers Ft. Jhené Aiko  Track:  Wake Up Alone (Triarchy Remix)
@@ -1597,7 +1597,7 @@ Step 3: Track: Undercover
 
 Step 1: Artist: Skrillex Track: Skrillex  Poo Bear - Would You Ever
 Step 2: Artist: Skrillex  Poo Bear  Track:  Would You Ever
-Step 3: Track: Skrillex Skrillex & Poo Bear - Would You Ever
+Step 3: Track: Skrillex & Poo Bear - Would You Ever
 
 Step 1: Artist: 3LAU Track: Audien  3LAU - Hot Water (3LAU DnB Remix)
 Step 2: Artist: Audien  3LAU  Track:  Hot Water (3LAU DnB Remix)
@@ -1645,7 +1645,7 @@ Step 3: Track: 4B
 
 Step 1: Artist: Notaker Track: Notaker  Declan James feat. Karra - Who I Am (Extended Mix)
 Step 2: Artist: Notaker  Declan James feat. Karra  Track:  Who I Am (Extended Mix)
-Step 3: Track: Notaker Notaker & Declan James feat. Karra - Who I Am
+Step 3: Track: Notaker & Declan James feat. Karra - Who I Am
 
 Step 1: Artist: ben maxwell Track: Believe U
 Step 2: Artist: ben maxwell Track: Believe U
@@ -1665,7 +1665,7 @@ Step 3: Track: Adventure Club Crash 2.0
 
 Step 1: Artist: Midranger Track: Midranger - Castle In The Sky (ft. 500Destinies)
 Step 2: Artist: Midranger  Track:  Castle In The Sky (ft. 500Destinies)
-Step 3: Track: Midranger Midranger - Castle In The Sky
+Step 3: Track: Midranger - Castle In The Sky
 
 Step 1: Artist: Pantheon Select Track: Prismo - Senses (William Black Remix)
 Step 2: Artist: Prismo  Track:  Senses (William Black Remix)
@@ -1692,8 +1692,8 @@ Step 2: Artist: Adventure Club Track: Without You (Adventure Club  Hunter Siegel
 Step 3: Track: Adventure Club Without You
 
 Step 1: Artist: T-Mass Track: Rain Man  Krysta Youngs - Habit (T-Mass Remix)
-Step 2: Artist: Rain Man  Krysta Youngs  Track:  Habit (T
-Step 3: Track: Habit (T
+Step 2: Artist: Rain Man  Krysta Youngs  Track:  Habit (T-Mass Remix)
+Step 3: Track: Habit
 
 Step 1: Artist: Trap Track: Eliminate  Holly - Telekinetic
 Step 2: Artist: Eliminate  Holly  Track:  Telekinetic
@@ -1709,7 +1709,7 @@ Step 3: Track: Monstercat Aero Chord - Resistance
 
 Step 1: Artist: Au5 Track: Au5 - Elemental [Sample Pack]
 Step 2: Artist: Au5  Track:  Elemental [Sample Pack]
-Step 3: Track: Au5 Au5 - Elemental
+Step 3: Track: Au5 - Elemental
 
 Step 1: Artist: Monstercat Track: KUURO - Savage
 Step 2: Artist: KUURO  Track:  Savage
@@ -1769,7 +1769,7 @@ Step 3: Track: Fareoh Moonlighting
 
 Step 1: Artist: Au5 Track: Au5 - I Miss You (Feat. Kenny Raye)
 Step 2: Artist: Au5  Track:  I Miss You (Feat. Kenny Raye)
-Step 3: Track: Au5 Au5 - I Miss You
+Step 3: Track: Au5 - I Miss You
 
 Step 1: Artist: KOVEN. Track: Seven Lions  Echos - Cold Skin (Koven Remix)
 Step 2: Artist: Seven Lions  Echos  Track:  Cold Skin (Koven Remix)
@@ -1781,7 +1781,7 @@ Step 3: Track: Firestorm ft. Sara Diamond
 
 Step 1: Artist: Au5 Track: Au5 - Arise
 Step 2: Artist: Au5  Track:  Arise
-Step 3: Track: Au5 Au5 - Arise
+Step 3: Track: Au5 - Arise
 
 Step 1: Artist: Adventure Club Track: Flight From The Gold Sky
 Step 2: Artist: Adventure Club Track: Flight From The Gold Sky
@@ -1865,7 +1865,7 @@ Step 3: Track: THĮEVES Zomboy - Young & Dangerous Ft. Kato
 
 Step 1: Artist: Au5 Track: Au5 - Goo Lagoon
 Step 2: Artist: Au5  Track:  Goo Lagoon
-Step 3: Track: Au5 Au5 - Goo Lagoon
+Step 3: Track: Au5 - Goo Lagoon
 
 Step 1: Artist: Monstercat Track: Stonebank - Body Moving (feat. Whizzkid)
 Step 2: Artist: Stonebank  Track:  Body Moving (feat. Whizzkid)
@@ -1920,8 +1920,8 @@ Step 2: Artist: Major Lazer [OFFICIAL] Track:  Run Up (feat. PARTYNEXTDOOR  Nick
 Step 3: Track: Major Lazer [OFFICIAL] Major Lazer - Run Up
 
 Step 1: Artist: Big Beat Records Track: Clean Bandit - Rockabye (feat. Sean Paul  Anne-Marie)[Autograf Remix]
-Step 2: Artist: Clean Bandit  Track:  Rockabye (feat. Sean Paul  Anne
-Step 3: Track: Rockabye (feat. Sean Paul & Anne
+Step 2: Artist: Clean Bandit  Track:  Rockabye (feat. Sean Paul  Anne-Marie)[Autograf Remix]
+Step 3: Track: Rockabye
 
 Step 1: Artist: ARMNHMR Track: Ekali  KRANE - AKIRA (ARMNHMR  DATHAN Remix)
 Step 2: Artist: Ekali  KRANE  Track:  AKIRA (ARMNHMR  DATHAN Remix)
@@ -1941,7 +1941,7 @@ Step 3: Track: Time To Say Goodbye
 
 Step 1: Artist: Kaskade Track: Kaskade (feat. Haley) Let It Out
 Step 2: Artist: Kaskade Track: Kaskade (feat. Haley) Let It Out
-Step 3: Track: Kaskade Kaskade  Let It Out
+Step 3: Track: Kaskade  Let It Out
 
 Step 1: Artist: MAKJ Track: Ed Sheeran - Shape Of You (MAKJ Remix)
 Step 2: Artist: Ed Sheeran  Track:  Shape Of You (MAKJ Remix)
@@ -2073,7 +2073,7 @@ Step 3: Track: Love Is Alive
 
 Step 1: Artist: R3HAB Track: R3HAB  Quintino - I Just Can't
 Step 2: Artist: R3HAB  Quintino  Track:  I Just Can't
-Step 3: Track: R3HAB R3HAB & Quintino - I Just Can't
+Step 3: Track: R3HAB & Quintino - I Just Can't
 
 Step 1: Artist: Anevo Track: Something Beautiful
 Step 2: Artist: Anevo Track: Something Beautiful
@@ -2081,7 +2081,7 @@ Step 3: Track: Anevo Something Beautiful
 
 Step 1: Artist: Galantis Track: Galantis  Throttle - Tell Me You Love Me
 Step 2: Artist: Galantis  Throttle  Track:  Tell Me You Love Me
-Step 3: Track: Galantis Galantis & Throttle - Tell Me You Love Me
+Step 3: Track: Galantis & Throttle - Tell Me You Love Me
 
 Step 1: Artist: ILLENIUM Track: Illenium - Let You Go (ft. Ember Island)
 Step 2: Artist: Illenium  Track:  Let You Go (ft. Ember Island)
@@ -2109,7 +2109,7 @@ Step 3: Track: Monstercat David Benjamin & Conro - Lay Low
 
 Step 1: Artist: DVBBS Track: DVBBS X Jasmine Thompson - Know Love
 Step 2: Artist: DVBBS X Jasmine Thompson  Track:  Know Love
-Step 3: Track: DVBBS DVBBS X Jasmine Thompson - Know Love
+Step 3: Track: DVBBS X Jasmine Thompson - Know Love
 
 Step 1: Artist: LℤRD Track: Krewella - Be There (LZRD Remix)
 Step 2: Artist: Krewella  Track:  Be There (LZRD Remix)
@@ -2132,8 +2132,8 @@ Step 2: Artist: Mr FijiWiji  Track:  Yours Truly VIP (feat. Danyka Nadeau)
 Step 3: Track: Monstercat Mr FijiWiji - Yours Truly VIP
 
 Step 1: Artist: T-Mass Mixes Track: ATC - All Around The World (T-Mass Remix)
-Step 2: Artist: ATC  Track:  All Around The World (T
-Step 3: Track: All Around The World (T
+Step 2: Artist: ATC  Track:  All Around The World (T-Mass Remix)
+Step 3: Track: All Around The World
 
 Step 1: Artist: Monstercat Track: Puppet  Cormak - Enough Is Enough (feat. Richard Caddock)
 Step 2: Artist: Puppet  Cormak  Track:  Enough Is Enough (feat. Richard Caddock)
@@ -2176,7 +2176,7 @@ Step 2: Artist: Louis The Child (ft. K. Flay)  Track:  It's Strange (Mr FijiWiji
 Step 3: Track: It's Strange
 
 Step 1: Artist: Elysian Records Track: T-Mass  Ellusive - Trapped in Fourths (feat. Mona Moua)
-Step 2: Artist: T Track: Mass  Ellusive 
+Step 2: Artist: T Track: Mass  Ellusive - Trapped in Fourths (feat. Mona Moua)
 Step 3: Track: Elysian Records T-Mass & Ellusive - Trapped in Fourths
 
 Step 1: Artist: Deep Sounds Track: Dr. Fresch - On And On
@@ -2213,7 +2213,7 @@ Step 3: Track: Heaven
 
 Step 1: Artist: Snavs Track: Snavs - Into The Wild (Feat. Sebastian Lind)
 Step 2: Artist: Snavs  Track:  Into The Wild (Feat. Sebastian Lind)
-Step 3: Track: Snavs Snavs - Into The Wild
+Step 3: Track: Snavs - Into The Wild
 
 Step 1: Artist: ILLENIUM Track: Illenium - Without You (Ft. SKYLR)
 Step 2: Artist: Illenium  Track:  Without You (Ft. SKYLR)
@@ -2244,8 +2244,8 @@ Step 2: Artist: Illenium ft. King Deco  Track:  Reverie
 Step 3: Track: Proximity Illenium ft. King Deco - Reverie
 
 Step 1: Artist: T-Mass Track: Two Friends ft. Breach The Summit - Long Way Home (T-Mass Remix)
-Step 2: Artist: Two Friends ft. Breach The Summit  Track:  Long Way Home (T
-Step 3: Track: Long Way Home (T
+Step 2: Artist: Two Friends ft. Breach The Summit  Track:  Long Way Home (T-Mass Remix)
+Step 3: Track: Long Way Home
 
 Step 1: Artist: TOMSIZE Track: Tomsize x Twenty One Pilots - Stressed Out
 Step 2: Artist: Tomsize x Twenty One Pilots  Track:  Stressed Out
@@ -2281,7 +2281,7 @@ Step 3: Track: DR. FRESCH Make It Drop
 
 Step 1: Artist: DVBBS Track: DVBBS  Shaun Frank - La La Land ft. Delaney Jane
 Step 2: Artist: DVBBS  Shaun Frank  Track:  La La Land ft. Delaney Jane
-Step 3: Track: DVBBS DVBBS & Shaun Frank - La La Land ft. Delaney Jane
+Step 3: Track: DVBBS & Shaun Frank - La La Land ft. Delaney Jane
 
 Step 1: Artist: MrSuicideSheep Track: IZECOLD - Swiggity
 Step 2: Artist: IZECOLD  Track:  Swiggity
@@ -2345,7 +2345,7 @@ Step 3: Track: Inside Out
 
 Step 1: Artist: Vicetone Track: Vicetone - 'Nevada feat. Cozi Zuehlsdorff'
 Step 2: Artist: Vicetone  Track:  'Nevada feat. Cozi Zuehlsdorff'
-Step 3: Track: Vicetone Vicetone - 'Nevada feat. Cozi Zuehlsdorff'
+Step 3: Track: Vicetone - 'Nevada feat. Cozi Zuehlsdorff'
 
 Step 1: Artist: Proximity Track: Ryos ft. Karra - Where We Are [Premiere]
 Step 2: Artist: Ryos ft. Karra  Track:  Where We Are [Premiere]
@@ -2381,7 +2381,7 @@ Step 3: Track: Closer
 
 Step 1: Artist: Galantis Track: Galantis  Hook N Sling - Love On Me
 Step 2: Artist: Galantis  Hook N Sling  Track:  Love On Me
-Step 3: Track: Galantis Galantis & Hook N Sling - Love On Me
+Step 3: Track: Galantis & Hook N Sling - Love On Me
 
 Step 1: Artist: Dirtyphonics Track: Excision  Datsik - Deviance (Dirtyphonics  Remix)
 Step 2: Artist: Excision  Datsik  Track:  Deviance (Dirtyphonics  Remix)
@@ -2400,12 +2400,12 @@ Step 2: Artist: ~ Drezo ~ Track:  Guap
 Step 3: Track: ~ Drezo ~ Drezo - Guap
 
 Step 1: Artist: T-Mass Mixes Track: ATC - All Around The World (T-Mass Remix)
-Step 2: Artist: ATC  Track:  All Around The World (T
-Step 3: Track: All Around The World (T
+Step 2: Artist: ATC  Track:  All Around The World (T-Mass Remix)
+Step 3: Track: All Around The World
 
 Step 1: Artist: Protohype Track: Protohype  Goldplate - Yup
 Step 2: Artist: Protohype  Goldplate  Track:  Yup
-Step 3: Track: Protohype Protohype & Goldplate - Yup
+Step 3: Track: Protohype & Goldplate - Yup
 
 Step 1: Artist: Disciple ♛ ♜ ♞ Track: Virtual Riot - Preset Junkies (Free Download)
 Step 2: Artist: Virtual Riot  Track:  Preset Junkies (Free Download)
@@ -2469,7 +2469,7 @@ Step 3: Track: TYPE 91 James Meyers - Amplify
 
 Step 1: Artist: Snavs Track: Snavs - Into The Wild (Feat. Sebastian Lind)
 Step 2: Artist: Snavs  Track:  Into The Wild (Feat. Sebastian Lind)
-Step 3: Track: Snavs Snavs - Into The Wild
+Step 3: Track: Snavs - Into The Wild
 
 Step 1: Artist: ILLENIUM Track: Illenium - It's All On U (ft. Liam O'Donnell)
 Step 2: Artist: Illenium  Track:  It's All On U (ft. Liam O'Donnell)
@@ -2492,8 +2492,8 @@ Step 2: Artist: KSHMR  Felix Snow ft. Madi  Track:  Touch (OUT NOW)
 Step 3: Track: Spinnin' Records KSHMR & Felix Snow ft. Madi - Touch
 
 Step 1: Artist: T-Mass Track: Two Friends ft. Breach The Summit - Long Way Home (T-Mass Remix)
-Step 2: Artist: Two Friends ft. Breach The Summit  Track:  Long Way Home (T
-Step 3: Track: Long Way Home (T
+Step 2: Artist: Two Friends ft. Breach The Summit  Track:  Long Way Home (T-Mass Remix)
+Step 3: Track: Long Way Home
 
 Step 1: Artist: Monstercat Track: Tut Tut Child - The Evidence
 Step 2: Artist: Tut Tut Child  Track:  The Evidence
@@ -2524,8 +2524,8 @@ Step 2: Artist: Zomboy Track: Like A Bitch (Extended Mix)
 Step 3: Track: Zomboy Like A Bitch
 
 Step 1: Artist: T-Mass Mixes Track: Route 94 - My Love (T-Mass Remix)
-Step 2: Artist: Route 94  Track:  My Love (T
-Step 3: Track: My Love (T
+Step 2: Artist: Route 94  Track:  My Love (T-Mass Remix)
+Step 3: Track: My Love
 
 Step 1: Artist: Dubstep Track: Dodge  Fuski - OK!
 Step 2: Artist: Dodge  Fuski  Track:  OK!
@@ -2556,8 +2556,8 @@ Step 2: Artist: Stephen  Track:  Remembering Myself (William Black Remix)
 Step 3: Track: Remembering Myself
 
 Step 1: Artist: T-Mass Dangerous Remixes Track: Lukas Graham - 7 Years (T-Mass Remix) ft. Toby Romeo
-Step 2: Artist: Lukas Graham  Track:  7 Years (T
-Step 3: Track: 7 Years (T
+Step 2: Artist: Lukas Graham  Track:  7 Years (T-Mass Remix) ft. Toby Romeo
+Step 3: Track: 7 Years  ft. Toby Romeo
 
 Step 1: Artist: Fool's Gold Records Track: Callie Reiff x Dapp - Wobble
 Step 2: Artist: Callie Reiff x Dapp  Track:  Wobble
@@ -2600,8 +2600,8 @@ Step 2: Artist: Illenium  Track:  With You ft. Quinn XCII (Crystal Skies Remix)
 Step 3: Track: With You ft. Quinn XCII
 
 Step 1: Artist: T-Mass Track: T-Mass - Feel It In The Air (ft. JVZEL)
-Step 2: Artist: T-Mass Track: Mass 
-Step 3: Track: T-Mass T-Mass - Feel It In The Air
+Step 2: Artist: T-Mass Track: Mass - Feel It In The Air (ft. JVZEL)
+Step 3: Track: T-Mass - Feel It In The Air
 
 Step 1: Artist: Rain Man Track: The Chainsmokers - Inside Out ft. Charlee (Rain Man Remix)
 Step 2: Artist: The Chainsmokers  Track:  Inside Out ft. Charlee (Rain Man Remix)
@@ -2648,8 +2648,8 @@ Step 2: Artist: Flux Pavilion x Snails  Track:  Cannonball
 Step 3: Track: Flux Pavilion Flux Pavilion x Snails - Cannonball
 
 Step 1: Artist: T-Mass Track: T-Mass  LZRD - Cash
-Step 2: Artist: T-Mass Track: Mass  LZRD 
-Step 3: Track: T-Mass T-Mass & LZRD - Cash
+Step 2: Artist: T-Mass Track: Mass  LZRD - Cash
+Step 3: Track: T-Mass & LZRD - Cash
 
 Step 1: Artist: Monstercat Track: KUURO - Aamon
 Step 2: Artist: KUURO  Track:  Aamon
@@ -2664,8 +2664,8 @@ Step 2: Artist: Koven  Track:  Telling Me
 Step 3: Track: Monstercat Koven - Telling Me
 
 Step 1: Artist: LℤRD Track: Illenium - It's All On U (LZRD  T-Mass Remix)
-Step 2: Artist: Illenium  Track:  It's All On U (LZRD  T
-Step 3: Track: It's All On U (LZRD & T
+Step 2: Artist: Illenium  Track:  It's All On U (LZRD  T-Mass Remix)
+Step 3: Track: It's All On U
 
 Step 1: Artist: Virtual Riot Track: The Chainsmokers - All We Know Ft. Phoebe Ryan (Virtual Riot Remix)
 Step 2: Artist: The Chainsmokers  Track:  All We Know Ft. Phoebe Ryan (Virtual Riot Remix)
@@ -2725,7 +2725,7 @@ Step 3: Track: Wall Recordings Tom & Jame - Burn Down
 
 Step 1: Artist: Vicetone Track: Vicetone - Pitch Black
 Step 2: Artist: Vicetone  Track:  Pitch Black
-Step 3: Track: Vicetone Vicetone - Pitch Black
+Step 3: Track: Vicetone - Pitch Black
 
 Step 1: Artist: HEXAGON Track: Madison Mars - Milky Way
 Step 2: Artist: Madison Mars  Track:  Milky Way
@@ -2757,7 +2757,7 @@ Step 3: Track: Spinnin' Talent Pool Oscar Troya - Shapes
 
 Step 1: Artist: Vicetone Track: Vicetone - Bright Side (ft. Cosmos  Creature)
 Step 2: Artist: Vicetone  Track:  Bright Side (ft. Cosmos  Creature)
-Step 3: Track: Vicetone Vicetone - Bright Side
+Step 3: Track: Vicetone - Bright Side
 
 Step 1: Artist: DOORN Records Track: Nom De Strip - Juno (OUT NOW)
 Step 2: Artist: Nom De Strip  Track:  Juno (OUT NOW)
@@ -2833,14 +2833,14 @@ Step 3: Track: Spinnin' Records KSHMR, B3nte & Badjack - The Spook Returns
 
 Step 1: Artist: Galantis Track: Galantis - Runaway (U  I)
 Step 2: Artist: Galantis  Track:  Runaway (U  I)
-Step 3: Track: Galantis Galantis - Runaway
+Step 3: Track: Galantis - Runaway
 
 Step 1: Artist: VIRTU Track: Daya - Hide Away (VIRTU Remix)
 Step 2: Artist: Daya  Track:  Hide Away (VIRTU Remix)
 Step 3: Track: Hide Away
 
 Step 1: Artist: EZY Lima Track: Justin Bieber - Sorry - (EZY Lima ft. Tayler Buono Remix / Cover)
-Step 2: Artist: Justin Bieber  Track:  Sorry 
+Step 2: Artist: Justin Bieber  Track:  Sorry - (EZY Lima ft. Tayler Buono Remix / Cover)
 Step 3: Track: Justin Bieber - Sorry -
 
 Step 1: Artist: Sam Feldt Track: Years  Years - Shine (Sam Feldt Remix)
@@ -2925,7 +2925,7 @@ Step 3: Track: Unspoken ft. Rachel K Collier
 
 Step 1: Artist: INSTRUM Track: INSTRUM - Night Rolls (ft. Somni)
 Step 2: Artist: INSTRUM  Track:  Night Rolls (ft. Somni)
-Step 3: Track: INSTRUM INSTRUM - Night Rolls
+Step 3: Track: INSTRUM - Night Rolls
 
 Step 1: Artist: XYLØ Track: BLK CLD
 Step 2: Artist: XYLØ Track: BLK CLD
@@ -2972,8 +2972,8 @@ Step 2: Artist: Skizzy Mars  Track:  Alcoholics (Fareoh Remix)
 Step 3: Track: Alcoholics
 
 Step 1: Artist: YOUNG BOMBS Track: Alessia Cara X G-Eazy - Wild Things (Young Bombs Remix)
-Step 2: Artist: Alessia Cara X G Track: Eazy 
-Step 3: Track: Eazy
+Step 2: Artist: Alessia Cara X G Track: Eazy - Wild Things (Young Bombs Remix)
+Step 3: Track: Eazy - Wild Things
 
 Step 1: Artist: Jenaux Track: 3lau - Is It Love (Jenaux Remix)
 Step 2: Artist: 3lau  Track:  Is It Love (Jenaux Remix)
@@ -2984,7 +2984,7 @@ Step 2: Artist: The Him Feat. Gia Koka  Track:  Don't Leave Without Me (Roostz O
 Step 3: Track: Don't Leave Without Me
 
 Step 1: Artist: Proximity Track: Steve Void  Alex Adair - Burnin [Premiere - Free]
-Step 2: Artist: Steve Void  Alex Adair  Track:  Burnin [Premiere 
+Step 2: Artist: Steve Void  Alex Adair  Track:  Burnin [Premiere - Free]
 Step 3: Track: Proximity Steve Void & Alex Adair - Burnin
 
 Step 1: Artist: Proximity Track: Ryos ft. Karra - Where We Are [Premiere]
@@ -3004,8 +3004,8 @@ Step 2: Artist: Martin Garrix  Bebe Rexha  Track:  In The Name Of Love
 Step 3: Track: Martin Garrix Martin Garrix & Bebe Rexha - In The Name Of Love
 
 Step 1: Artist: EKALI Track: Ta-ku  Wafia - Meet In The Middle (Ekali Remix)
-Step 2: Artist: Ta Track: ku  Wafia 
-Step 3: Track: ku & Wafia
+Step 2: Artist: Ta Track: ku  Wafia - Meet In The Middle (Ekali Remix)
+Step 3: Track: ku & Wafia - Meet In The Middle
 
 Step 1: Artist: Spinnin' Records Track: Vicetone - Anywhere I Go (Out Now)
 Step 2: Artist: Vicetone  Track:  Anywhere I Go (Out Now)
@@ -3037,7 +3037,7 @@ Step 3: Track: Closer
 
 Step 1: Artist: Galantis Track: Galantis  Hook N Sling - Love On Me
 Step 2: Artist: Galantis  Hook N Sling  Track:  Love On Me
-Step 3: Track: Galantis Galantis & Hook N Sling - Love On Me
+Step 3: Track: Galantis & Hook N Sling - Love On Me
 
 Step 1: Artist: Speaker of the House Track: Speaker of the House x REMMI - Awake, Asleep
 Step 2: Artist: Speaker of the House x REMMI  Track:  Awake, Asleep
@@ -3129,7 +3129,7 @@ Step 3: Track: No One
 
 Step 1: Artist: Skrux Track: Skrux - The Shadow
 Step 2: Artist: Skrux  Track:  The Shadow
-Step 3: Track: Skrux Skrux - The Shadow
+Step 3: Track: Skrux - The Shadow
 
 Step 1: Artist: MrSuicideSheep Track: Jerry Folk - To My Soul
 Step 2: Artist: Jerry Folk  Track:  To My Soul
@@ -3269,7 +3269,7 @@ Step 3: Track: Cool
 
 Step 1: Artist: Diplo Track: Diplo  Sleepy Tom - Be Right There
 Step 2: Artist: Diplo  Sleepy Tom  Track:  Be Right There
-Step 3: Track: Diplo Diplo & Sleepy Tom - Be Right There
+Step 3: Track: Diplo & Sleepy Tom - Be Right There
 
 Step 1: Artist: Monstercat Track: Mr FijiWiji - Yours Truly VIP (feat. Danyka Nadeau)
 Step 2: Artist: Mr FijiWiji  Track:  Yours Truly VIP (feat. Danyka Nadeau)
@@ -3320,7 +3320,7 @@ Step 2: Artist: DJ Khaled  Track:  All I Do Is Win ft. Moonzz (Prince Fox Cover)
 Step 3: Track: Proximity DJ Khaled - All I Do Is Win ft. Moonzz
 
 Step 1: Artist: Elysian Records Track: T-Mass  Ellusive - Trapped in Fourths (feat. Mona Moua)
-Step 2: Artist: T Track: Mass  Ellusive 
+Step 2: Artist: T Track: Mass  Ellusive - Trapped in Fourths (feat. Mona Moua)
 Step 3: Track: Elysian Records T-Mass & Ellusive - Trapped in Fourths
 
 Step 1: Artist: Deep Sounds Track: Dr. Fresch - On And On
@@ -3388,8 +3388,8 @@ Step 2: Artist: Stephen  Track:  Sincerely
 Step 3: Track: Proximity Stephen - Sincerely
 
 Step 1: Artist: Benny Benassi Track: Benny Benassi  Vassy - Even If (T-Mass Remix)
-Step 2: Artist: Benny Benassi  Vassy  Track:  Even If (T
-Step 3: Track: Even If (T
+Step 2: Artist: Benny Benassi  Vassy  Track:  Even If (T-Mass Remix)
+Step 3: Track: Even If
 
 Step 1: Artist: Rain Man Track: Bring Back The Summer (Ft. Oly)
 Step 2: Artist: Rain Man Track: Bring Back The Summer (Ft. Oly)
@@ -3421,7 +3421,7 @@ Step 3: Track: Thissongissick.com Elephante - Closer
 
 Step 1: Artist: DVBBS Track: DVBBS  Shaun Frank - La La Land ft. Delaney Jane
 Step 2: Artist: DVBBS  Shaun Frank  Track:  La La Land ft. Delaney Jane
-Step 3: Track: DVBBS DVBBS & Shaun Frank - La La Land ft. Delaney Jane
+Step 3: Track: DVBBS & Shaun Frank - La La Land ft. Delaney Jane
 
 Step 1: Artist: NOT YOUR DOPE Track: Bring Back The Summer (Not Your Dope Remix)
 Step 2: Artist: NOT YOUR DOPE Track: Bring Back The Summer (Not Your Dope Remix)
@@ -3505,7 +3505,7 @@ Step 3: Track: DVBBS 24K
 
 Step 1: Artist: Elephante Track: Elephante feat. Bishøp - Closer (Zoo Mix)
 Step 2: Artist: Elephante feat. Bishøp  Track:  Closer (Zoo Mix)
-Step 3: Track: Elephante Elephante feat. Bishøp - Closer
+Step 3: Track: Elephante feat. Bishøp - Closer
 
 Step 1: Artist: Two Friends VIP Track: Galantis - No Money (Two Friends Remix)
 Step 2: Artist: Galantis  Track:  No Money (Two Friends Remix)
@@ -3533,7 +3533,7 @@ Step 3: Track: MrSuicideSheep ZenAware - Prima
 
 Step 1: Artist: Vicetone Track: Vicetone - 'Nevada feat. Cozi Zuehlsdorff'
 Step 2: Artist: Vicetone  Track:  'Nevada feat. Cozi Zuehlsdorff'
-Step 3: Track: Vicetone Vicetone - 'Nevada feat. Cozi Zuehlsdorff'
+Step 3: Track: Vicetone - 'Nevada feat. Cozi Zuehlsdorff'
 
 Step 1: Artist: Proximity Track: Stephen - Crossfire (Elephante Remix)
 Step 2: Artist: Stephen  Track:  Crossfire (Elephante Remix)
@@ -3585,7 +3585,7 @@ Step 3: Track: Fareoh
 
 Step 1: Artist: TJR Track: TJR - Ode To Oi (Original)
 Step 2: Artist: TJR  Track:  Ode To Oi (Original)
-Step 3: Track: TJR TJR - Ode To Oi
+Step 3: Track: TJR - Ode To Oi
 
 Step 1: Artist: EDM.com Track: Run Away by Fareoh (Radio Edit) - EDM.com Exclusive
 Step 2: Artist: Run Away by Fareoh (Radio Edit)  Track:  EDM.com Exclusive
@@ -3605,7 +3605,7 @@ Step 3: Track: martinsolveig Intoxicated
 
 Step 1: Artist: Galantis Track: Galantis - Gold Dust (Original Mix)
 Step 2: Artist: Galantis  Track:  Gold Dust (Original Mix)
-Step 3: Track: Galantis Galantis - Gold Dust
+Step 3: Track: Galantis - Gold Dust
 
 Step 1: Artist: Spinnin' Deep Track: Curbi - Discharge (Original Mix)
 Step 2: Artist: Curbi  Track:  Discharge (Original Mix)
@@ -3633,7 +3633,7 @@ Step 3: Track: Intoxicated
 
 Step 1: Artist: Galantis Track: Galantis - Peanut Butter Jelly
 Step 2: Artist: Galantis  Track:  Peanut Butter Jelly
-Step 3: Track: Galantis Galantis - Peanut Butter Jelly
+Step 3: Track: Galantis - Peanut Butter Jelly
 
 Step 1: Artist: Proximity Track: Dropout - Slowly
 Step 2: Artist: Dropout  Track:  Slowly
@@ -3660,11 +3660,11 @@ Step 2: Artist: Skrux  Track:  You  Me
 Step 3: Track: Hegemon Select Skrux - You & Me
 
 Step 1: Artist: Musical Freedom Track: Wee-O - Fighting For (Tiësto Edit) [OUT NOW]
-Step 2: Artist: Wee Track: O 
+Step 2: Artist: Wee Track: O - Fighting For (Tiësto Edit) [OUT NOW]
 Step 3: Track: Musical Freedom Wee-O - Fighting For
 
 Step 1: Artist: WantedTunes ✅ Track: Shwann - Hunter-Killer (Original Mix) [Wanted Tunes Exclusive]
-Step 2: Artist: Shwann  Track:  Hunter
+Step 2: Artist: Shwann  Track:  Hunter-Killer (Original Mix) [Wanted Tunes Exclusive]
 Step 3: Track: WantedTunes ✅ Shwann - Hunter-Killer
 
 Step 1: Artist: NCS Track: Janji - Heroes Tonight (feat. Johnning)[NCS Release]
@@ -3712,8 +3712,8 @@ Step 2: Artist: Dave Emanuel  Teseo  Track:  Cheers
 Step 3: Track: House Dave Emanuel & Teseo - Cheers
 
 Step 1: Artist: Proximity Track: Deluka - Home (Elephante Remix) [Premiere - Free]
-Step 2: Artist: Deluka  Track:  Home (Elephante Remix) [Premiere 
-Step 3: Track: Home  [Premiere
+Step 2: Artist: Deluka  Track:  Home (Elephante Remix) [Premiere - Free]
+Step 3: Track: Home
 
 Step 1: Artist: Totally Normal Track: Tove Lo - Talking Body (Totally Normal  Rederic Remix)
 Step 2: Artist: Tove Lo  Track:  Talking Body (Totally Normal  Rederic Remix)
@@ -3729,7 +3729,7 @@ Step 3: Track: Beautiful Now
 
 Step 1: Artist: M4SONIC Track: M4SONIC  DIMATIK - Universe (Original Mix)
 Step 2: Artist: M4SONIC  DIMATIK  Track:  Universe (Original Mix)
-Step 3: Track: M4SONIC M4SONIC & DIMATIK - Universe
+Step 3: Track: M4SONIC & DIMATIK - Universe
 
 Step 1: Artist: Swede Dreams Track: DallasK - Retrograde (Swede Dreams Remix)
 Step 2: Artist: DallasK  Track:  Retrograde (Swede Dreams Remix)
@@ -3773,7 +3773,7 @@ Step 3: Track: Neon
 
 Step 1: Artist: Deepdink Track: Deepdink x Pablo Oliver x Jordi Rivera Ft. Nathan Brumley - Same Deep Water
 Step 2: Artist: Deepdink x Pablo Oliver x Jordi Rivera Ft. Nathan Brumley  Track:  Same Deep Water
-Step 3: Track: Deepdink Deepdink x Pablo Oliver x Jordi Rivera Ft. Nathan Brumley - Same Deep Water
+Step 3: Track: Deepdink x Pablo Oliver x Jordi Rivera Ft. Nathan Brumley - Same Deep Water
 
 Step 1: Artist: Monstercat Track: Stonebank - Blast from the Past
 Step 2: Artist: Stonebank  Track:  Blast from the Past
@@ -3785,7 +3785,7 @@ Step 3: Track: Powerful
 
 Step 1: Artist: Vicetone Track: Vicetone - Catch Me
 Step 2: Artist: Vicetone  Track:  Catch Me
-Step 3: Track: Vicetone Vicetone - Catch Me
+Step 3: Track: Vicetone - Catch Me
 
 Step 1: Artist: Nextgen Records Track: Spraynpray - Blakin Out (Original Mix)
 Step 2: Artist: Spraynpray  Track:  Blakin Out (Original Mix)
@@ -3804,8 +3804,8 @@ Step 2: Artist: Kris Kross Amsterdam  CHOCO  Track:  Until The Morning (CMC$ Rem
 Step 3: Track: Until The Morning
 
 Step 1: Artist: APAX Track: APAX - Higher (Original Mix) [Brooklyn Fire - Free for Soundcloud Friends]
-Step 2: Artist: APAX  Track:  Higher (Original Mix) [Brooklyn Fire 
-Step 3: Track: APAX APAX - Higher
+Step 2: Artist: APAX  Track:  Higher (Original Mix) [Brooklyn Fire - Free for Soundcloud Friends]
+Step 3: Track: APAX - Higher
 
 Step 1: Artist: Joe Maz Track: No Good [Original] w/ Scotty Boy  Krista Richards **OUT 3/2/16**
 Step 2: Artist: Joe Maz Track: No Good [Original] w/ Scotty Boy  Krista Richards **OUT 3/2/16**
@@ -3821,15 +3821,15 @@ Step 3: Track: Proximity Steerner & Kavela ft. Matthew Steeper - Horizon
 
 Step 1: Artist: Elephante Track: Elephante - Age Of Innocence (feat. Trouze  Damon Sharpe)
 Step 2: Artist: Elephante  Track:  Age Of Innocence (feat. Trouze  Damon Sharpe)
-Step 3: Track: Elephante Elephante - Age Of Innocence
+Step 3: Track: Elephante - Age Of Innocence
 
 Step 1: Artist: 3LAU Track: Runaway (Feat. 3LAU) - Bright Lights
 Step 2: Artist: Runaway (Feat. 3LAU)  Track:  Bright Lights
 Step 3: Track: 3LAU Runaway  - Bright Lights
 
 Step 1: Artist: APAX Track: APAX - Just Can't Stop (Original Mix) [Brooklyn Fire - Free for our Soundcloud Friends]
-Step 2: Artist: APAX  Track:  Just Can't Stop (Original Mix) [Brooklyn Fire 
-Step 3: Track: APAX APAX - Just Can't Stop
+Step 2: Artist: APAX  Track:  Just Can't Stop (Original Mix) [Brooklyn Fire - Free for our Soundcloud Friends]
+Step 3: Track: APAX - Just Can't Stop
 
 Step 1: Artist: VIRGINIA DA CUNHA Track: So Alone, Virginia Da Cunha (Electrohouse Erke Records Remix)
 Step 2: Artist: VIRGINIA DA CUNHA Track: So Alone, Virginia Da Cunha (Electrohouse Erke Records Remix)
@@ -3892,8 +3892,8 @@ Step 2: Artist: KDrew  Track:  Tonight
 Step 3: Track: Good Game KDrew - Tonight
 
 Step 1: Artist: T-Mass Track: Lange  Cate Kanell - Fireflies (T-Mass Remix)
-Step 2: Artist: Lange  Cate Kanell  Track:  Fireflies (T
-Step 3: Track: Fireflies (T
+Step 2: Artist: Lange  Cate Kanell  Track:  Fireflies (T-Mass Remix)
+Step 3: Track: Fireflies
 
 Step 1: Artist: Λ V Ø Track: Andrea Balency - YNBA (Avioth Remix)
 Step 2: Artist: Andrea Balency  Track:  YNBA (Avioth Remix)
@@ -3964,7 +3964,7 @@ Step 2: Artist: MØ  Track:  Say You'll Be There (Absence Remix) [Free]
 Step 3: Track: Say You'll Be There
 
 Step 1: Artist: David K. Official Track: Urban Cone - We Should Go To France (David K.´s Sunny Sunday Mix) - FREE DOWNLOAD
-Step 2: Artist: Urban Cone  Track:  We Should Go To France (David K.´s Sunny Sunday Mix) 
+Step 2: Artist: Urban Cone  Track:  We Should Go To France (David K.´s Sunny Sunday Mix) - FREE DOWNLOAD
 Step 3: Track: David K. Official Urban Cone - We Should Go To France  - FREE DOWNLOAD
 
 Step 1: Artist: Proximity Track: Galantis - Gold Dust (Hook N Sling Remix) [Premiere]
@@ -4036,7 +4036,7 @@ Step 2: Artist: Laszlo  Track:  Our Arrival
 Step 3: Track: Monstercat Laszlo - Our Arrival
 
 Step 1: Artist: dimitrivegasandlikemike Track: Dimitri Vegas  Like Mike ft Ne-Yo - Higher Place - USA BILLBOARD #1
-Step 2: Artist: Dimitri Vegas  Like Mike ft Ne Track: Yo 
+Step 2: Artist: Dimitri Vegas  Like Mike ft Ne Track: Yo - Higher Place - USA BILLBOARD #1
 Step 3: Track: dimitrivegasandlikemike Dimitri Vegas & Like Mike ft Ne-Yo - Higher Place - USA BILLBOARD #1
 
 Step 1: Artist: Fransis Derelle Track: Fransis Derelle - The Sun
@@ -4237,7 +4237,7 @@ Step 3: Track: Hugh
 
 Step 1: Artist: Au5 Track: Au5  - Guardians feat. Fiora
 Step 2: Artist: Au5   Track:  Guardians feat. Fiora
-Step 3: Track: Au5 Au5  - Guardians feat. Fiora
+Step 3: Track: Au5  - Guardians feat. Fiora
 
 Step 1: Artist: Monstercat Track: Nigel Good - Disappear (feat. Mango, Andre Frauenstein,  Stefan Ludik)
 Step 2: Artist: Nigel Good  Track:  Disappear (feat. Mango, Andre Frauenstein,  Stefan Ludik)
@@ -4272,8 +4272,8 @@ Step 2: Artist: Illenium ft. Nina Sung  Track:  Only One [Proximity Release]
 Step 3: Track: Proximity Illenium ft. Nina Sung - Only One
 
 Step 1: Artist: Lucian Track: Kiri Tse - Twenty-Something (Lucian Remix)
-Step 2: Artist: Kiri Tse  Track:  Twenty
-Step 3: Track: Twenty
+Step 2: Artist: Kiri Tse  Track:  Twenty-Something (Lucian Remix)
+Step 3: Track: Twenty-Something
 
 Step 1: Artist: chinchilla Track: Subtact  Jay Rodger - Burden (Mr FijiWiji Remix)
 Step 2: Artist: Subtact  Jay Rodger  Track:  Burden (Mr FijiWiji Remix)
@@ -4300,8 +4300,8 @@ Step 2: Artist: Eliza Roe  Track:  Promise Me (Audiobot Remix)
 Step 3: Track: Promise Me
 
 Step 1: Artist: LℤRD Track: The Chainsmokers - New York City (T-Mass  LZRD Remix)
-Step 2: Artist: The Chainsmokers  Track:  New York City (T
-Step 3: Track: New York City (T
+Step 2: Artist: The Chainsmokers  Track:  New York City (T-Mass  LZRD Remix)
+Step 3: Track: New York City
 
 Step 1: Artist: 3LAU Track: Stitches (3LAU Remix) - Shawn Mendes
 Step 2: Artist: Stitches (3LAU Remix)  Track:  Shawn Mendes
@@ -4365,7 +4365,7 @@ Step 3: Track: 3LAU Roses & Money  - The Chainsmokers vs DJ Snake vs Lil Dicky
 
 Step 1: Artist: Elephante Track: Elephante - Temporary Love x Walking On A Dream
 Step 2: Artist: Elephante  Track:  Temporary Love x Walking On A Dream
-Step 3: Track: Elephante Elephante - Temporary Love x Walking On A Dream
+Step 3: Track: Elephante - Temporary Love x Walking On A Dream
 
 Step 1: Artist: House Track: Lana Del Rey - Summertime Sadness (Cedric Gervais Remix)
 Step 2: Artist: Lana Del Rey  Track:  Summertime Sadness (Cedric Gervais Remix)
@@ -4389,7 +4389,7 @@ Step 3: Track: EDM.com Deorro ft. DyCy - Five Hours
 
 Step 1: Artist: Firebeatz Track: Firebeatz  KSHMR- No Heroes (feat. Luciana) (Original Mix)
 Step 2: Artist: Firebeatz  KSHMR Track:  No Heroes (feat. Luciana) (Original Mix)
-Step 3: Track: Firebeatz Firebeatz & KSHMR- No Heroes
+Step 3: Track: Firebeatz & KSHMR- No Heroes
 
 Step 1: Artist: Young Wolf Hatchlings Track: Tove Lo - Habits (Young Wolf Hatchlings Remix)
 Step 2: Artist: Tove Lo  Track:  Habits (Young Wolf Hatchlings Remix)
@@ -4401,7 +4401,7 @@ Step 3: Track: Diplo Jack Ü - Take Ü There
 
 Step 1: Artist: Galantis Track: Galantis - Runaway (U  I)
 Step 2: Artist: Galantis  Track:  Runaway (U  I)
-Step 3: Track: Galantis Galantis - Runaway
+Step 3: Track: Galantis - Runaway
 
 Step 1: Artist: David Guetta Track: David Guetta ft. Sam Martin - Dangerous (Robin Schulz Remix Radio Edit)
 Step 2: Artist: David Guetta ft. Sam Martin  Track:  Dangerous (Robin Schulz Remix Radio Edit)
@@ -4413,7 +4413,7 @@ Step 3: Track: Surrender
 
 Step 1: Artist: Kaskade Track: Kaskade  John Dahlbäck - A Little More feat Sansa
 Step 2: Artist: Kaskade  John Dahlbäck  Track:  A Little More feat Sansa
-Step 3: Track: Kaskade Kaskade & John Dahlbäck - A Little More feat Sansa
+Step 3: Track: Kaskade & John Dahlbäck - A Little More feat Sansa
 
 Step 1: Artist: Protocol Recordings Track: Tom Swoon  Stadiumx ft. Rico  Miella - Ghost (OUT NOW)
 Step 2: Artist: Tom Swoon  Stadiumx ft. Rico  Miella  Track:  Ghost (OUT NOW)
@@ -4473,7 +4473,7 @@ Step 3: Track: Cool Kids
 
 Step 1: Artist: Madeon Track: Madeon - Pay No Mind (ft. Passion Pit)
 Step 2: Artist: Madeon  Track:  Pay No Mind (ft. Passion Pit)
-Step 3: Track: Madeon Madeon - Pay No Mind
+Step 3: Track: Madeon - Pay No Mind
 
 Step 1: Artist: Proximity Track: Milk N Cookies - Monster (Totally Normal Remix)
 Step 2: Artist: Milk N Cookies  Track:  Monster (Totally Normal Remix)
@@ -4500,7 +4500,7 @@ Step 2: Artist: Hellberg  Track:  The Girl (feat. Cozi Zuehlsdorff)
 Step 3: Track: Monstercat Hellberg - The Girl
 
 Step 1: Artist: Proximity Track: Elephante ft. Brook Forman - Temporary Love [Premiere - Free]
-Step 2: Artist: Elephante ft. Brook Forman  Track:  Temporary Love [Premiere 
+Step 2: Artist: Elephante ft. Brook Forman  Track:  Temporary Love [Premiere - Free]
 Step 3: Track: Proximity Elephante ft. Brook Forman - Temporary Love
 
 Step 1: Artist: Proximity Track: The Jane Doze - Lights Go Down [Premiere]
@@ -4513,7 +4513,7 @@ Step 3: Track: Outlines
 
 Step 1: Artist: APAX Track: APAX - The Times (Radio Edit)
 Step 2: Artist: APAX  Track:  The Times (Radio Edit)
-Step 3: Track: APAX APAX - The Times
+Step 3: Track: APAX - The Times
 
 Step 1: Artist: Stefan Dabruck Track: Robin Schulz feat Ilsey-headlights ( Stefan Dabruck remix preview ) )
 Step 2: Artist: Robin Schulz feat Ilsey Track: headlights ( Stefan Dabruck remix preview ) )
@@ -4537,10 +4537,10 @@ Step 3: Track: ∆ trentino ∇ #TBT Trentino - Jesse Pinkman
 
 Step 1: Artist: KDrew Track: KDrew - Come Alive
 Step 2: Artist: KDrew  Track:  Come Alive
-Step 3: Track: KDrew KDrew - Come Alive
+Step 3: Track: KDrew - Come Alive
 
 Step 1: Artist: Monstercat Track: Eminence  Soulero - Invisible (feat. Mari-Anna)
-Step 2: Artist: Eminence  Soulero  Track:  Invisible (feat. Mari
+Step 2: Artist: Eminence  Soulero  Track:  Invisible (feat. Mari-Anna)
 Step 3: Track: Monstercat Eminence & Soulero - Invisible
 
 Step 1: Artist: Lenno Track: Peking Duk - High (Lenno Remix)
@@ -4560,8 +4560,8 @@ Step 2: Artist: Vicetone ft. Kat Nestel  Track:  Nothing Stopping Me [Premiere]
 Step 3: Track: Proximity Vicetone ft. Kat Nestel - Nothing Stopping Me
 
 Step 1: Artist: Marcus Schossow Track: Dimitri Vegas  Like Mike feat. Ne-Yo - Higher Place (Marcus Schossow Remix) OUT NOW!
-Step 2: Artist: Dimitri Vegas  Like Mike feat. Ne Track: Yo 
-Step 3: Track: Yo
+Step 2: Artist: Dimitri Vegas  Like Mike feat. Ne Track: Yo - Higher Place (Marcus Schossow Remix) OUT NOW!
+Step 3: Track: Yo - Higher Place  OUT NOW!
 
 Step 1: Artist: VANIC Official Track: Major Lazer - Be Together (feat. Wild Belle) (Vanic remix)
 Step 2: Artist: Major Lazer  Track:  Be Together (feat. Wild Belle) (Vanic remix)
@@ -4640,11 +4640,11 @@ Step 2: Artist: M A E S T R O  🌊🏄🏾 Track: Fort Minor "Where'd You Go" (
 Step 3: Track: M A E S T R O  🌊🏄🏾
 
 Step 1: Artist: Proximity Track: Kyle Tree ft. Bright Lights - Open Eyes [Premiere - Free]
-Step 2: Artist: Kyle Tree ft. Bright Lights  Track:  Open Eyes [Premiere 
+Step 2: Artist: Kyle Tree ft. Bright Lights  Track:  Open Eyes [Premiere - Free]
 Step 3: Track: Proximity Kyle Tree ft. Bright Lights - Open Eyes
 
 Step 1: Artist: Proximity Track: Slander ft. WAVZ - Love Again [Exclusive - Free]
-Step 2: Artist: Slander ft. WAVZ  Track:  Love Again [Exclusive 
+Step 2: Artist: Slander ft. WAVZ  Track:  Love Again [Exclusive - Free]
 Step 3: Track: Proximity Slander ft. WAVZ - Love Again
 
 Step 1: Artist: Weekend Vibes Track: Funk LeBlanc - Waves (La Felix Remix)
@@ -4684,7 +4684,7 @@ Step 2: Artist: Fletcher  Track:  War Paint (Young Bombs Remix)
 Step 3: Track: War Paint
 
 Step 1: Artist: Proximity Track: Gazzo ft. Jeff Greenspan - Say [Premiere - Free]
-Step 2: Artist: Gazzo ft. Jeff Greenspan  Track:  Say [Premiere 
+Step 2: Artist: Gazzo ft. Jeff Greenspan  Track:  Say [Premiere - Free]
 Step 3: Track: Proximity Gazzo ft. Jeff Greenspan - Say
 
 Step 1: Artist: MrSuicideSheep Track: Virtu - Blunt Force
@@ -4692,7 +4692,7 @@ Step 2: Artist: Virtu  Track:  Blunt Force
 Step 3: Track: MrSuicideSheep Virtu - Blunt Force
 
 Step 1: Artist: Soundplate Records Track: 19Hundred - 'Oh Boy' (Feat. DAZE) - OUT NOW!
-Step 2: Artist: 19Hundred  Track:  'Oh Boy' (Feat. DAZE) 
+Step 2: Artist: 19Hundred  Track:  'Oh Boy' (Feat. DAZE) - OUT NOW!
 Step 3: Track: Soundplate Records 19Hundred - 'Oh Boy'  - OUT NOW!
 
 Step 1: Artist: The Chainsmokers Track: Until You Were Gone (feat. Emily Warren)
@@ -4724,7 +4724,7 @@ Step 2: Artist: Sonnengruss  Track:  Storyteller (Vijay  Sofia Remix)
 Step 3: Track: Storyteller
 
 Step 1: Artist: Mozambo Track: Mystery Skulls - Magic (feat. Nile Rodgers and Brandy) - Mozambo remix
-Step 2: Artist: Mystery Skulls  Track:  Magic (feat. Nile Rodgers and Brandy) 
+Step 2: Artist: Mystery Skulls  Track:  Magic (feat. Nile Rodgers and Brandy) - Mozambo remix
 Step 3: Track: Mozambo Mystery Skulls - Magic  - Mozambo remix
 
 Step 1: Artist: Nextgen Records Track: Sebastian Knight  FGSN - Only One
@@ -4784,8 +4784,8 @@ Step 2: Artist: The 3AM  Track:  Come Over (Telemetry Remix)
 Step 3: Track: Come Over
 
 Step 1: Artist: LℤRD Track: The Chainsmokers - New York City (T-Mass  LZRD Remix)
-Step 2: Artist: The Chainsmokers  Track:  New York City (T
-Step 3: Track: New York City (T
+Step 2: Artist: The Chainsmokers  Track:  New York City (T-Mass  LZRD Remix)
+Step 3: Track: New York City
 
 Step 1: Artist: 3LAU Track: Stitches (3LAU Remix) - Shawn Mendes
 Step 2: Artist: Stitches (3LAU Remix)  Track:  Shawn Mendes
@@ -4805,7 +4805,7 @@ Step 3: Track: Proximity Louis Vivet ft. Gavrielle - Best Thing
 
 Step 1: Artist: Audiobot Track: Audiobot - Mars 2040
 Step 2: Artist: Audiobot  Track:  Mars 2040
-Step 3: Track: Audiobot Audiobot - Mars 2040
+Step 3: Track: Audiobot - Mars 2040
 
 Step 1: Artist: Said The Sky Track: Owl City - Fireflies (Said The Sky Remix)
 Step 2: Artist: Owl City  Track:  Fireflies (Said The Sky Remix)
@@ -4845,7 +4845,7 @@ Step 3: Track: DVBBS Swanky Tunes, DVBBS, Eitro - We Know
 
 Step 1: Artist: DVBBS Track: DVBBS  Borgeous - TSUNAMI (Original Mix)
 Step 2: Artist: DVBBS  Borgeous  Track:  TSUNAMI (Original Mix)
-Step 3: Track: DVBBS DVBBS & Borgeous - TSUNAMI
+Step 3: Track: DVBBS & Borgeous - TSUNAMI
 
 Step 1: Artist: Spinnin' Records Track: Dimitri Vegas  Like Mike vs Sander van Doorn - Project T (Martin Garrix Remix)
 Step 2: Artist: Dimitri Vegas  Like Mike vs Sander van Doorn  Track:  Project T (Martin Garrix Remix)
@@ -4857,7 +4857,7 @@ Step 3: Track: DVBBS Dimitri Vegas & Like Mike, DVBBS, Borgeous - STAMPEDE
 
 Step 1: Artist: DVBBS Track: DVBBS  Borgeous - TSUNAMI (JUMP) ft TINIE TEMPAH
 Step 2: Artist: DVBBS  Borgeous  Track:  TSUNAMI (JUMP) ft TINIE TEMPAH
-Step 3: Track: DVBBS DVBBS & Borgeous - TSUNAMI  ft TINIE TEMPAH
+Step 3: Track: DVBBS & Borgeous - TSUNAMI  ft TINIE TEMPAH
 
 Step 1: Artist: Throttle Track: Avicii - You Make Me (Throttle Remix)
 Step 2: Artist: Avicii  Track:  You Make Me (Throttle Remix)
@@ -4869,11 +4869,11 @@ Step 3: Track: HARDWELL Hardwell feat. Matthew Koma - Dare You
 
 Step 1: Artist: WW Track: WW - Bigfoot [Mainstage Music]
 Step 2: Artist: WW  Track:  Bigfoot [Mainstage Music]
-Step 3: Track: W&W W&W - Bigfoot
+Step 3: Track: W&W - Bigfoot
 
 Step 1: Artist: Fareoh Track: Fareoh - Pandora (Original Mix)
 Step 2: Artist: Fareoh  Track:  Pandora (Original Mix)
-Step 3: Track: Fareoh Fareoh - Pandora
+Step 3: Track: Fareoh - Pandora
 
 Step 1: Artist: R3HAB Track: R3hab  Deorro - Flashlight (Original Mix) [OUT NOW]
 Step 2: Artist: R3hab  Deorro  Track:  Flashlight (Original Mix) [OUT NOW]
@@ -4893,7 +4893,7 @@ Step 3: Track: UmmetOzcan Ummet Ozcan - Raise Your Hands
 
 Step 1: Artist: DVBBS Track: DVBBS  MOTi - This is Dirty [OUT NOW]
 Step 2: Artist: DVBBS  MOTi  Track:  This is Dirty [OUT NOW]
-Step 3: Track: DVBBS DVBBS & MOTi - This is Dirty
+Step 3: Track: DVBBS & MOTi - This is Dirty
 
 Step 1: Artist: Martin Garrix Track: Dimitri Vegas, Martin Garrix, Like Mike - Tremor (Sensation 2014 Anthem) OUT NOW
 Step 2: Artist: Dimitri Vegas, Martin Garrix, Like Mike  Track:  Tremor (Sensation 2014 Anthem) OUT NOW
@@ -4925,7 +4925,7 @@ Step 3: Track: Lovers On The Sun ft. Sam Martin
 
 Step 1: Artist: DVBBS Track: DVBBS - WE WERE YOUNG [OUT NOW]
 Step 2: Artist: DVBBS  Track:  WE WERE YOUNG [OUT NOW]
-Step 3: Track: DVBBS DVBBS - WE WERE YOUNG
+Step 3: Track: DVBBS - WE WERE YOUNG
 
 Step 1: Artist: EDM.com Track: Deorro ft. DyCy - Five Hours (Don't Hold Me Back) [EDM.com Premiere]
 Step 2: Artist: Deorro ft. DyCy  Track:  Five Hours (Don't Hold Me Back) [EDM.com Premiere]
@@ -4981,7 +4981,7 @@ Step 3: Track: Calabria
 
 Step 1: Artist: Vicetone Track: Vicetone - United We Dance
 Step 2: Artist: Vicetone  Track:  United We Dance
-Step 3: Track: Vicetone Vicetone - United We Dance
+Step 3: Track: Vicetone - United We Dance
 
 Step 1: Artist: David Guetta Track: Dangerous (feat. Sam Martin) (Steve Aoki Remix)
 Step 2: Artist: David Guetta Track: Dangerous (feat. Sam Martin) (Steve Aoki Remix)
@@ -5008,7 +5008,7 @@ Step 2: Artist: Dimitri Vegas, Like Mike  VINAI  Track:  Louder (Original Mix)
 Step 3: Track: Spinnin' Records Dimitri Vegas, Like Mike & VINAI - Louder
 
 Step 1: Artist: dimitrivegasandlikemike Track: Dimitri Vegas  Like Mike vs VINAI - LOUDER - OUT NOW @ BEATPORT !!
-Step 2: Artist: Dimitri Vegas  Like Mike vs VINAI  Track:  LOUDER 
+Step 2: Artist: Dimitri Vegas  Like Mike vs VINAI  Track:  LOUDER - OUT NOW @ BEATPORT !!
 Step 3: Track: dimitrivegasandlikemike Dimitri Vegas & Like Mike vs VINAI - LOUDER - OUT NOW @ BEATPORT !!
 
 Step 1: Artist: Spinnin' Records Track: Don Diablo ft Kris Kiss - Chain Reaction (Domino) (Original Mix)
@@ -5056,7 +5056,7 @@ Step 2: Artist: Deniz Koyu  Track:  Sonic (Original Mix)
 Step 3: Track: Spinnin' Records Deniz Koyu - Sonic
 
 Step 1: Artist: dimitrivegasandlikemike Track: Dimitri Vegas  Like Mike vs Ummet Ozcan - The Hum - BEATPORT #1
-Step 2: Artist: Dimitri Vegas  Like Mike vs Ummet Ozcan  Track:  The Hum 
+Step 2: Artist: Dimitri Vegas  Like Mike vs Ummet Ozcan  Track:  The Hum - BEATPORT #1
 Step 3: Track: dimitrivegasandlikemike Dimitri Vegas & Like Mike vs Ummet Ozcan - The Hum - BEATPORT #1
 
 Step 1: Artist: Monstercat Track: F.O.O.L - Knight
@@ -5084,7 +5084,7 @@ Step 2: Artist: Bisbetic  JP Candela  Track:  Ghepardo (Out Now)
 Step 3: Track: OXYGEN Recordings Bisbetic & JP Candela - Ghepardo
 
 Step 1: Artist: Wall Recordings Track: D-wayne - Modus (OUT NOW)
-Step 2: Artist: D Track: wayne 
+Step 2: Artist: D Track: wayne - Modus (OUT NOW)
 Step 3: Track: Wall Recordings D-wayne - Modus
 
 Step 1: Artist: Skink Track: Bassjackers  Brooks - Alamo
@@ -5141,7 +5141,7 @@ Step 3: Track: Skink Dropgun - Ninja
 
 Step 1: Artist: Showtek Track: Showtek - Satisfied (feat. VASSY)
 Step 2: Artist: Showtek  Track:  Satisfied (feat. VASSY)
-Step 3: Track: Showtek Showtek - Satisfied
+Step 3: Track: Showtek - Satisfied
 
 Step 1: Artist: OXYGEN Recordings Track: BL3R - Heat (Original Mix)
 Step 2: Artist: BL3R  Track:  Heat (Original Mix)
@@ -5172,7 +5172,7 @@ Step 2: Artist: Peanut Butter Jelly (Rave Radio Remix)  Track:  Galantis.  [EDM.
 Step 3: Track: Galantis.   FREE DOWNLOAD
 
 Step 1: Artist: ⛵ Ebisu ⛵ Track: SuyanoReez Vs Zbra Vs MissPalmer - Beef Up(G-Bæss  Z3TO Mashup)
-Step 2: Artist: SuyanoReez Vs Zbra Vs MissPalmer  Track:  Beef Up(G
+Step 2: Artist: SuyanoReez Vs Zbra Vs MissPalmer  Track:  Beef Up(G-Bæss  Z3TO Mashup)
 Step 3: Track: ⛵ Ebisu ⛵ Suyano&Reez Vs Zbra Vs MissPalmer - Beef Up
 
 Step 1: Artist: Martin Garrix Track: Martin Garrix vs Matisse  Sadko - Break Through The Silence
@@ -5201,7 +5201,7 @@ Step 3: Track: Wall Recordings Apster - Get Down Like That
 
 Step 1: Artist: Elephante Track: Elephante - Gecko x Cinema
 Step 2: Artist: Elephante  Track:  Gecko x Cinema
-Step 3: Track: Elephante Elephante - Gecko x Cinema
+Step 3: Track: Elephante - Gecko x Cinema
 
 Step 1: Artist: Spinnin' Records Track: Sam Feldt - Show Me Love (Kryder  Tom Staar Remix)
 Step 2: Artist: Sam Feldt  Track:  Show Me Love (Kryder  Tom Staar Remix)
@@ -5284,7 +5284,7 @@ Step 2: Artist: The Weeknd  Track:  Can't Feel My Face (Martin Garrix Remix)
 Step 3: Track: Can't Feel My Face
 
 Step 1: Artist: OXYGEN Recordings Track: Wom-Bat - Wombasmile (Radio Edit)
-Step 2: Artist: Wom Track: Bat 
+Step 2: Artist: Wom Track: Bat - Wombasmile (Radio Edit)
 Step 3: Track: OXYGEN Recordings Wom-Bat - Wombasmile
 
 Step 1: Artist: Nextgen Records Track: My Own system - The Sound (Original Mix)
@@ -5332,8 +5332,8 @@ Step 2: Artist: Jay Hardway  Track:  Electric Elephants (Extended Mix) [OUT NOW]
 Step 3: Track: Spinnin' Records Jay Hardway - Electric Elephants
 
 Step 1: Artist: Macbass Track: Macbass  Khamix - Alpha [FREE DOWNLOAD] - Click "Buy"
-Step 2: Artist: Macbass  Khamix  Track:  Alpha [FREE DOWNLOAD] 
-Step 3: Track: Macbass Macbass & Khamix - Alpha  - Click "Buy"
+Step 2: Artist: Macbass  Khamix  Track:  Alpha [FREE DOWNLOAD] - Click "Buy"
+Step 3: Track: Macbass & Khamix - Alpha  - Click "Buy"
 
 Step 1: Artist: Skink Track: Dirty Rush  Gregor Es - Turn It Up
 Step 2: Artist: Dirty Rush  Gregor Es  Track:  Turn It Up
@@ -5356,8 +5356,8 @@ Step 2: Artist: Showtek  Track:  Satisfied (feat. VASSY) (twoloud Remix)
 Step 3: Track: Satisfied
 
 Step 1: Artist: T-Mass Track: Calvin Harris - Sweet Nothing ft. Florence Welch (T-Mass Remix)
-Step 2: Artist: Calvin Harris  Track:  Sweet Nothing ft. Florence Welch (T
-Step 3: Track: Sweet Nothing ft. Florence Welch (T
+Step 2: Artist: Calvin Harris  Track:  Sweet Nothing ft. Florence Welch (T-Mass Remix)
+Step 3: Track: Sweet Nothing ft. Florence Welch
 
 Step 1: Artist: Nextgen Records Track: Treeson  Kirk Cosier - Tides (Original Mix)
 Step 2: Artist: Treeson  Kirk Cosier  Track:  Tides (Original Mix)
@@ -5413,7 +5413,7 @@ Step 3: Track: Youth
 
 Step 1: Artist: KDrew Track: KDrew - Bullseye
 Step 2: Artist: KDrew  Track:  Bullseye
-Step 3: Track: KDrew KDrew - Bullseye
+Step 3: Track: KDrew - Bullseye
 
 Step 1: Artist: Monstercat Track: Varien - Cloak and Dagger
 Step 2: Artist: Varien  Track:  Cloak and Dagger
@@ -5421,11 +5421,11 @@ Step 3: Track: Monstercat Varien - Cloak and Dagger
 
 Step 1: Artist: Skrillex Track: Skrillex - Bangarang feat Sirah
 Step 2: Artist: Skrillex  Track:  Bangarang feat Sirah
-Step 3: Track: Skrillex Skrillex - Bangarang feat Sirah
+Step 3: Track: Skrillex - Bangarang feat Sirah
 
 Step 1: Artist: Skrillex Track: Skrillex - Kyoto feat Sirah
 Step 2: Artist: Skrillex  Track:  Kyoto feat Sirah
-Step 3: Track: Skrillex Skrillex - Kyoto feat Sirah
+Step 3: Track: Skrillex - Kyoto feat Sirah
 
 Step 1: Artist: Adventure Club Track: Retro City
 Step 2: Artist: Adventure Club Track: Retro City
@@ -5440,8 +5440,8 @@ Step 2: Artist: Excision  Downlink  Track:  Crowd Control (Delta Heavy Remix)
 Step 3: Track: Crowd Control
 
 Step 1: Artist: OVERWERK Track: OVERWERK - 03 - Signal
-Step 2: Artist: OVERWERK  Track:  03 
-Step 3: Track: OVERWERK OVERWERK - 03 - Signal
+Step 2: Artist: OVERWERK  Track:  03 - Signal
+Step 3: Track: OVERWERK - 03 - Signal
 
 Step 1: Artist: Dj Carnage Track: Hardwell - Spaceman (Carnage Festival Trap Remix)
 Step 2: Artist: Hardwell  Track:  Spaceman (Carnage Festival Trap Remix)
@@ -5452,20 +5452,20 @@ Step 2: Artist: Crizzly Track: The Way We Ball (Crizzly Remix) by Lil Flip
 Step 3: Track: Crizzly
 
 Step 1: Artist: OVERWERK Track: OVERWERK - 05 - Night Shift
-Step 2: Artist: OVERWERK  Track:  05 
-Step 3: Track: OVERWERK OVERWERK - 05 - Night Shift
+Step 2: Artist: OVERWERK  Track:  05 - Night Shift
+Step 3: Track: OVERWERK - 05 - Night Shift
 
 Step 1: Artist: OVERWERK Track: OVERWERK - 04 - Last Call
-Step 2: Artist: OVERWERK  Track:  04 
-Step 3: Track: OVERWERK OVERWERK - 04 - Last Call
+Step 2: Artist: OVERWERK  Track:  04 - Last Call
+Step 3: Track: OVERWERK - 04 - Last Call
 
 Step 1: Artist: OVERWERK Track: OVERWERK - 02 - Relapse
-Step 2: Artist: OVERWERK  Track:  02 
-Step 3: Track: OVERWERK OVERWERK - 02 - Relapse
+Step 2: Artist: OVERWERK  Track:  02 - Relapse
+Step 3: Track: OVERWERK - 02 - Relapse
 
 Step 1: Artist: OVERWERK Track: OVERWERK - 01 - Daybreak
-Step 2: Artist: OVERWERK  Track:  01 
-Step 3: Track: OVERWERK OVERWERK - 01 - Daybreak
+Step 2: Artist: OVERWERK  Track:  01 - Daybreak
+Step 3: Track: OVERWERK - 01 - Daybreak
 
 Step 1: Artist: ͯ̑ͦͭ̃̐͘ ̵ͬͮ҉͝i Track: Whiiite  Schoolboy - Houdini (Calvertron Remix)
 Step 2: Artist: Whiiite  Schoolboy  Track:  Houdini (Calvertron Remix)
@@ -5473,7 +5473,7 @@ Step 3: Track: Houdini
 
 Step 1: Artist: OVERWERK Track: OVERWERK - 12:30
 Step 2: Artist: OVERWERK  Track:  12:30
-Step 3: Track: OVERWERK OVERWERK - 12:30
+Step 3: Track: OVERWERK - 12:30
 
 Step 1: Artist: Au5 Track: Singularity - Alone (Au5  Fractal Remix) [Play Me Free]
 Step 2: Artist: Singularity  Track:  Alone (Au5  Fractal Remix) [Play Me Free]
@@ -5529,7 +5529,7 @@ Step 3: Track: Zomboy Nuclear
 
 Step 1: Artist: Vicetone Track: Vicetone - United We Dance
 Step 2: Artist: Vicetone  Track:  United We Dance
-Step 3: Track: Vicetone Vicetone - United We Dance
+Step 3: Track: Vicetone - United We Dance
 
 Step 1: Artist: ILLENIUM Track: Oh Wonder - Shark (Illenium Remix)
 Step 2: Artist: Oh Wonder  Track:  Shark (Illenium Remix)
@@ -5537,7 +5537,7 @@ Step 3: Track: Shark
 
 Step 1: Artist: KDrew Track: KDrew, Rico  Miella - Let Me Go
 Step 2: Artist: KDrew, Rico  Miella  Track:  Let Me Go
-Step 3: Track: KDrew KDrew, Rico & Miella - Let Me Go
+Step 3: Track: KDrew, Rico & Miella - Let Me Go
 
 Step 1: Artist: Skrillex Track: Ragga Bomb (Skrillex  Zomboy Remix)
 Step 2: Artist: Skrillex Track: Ragga Bomb (Skrillex  Zomboy Remix)
@@ -5553,7 +5553,7 @@ Step 3: Track: TYPE 91 Dec3mber x Tempest x Lord Swan3x - Threefold
 
 Step 1: Artist: Skrux Track: Skrux - My Love Is A Weapon ft. Delacey
 Step 2: Artist: Skrux  Track:  My Love Is A Weapon ft. Delacey
-Step 3: Track: Skrux Skrux - My Love Is A Weapon ft. Delacey
+Step 3: Track: Skrux - My Love Is A Weapon ft. Delacey
 
 Step 1: Artist: VANIC Official Track: Vanic X Tove Styrke - Borderline
 Step 2: Artist: Vanic X Tove Styrke  Track:  Borderline
@@ -5585,7 +5585,7 @@ Step 3: Track: Gold Dust
 
 Step 1: Artist: KDrew Track: KDrew - Come Alive
 Step 2: Artist: KDrew  Track:  Come Alive
-Step 3: Track: KDrew KDrew - Come Alive
+Step 3: Track: KDrew - Come Alive
 
 Step 1: Artist: Hegemon Select Track: Skrux - You  Me
 Step 2: Artist: Skrux  Track:  You  Me
@@ -5636,8 +5636,8 @@ Step 2: Artist: Royal Disco  Track:  Welcome To The Universe
 Step 3: Track: TYPE 91 Royal Disco - Welcome To The Universe
 
 Step 1: Artist: T-Mass Mixes Track: Wiz Khalifa - See You Again ft. Charlie Puth (T-Mass Remix)
-Step 2: Artist: Wiz Khalifa  Track:  See You Again ft. Charlie Puth (T
-Step 3: Track: See You Again ft. Charlie Puth (T
+Step 2: Artist: Wiz Khalifa  Track:  See You Again ft. Charlie Puth (T-Mass Remix)
+Step 3: Track: See You Again ft. Charlie Puth
 
 Step 1: Artist: Pantheon Select Track: Illenium  Said The Sky - Painted White ft. Cristina Soto
 Step 2: Artist: Illenium  Said The Sky  Track:  Painted White ft. Cristina Soto
@@ -5656,8 +5656,8 @@ Step 2: Artist: Delta Heavy  Track:  Ghost (Zomboy Remix) [Nest HQ Premiere]
 Step 3: Track: Ghost
 
 Step 1: Artist: T-Mass Track: The Chainsmokers - Let You Go (T-Mass Remix)
-Step 2: Artist: The Chainsmokers  Track:  Let You Go (T
-Step 3: Track: Let You Go (T
+Step 2: Artist: The Chainsmokers  Track:  Let You Go (T-Mass Remix)
+Step 3: Track: Let You Go
 
 Step 1: Artist: OVERWERK Track: Create
 Step 2: Artist: OVERWERK Track: Create
@@ -5816,8 +5816,8 @@ Step 2: Artist: IYFFE  Track:  Beats On Fire Feat. Krime Fyter (Original Mix)
 Step 3: Track: Uprise Music IYFFE - Beats On Fire Feat. Krime Fyter
 
 Step 1: Artist: T-Mass Track: Supermode - Tell Me Why (T-Mass Remix)
-Step 2: Artist: Supermode  Track:  Tell Me Why (T
-Step 3: Track: Tell Me Why (T
+Step 2: Artist: Supermode  Track:  Tell Me Why (T-Mass Remix)
+Step 3: Track: Tell Me Why
 
 Step 1: Artist: ILLENIUM Track: Niykee Heaton - Infinity (Illenium Remix)
 Step 2: Artist: Niykee Heaton  Track:  Infinity (Illenium Remix)
