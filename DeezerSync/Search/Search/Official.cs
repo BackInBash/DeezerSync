@@ -120,6 +120,7 @@ namespace Search
                     default:
                         break;
                 }
+                Console.WriteLine("");
 
                 //var data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(i)));
             }
