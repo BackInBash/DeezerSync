@@ -140,7 +140,7 @@ namespace DeezerSync.Deezer
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                    throw new Exception("ERROR: " + result.error.toString());
+                    throw new Exception("ERROR: " + result.error);
                 }
                 catch (Exception ex)
                 {

@@ -52,23 +52,22 @@ namespace DeezerSync.Deezer
                 DeezerSync.Deezer.Playlist.CreatePlaylist(diff);
             }
 
-             Deezer = null;
-             Deezer = DeezerSync.Deezer.Playlist.GetAllPlaylists();
-
             // Playlist loop
-            foreach(var playlist in SoundCloud)
+            foreach (var playlist in SoundCloud)
             {
                 List<long> TrackIDs = new List<long>();
+                Deezer = null;
+                Deezer = DeezerSync.Deezer.Playlist.GetAllPlaylists();
 
                 // Track loop
-                foreach(var track in playlist.tracks)
+                foreach (var track in playlist.tracks)
                 {
                     // Search loop
-                    Deezer.API.Official o = new Deezer.API.Official(track.username, track.title, (track.duration).ToString(), (track.duration).ToString());
-                    long id = o.finder(2);
-                    if(id != 0)
+                    Deezer.API.Official o = new Deezer.API.Official(track.username, track.title, track.duration);
+                    long id = o.finder();
+                    if (id != 0)
                     {
-                        bool exists = false;
+                        bool NotExists = true;
                         foreach (var deezer in Deezer)
                         {
                             if (deezer.title.Equals(playlist.title))
@@ -77,77 +76,20 @@ namespace DeezerSync.Deezer
                                 {
                                     if (dzloop.id == id)
                                     {
-                                        exists = true;
+                                        NotExists = false;
                                     }
                                 }
                             }
                         }
-                        if (!exists)
+                        if (NotExists)
                         {
-                            foreach (long l in TrackIDs)
+                            if (TrackIDs.Count == 0)
                             {
-                                if (l != id)
-                                {
-                                    TrackIDs.Add(id);
-                                }
+                                TrackIDs.Add(id);
                             }
-                        }
-                    }
-                    else
-                    {
-                        string regtrack = Regex.Replace(track.title, "&", "", RegexOptions.IgnoreCase);
-                        o = null;
-                        o = new Deezer.API.Official(track.username, regtrack, (track.duration).ToString(), (track.duration).ToString());
-                        id = 0;
-                        id = o.finder(2);
-                        if (id != 0)
-                        {
-                            bool exists = false;
-                            foreach (var deezer in Deezer)
+                            else
                             {
-                                if (deezer.title.Equals(playlist.title))
-                                {
-                                    foreach (var dzloop in deezer.tracks)
-                                    {
-                                        if (dzloop.id == id)
-                                        {
-                                            exists = true;
-                                        }
-                                    }
-                                }
-                            }
-                            foreach (long l in TrackIDs)
-                            {
-                                if (l != id)
-                                {
-                                    TrackIDs.Add(id);
-                                }
-                            }
-                        }
-                        else
-                        {
-                            regtrack = null;
-                            regtrack = Regex.Replace(track.title, @"\(.*\)", "", RegexOptions.IgnoreCase).Trim();
-                            o = null;
-                            o = new Deezer.API.Official(track.username, regtrack, (track.duration).ToString(), (track.duration).ToString());
-                            id = 0;
-                            id = o.finder(2);
-                            if (id != 0)
-                            {
-                                bool exists = false;
-                                foreach (var deezer in Deezer)
-                                {
-                                    if (deezer.title.Equals(playlist.title))
-                                    {
-                                        foreach (var dzloop in deezer.tracks) {
-                                            if (dzloop.id == id)
-                                            {
-                                                exists = true;
-                                            }
-                                        }
-                                    }
-                                }
-                                foreach (long l in TrackIDs)
+                                foreach (long l in TrackIDs.ToList())
                                 {
                                     if (l != id)
                                     {
@@ -162,18 +104,18 @@ namespace DeezerSync.Deezer
                 if (TrackIDs.Count != 0)
                 {
                     string playlistid = null;
-                    foreach (var id in Deezer)
+                    foreach (var did in Deezer)
                     {
-                        if (playlist.title.Equals(id.title))
+                        if (playlist.title.Equals(did.title))
                         {
-                            playlistid = id.id;
+                            playlistid = did.id;
                         }
                     }
                     Playlist.AddSongsToPlaylist(playlistid, TrackIDs);
                 }
                 else
                 {
-                    Console.WriteLine("Playlist "+playlist.title+" no changes.");
+                    Console.WriteLine("Playlist " + playlist.title + " no changes.");
                 }
             }
         }
