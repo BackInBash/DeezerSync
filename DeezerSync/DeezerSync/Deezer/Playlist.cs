@@ -33,14 +33,14 @@ namespace DeezerSync.Deezer
             {
                 result = DeezerSync.Deezer.API.Model.AllPlaylists.Request.FromJson(jsonresult);
             }
-            catch (JsonSerializationException)
+            catch (JsonSerializationException ex)
             {
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
                     throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     throw new Exception(ex.Message);
                 }
@@ -113,41 +113,48 @@ namespace DeezerSync.Deezer
         /// <returns></returns>
         public static bool AddSongsToPlaylist(string PlaylistID, List<long> TrackIDs)
         {
-            List<List<long>> myList = new List<List<long>>();
+
+            List<AddSongsToPlaylist> plst = new List<AddSongsToPlaylist>();
             foreach (long l in TrackIDs)
             {
-                myList.Add(new List<long> { l, 0 });
+                List<List<long>> myList = new List<List<long>>
+                {
+                    new List<long> { l, 0 }
+                };
+                plst.Add(new AddSongsToPlaylist()
+                {
+                    playlist_id = PlaylistID,
+                    offset = -1,
+                    songs = myList
+                }
+                );
             }
 
-            AddSongsToPlaylist songstoplaylist = new AddSongsToPlaylist()
+            foreach (var i in plst)
             {
-                playlist_id = PlaylistID,
-                offset = -1,
-                songs = myList
-            };
+                var result = (dynamic)null;
+                string jsonresult = string.Empty;
+                string json = JsonConvert.SerializeObject(i, Formatting.None);
 
-            string json = JsonConvert.SerializeObject(songstoplaylist, Formatting.None);
+                jsonresult = l.DeezerRequest("playlist.addSongs", json);
 
-            var result = (dynamic)null;
-            string jsonresult = l.DeezerRequest("playlist.addSongs", json);
-
-            try
-            {
-                result = JsonConvert.DeserializeObject<CreatePlaylistResponse>(jsonresult);
-            }
-            catch (JsonSerializationException)
-            {
                 try
                 {
-                    result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                    throw new Exception("ERROR: " + result.error);
+                    result = JsonConvert.DeserializeObject<CreatePlaylistResponse>(jsonresult);
                 }
-                catch (Exception ex)
+                catch (JsonSerializationException ex)
                 {
-                    throw new Exception(ex.Message);
+                    try
+                    {
+                        result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
+                        Console.WriteLine("ERROR: " + result.error);
+                    }
+                    catch (Exception)
+                    {
+                        throw new Exception(ex.Message);
+                    }
                 }
             }
-
             return true;
         }
 

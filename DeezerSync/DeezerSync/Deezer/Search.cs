@@ -74,16 +74,17 @@ namespace DeezerSync.Deezer
                             {
                                 foreach (var dzloop in deezer.tracks)
                                 {
-                                    if (dzloop.id == id)
+                                    if (dzloop.id.Equals(id))
                                     {
                                         NotExists = false;
                                     }
                                 }
                             }
                         }
-                        if (NotExists)
+                        if (NotExists == true)
                         {
-                            if (TrackIDs.Count == 0)
+                            TrackIDs.ToList();
+                            if (TrackIDs.Count.Equals(0))
                             {
                                 TrackIDs.Add(id);
                             }
@@ -93,8 +94,12 @@ namespace DeezerSync.Deezer
                                 {
                                     if (l != id)
                                     {
-                                        TrackIDs.Add(id);
+                                        NotExists = false;
                                     }
+                                }
+                                if(NotExists == true)
+                                {
+                                    TrackIDs.Add(id);
                                 }
                             }
                         }

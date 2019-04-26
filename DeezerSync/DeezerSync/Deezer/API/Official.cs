@@ -173,8 +173,8 @@ namespace DeezerSync.Deezer.API
                             {
                                 if (found.Artist.Name.Contains(artist) && found.Title.Contains(track))
                                 {
-                                    Console.WriteLine("FOUND: Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
-                                    return found.Id;
+                                    Console.WriteLine("FOUND "+ data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
+                                    return (long)found.Id;
                                 }
                             }
                         }
@@ -187,8 +187,8 @@ namespace DeezerSync.Deezer.API
                             {
                                 if (found.Artist.Name.Contains(artist) && found.Title.Contains(track))
                                 {
-                                    Console.WriteLine("FOUND: Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
-                                    return found.Id;
+                                    Console.WriteLine("FOUND "+ data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
+                                    return (long)found.Id;
                                 }
                             }
                         }
@@ -199,10 +199,10 @@ namespace DeezerSync.Deezer.API
                         {
                             foreach (var found in data.Data)
                             {
-                                if (found.Title.Contains(track))
+                                if (found.Title.Contains(track) && found.Artist.Name.Contains(track) || found.Artist.Name.Contains(this.artist))
                                 {
-                                    Console.WriteLine("FOUND: Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
-                                    return found.Id;
+                                    Console.WriteLine("FOUND " + data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
+                                    return (long)found.Id;
                                 }
                             }
                         }

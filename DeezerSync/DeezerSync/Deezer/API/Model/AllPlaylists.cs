@@ -176,8 +176,8 @@ namespace DeezerSync.Deezer.API.Model
             [JsonConverter(typeof(ParseStringConverter))]
             public long? Rank { get; set; }
 
-            [JsonProperty("LOCALES", NullValueHandling = NullValueHandling.Ignore)]
-            public Locales Locales { get; set; }
+            //[JsonProperty("LOCALES", NullValueHandling = NullValueHandling.Ignore)]
+            //public Locales Locales { get; set; }
 
             [JsonProperty("__TYPE__", NullValueHandling = NullValueHandling.Ignore)]
             public string Type { get; set; }
