@@ -23,7 +23,7 @@ namespace DeezerSync.Deezer.API
 
         internal string userid;
         private string apiKey;
-        private string csfrsid;
+        private string csrfsid;
         private string secret = "";
 
 
@@ -53,7 +53,7 @@ namespace DeezerSync.Deezer.API
             request.Headers["Cache-Control"] = "max-age=0";
             request.Headers["accept-language"] = "en-US,en;q=0.9,en-US;q=0.8,en;q=0.7";
             request.Headers["accept-charset"] = "utf-8,ISO-8859-1;q=0.8,*;q=0.7";
-            request.Headers["cookie"] = "arl=" + secret+ "; sid="+csfrsid;
+            request.Headers["cookie"] = "arl=" + secret+ "; sid="+csrfsid;
 
             var content = string.Empty;
             request.CookieContainer = new CookieContainer();
@@ -70,13 +70,13 @@ namespace DeezerSync.Deezer.API
 
                 using (var response = (HttpWebResponse)request.GetResponse())
                 {
-                    if (string.IsNullOrEmpty(csfrsid))
+                    if (string.IsNullOrEmpty(csrfsid))
                     {
                         foreach (Cookie cook in response.Cookies)
                         {
                             if (cook.Name.Equals("sid"))
                             {
-                                csfrsid = cook.Value;
+                                csrfsid = cook.Value;
                             }
                         }
                     }

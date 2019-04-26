@@ -8,8 +8,8 @@ namespace Search.SoundCloud
 {
     public class Loader
     {
-        private static string clientId = "FweeGBOOEOYJWLJN3oEyToGLKhmSz0I7";
-        protected static string username = "omg-network-radio";
+        private static string clientId = "";
+        protected static string username = "";
         protected static User user = null;
         protected ISoundCloudClient client = null;
 

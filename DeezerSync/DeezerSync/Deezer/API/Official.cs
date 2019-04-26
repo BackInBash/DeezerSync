@@ -115,7 +115,7 @@ namespace DeezerSync.Deezer.API
 
                     case 3:
                         // Remove Artist & Modify Track
-                        artist = null;
+                        artist = string.Empty;
                         string trackex = this.track;
                         if (this.track.Contains("-"))
                         {
@@ -123,16 +123,22 @@ namespace DeezerSync.Deezer.API
                         }
                         else
                         {
-                            trackex = this.artist;
+                            trackex = this.track;
                         }
 
-                        if (this.track.Contains("Remix"))
+                        if (Regex.Match(this.track, @"Remix", RegexOptions.IgnoreCase).Success)
                         {
                             Match m = Regex.Match(this.track, @"(\(|\[).*Remix*(\)|\])", RegexOptions.IgnoreCase);
                             if (m.Success)
                             {
                                 // Split track replace remix entry with the clean remix artist
                                 string regex = Regex.Replace(trackex, @"(\(|\[).*Remix*(\)|\])", m.Value, RegexOptions.IgnoreCase).Trim();
+
+                                artist = Regex.Replace(m.Value, @"[\(*\)|\[*\]]", "", RegexOptions.IgnoreCase).Trim();
+                                artist = Regex.Replace(artist, @"Remix", "", RegexOptions.IgnoreCase).Trim();
+                                // Set Remix Artist as new Artist
+                                this.artist = artist;
+
                                 // Remove remaining [] ()
                                 track = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
                                 track = Regex.Replace(track, @"&", "", RegexOptions.IgnoreCase).Trim();
@@ -156,17 +162,22 @@ namespace DeezerSync.Deezer.API
                                 track = Regex.Replace(track, @"&", "", RegexOptions.IgnoreCase).Trim();
                             }
                         }
-                        //Console.WriteLine("Step 3: Track: " + track);
+                        //Console.WriteLine("Step 3: Artist "+artist+" Track: " + track);
                         break;
 
                 }
                 //Console.WriteLine("");
 
                 var data = (dynamic)null;
+
                 switch (i)
                 {
                     case 1:
                         data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, track).Result));
+                        if (data.Total == 0)
+                        {
+                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(1, track).Result));
+                        }
                         if (data.Data != null)
                         {
                             foreach (var found in data.Data)
@@ -176,11 +187,25 @@ namespace DeezerSync.Deezer.API
                                     Console.WriteLine("FOUND "+ data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
                                     return (long)found.Id;
                                 }
+
+                                if (found.Artist.Name.Contains(this.artist) && found.Title.Contains(this.track))
+                                {
+                                    Console.WriteLine("FOUND " + data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
+                                    return (long)found.Id;
+                                }
                             }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Empty Dataset");
                         }
                         break;
                     case 2:
                         data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, track).Result));
+                        if (data.Total == 0)
+                        {
+                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, Regex.Replace(track, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim()).Result));
+                        }
                         if (data.Data != null)
                         {
                             foreach (var found in data.Data)
@@ -190,11 +215,28 @@ namespace DeezerSync.Deezer.API
                                     Console.WriteLine("FOUND "+ data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
                                     return (long)found.Id;
                                 }
+
+                                if (found.Artist.Name.Contains(this.artist) && found.Title.Contains(this.track))
+                                {
+                                    Console.WriteLine("FOUND " + data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
+                                    return (long)found.Id;
+                                }
                             }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Empty Dataset");
                         }
                         break;
                     case 3:
-                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(lvl: 4, Track: track, duration: this.duration).Result));
+                        if (string.IsNullOrEmpty(artist))
+                        {
+                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(lvl: 1, Track: track).Result));
+                        } 
+                        else
+                        {
+                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(lvl: 3, Track: track, Artist: artist).Result));
+                        }
                         if (data.Data != null)
                         {
                             foreach (var found in data.Data)
@@ -204,7 +246,17 @@ namespace DeezerSync.Deezer.API
                                     Console.WriteLine("FOUND " + data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
                                     return (long)found.Id;
                                 }
+
+                                if (found.Title.Contains(this.track) && found.Artist.Name.Contains(this.track) || found.Artist.Name.Contains(this.artist))
+                                {
+                                    Console.WriteLine("FOUND " + data.Total + ": Artist: " + artist + " Track: " + track + " Link: " + found.Link.AbsoluteUri);
+                                    return (long)found.Id;
+                                }
                             }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Empty Dataset");
                         }
                         break;
                 }
@@ -229,28 +281,38 @@ namespace DeezerSync.Deezer.API
                 {
                     case 5:
                         // Artist + Track + Duration
-                        Console.WriteLine(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\" " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
+                        //Console.WriteLine(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\" " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
                         return await client.GetStringAsync(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\" " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
 
                     case 4:
                         // Track + Duration
-                        //Console.WriteLine(Official_api + "track:" + "\"" + Track + "\" " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
-                        return await client.GetStringAsync(Official_api + "track:" + "\"" + Track + "\" " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
+                        //Console.WriteLine(Official_api + Track + " " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
+                        return await client.GetStringAsync(Official_api + Track + " " + "dur_min:" + (duration - 1).ToString() + " dur_max:" + (duration + 1).ToString());
 
                     case 3:
                         // Artist + Track
                         //Console.WriteLine(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\"");
-                        return await client.GetStringAsync(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\"");
+                        string res = await client.GetStringAsync(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\"");
+                        if (res.Equals("{\"data\":[],\"total\":0}"))
+                        {
+                            Console.WriteLine(Official_api + "artist:" + "\"" + Artist + "\" " + "track:" + "\"" + Track + "\"");
+                        }
+                        return res;
 
                     case 2:
                         // Artist
-                        Console.WriteLine(Official_api + "artist:" + "\"" + Artist + "\" ");
+                        //Console.WriteLine(Official_api + "artist:" + "\"" + Artist + "\" ");
                         return await client.GetStringAsync(Official_api + "artist:" + "\"" + Artist + "\" ");
 
                     case 1:
                         // Track
-                        //Console.WriteLine(Official_api + "track:" + "\"" + Track + "\"");
-                        return await client.GetStringAsync(Official_api + "track:" + "\"" + Track + "\"");
+                        //Console.WriteLine(Official_api + Track);
+                        string result = await client.GetStringAsync(Official_api + Track);
+                        if (result.Equals("{\"data\":[],\"total\":0}"))
+                        {
+                            Console.WriteLine(Official_api + Track);
+                        }
+                        return result;
 
                     default:
                         throw new ArgumentOutOfRangeException("Option out of scope");
@@ -259,6 +321,7 @@ namespace DeezerSync.Deezer.API
             catch (HttpRequestException ex)
             {
                 Console.WriteLine(ex.Message);
+                //throw new HttpRequestException(ex.Message);
                 return "{\"data\": [],\"total\": 0}";
             }
             catch (Exception e)
