@@ -132,7 +132,7 @@ namespace DeezerSync.Deezer.API
                             if (m.Success)
                             {
                                 // Split track replace remix entry with the clean remix artist
-                                string regex = Regex.Replace(trackex, @"(\(|\[).*Remix*(\)|\])", Regex.Replace(m.Value, @"Remix", "", RegexOptions.IgnoreCase).Trim(), RegexOptions.IgnoreCase).Trim();
+                                string regex = Regex.Replace(trackex, @"(\(|\[).*Remix*(\)|\])", m.Value, RegexOptions.IgnoreCase).Trim();
                                 // Remove remaining [] ()
                                 track = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
                                 track = Regex.Replace(track, @"&", "", RegexOptions.IgnoreCase).Trim();
