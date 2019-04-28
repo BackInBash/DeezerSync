@@ -20,7 +20,7 @@ Application to Sync Playlists to Deezer
 To run this Program a `config.json` config file is needed in the working directory.
 The `config.json` requires the following entries:
 
-```JSON
+```console
 {
   "SoundCloud_Username": "",    // SoundCloud User Name (These are the playlists to sync)
   "SoundCloud_ClientID": "",    // A valid SoundCloud Client ID (Just start a few tracks on the site and check the dev console for api calls. A clientid should be in the url)
