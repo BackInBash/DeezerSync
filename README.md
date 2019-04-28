@@ -3,24 +3,27 @@ Application to Sync Playlists to Deezer
 
 ## Supported Platforms
 + SoundCloud
-+ Spotify
++ Spotify (later on)
 
+## Supported Operating Systems
++ Windows
++ macOS
++ Linux (Later in a fully featured version)
 
-## Search Querys
+## Used Libraries
++ Newtonsoft.Json
++ SoundCloud.Api
 
-1. Vanilla Search `Artist` & `Title`
-1. If `Title` contains `-` split title Then compare `Artist` with `split[0]` If equal search with `Artist` & `split[1]` else replace `Artist` (can be a label) with split[0]
-   ```
-   https://api.deezer.com/search?q=artist:"MR.BLACK" track:"MR.BLACK - In My Mind (Remix)"
-   https://api.deezer.com/search?q=artist:"SLUMBERJACK" track:"SLUMBERJACK X Troyboi - Solid"
-   https://api.deezer.com/search?q=artist:"Monstercat" track:"Lil Hank - Hank's Back"
-   https://api.deezer.com/search?q=artist:"KLOUD" track:"KLOUD - Save The World"
-   https://api.deezer.com/search?q=artist:"Dharma Worldwide" track:"KRIMSONN - AUBURN LULLABY"
-   https://api.deezer.com/search?q=artist:"Monstercat" track:"Notaker - Into The Light (feat. Karra)"
-   ```
-1. If results < 0 try filter with Duration
-1. Remove unwantet chars `&`
-1. Remove unwantet details `[OUT NOW]` & `(TNT Remix)` // Filter for `Remix` and save remix artist for next query 
-   ```
-   https://api.deezer.com/search?q=artist:"Spinnin' Records" track:"Timmy Trumpet - Oracle (TNT Remix) [OUT NOW]"
-   ```
+### Build with dotNET Core 2.2 & VS 2019
+
+## Getting Started
+To run this Program a `config.json` config file is needed in the working directory.
+The `config.json` requires the following entries:
+
+```JSON
+{
+  "SoundCloud_Username": "",    // SoundCloud User Name (These are the playlists to sync)
+  "SoundCloud_ClientID": "",    // A valid SoundCloud Client ID (Just start a few tracks on the site and check the dev console for api calls. A clientid should be in the url)
+  "Deezer_Secret": ""           // Login to Deezer and search in the dev console for an arl Cookie
+}
+```
