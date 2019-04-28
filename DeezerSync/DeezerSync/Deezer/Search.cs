@@ -1,10 +1,7 @@
-﻿using DeezerSync.Deezer.API;
-using DeezerSync.Model;
+﻿using DeezerSync.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
 
 namespace DeezerSync.Deezer
 {
@@ -117,6 +114,7 @@ namespace DeezerSync.Deezer
                         }
                     }
                     Playlist.AddSongsToPlaylist(playlistid, TrackIDs);
+                    Console.WriteLine("Playlist " + playlist.title + " with "+TrackIDs.Count+" changes.");
                 }
                 else
                 {

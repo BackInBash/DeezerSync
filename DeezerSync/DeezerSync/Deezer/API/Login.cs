@@ -24,7 +24,7 @@ namespace DeezerSync.Deezer.API
         internal string userid;
         private string apiKey;
         private string csrfsid;
-        private string secret = "";
+        private string secret = Config.deezer_secret;
 
 
         internal string DeezerRequest(string Dmethod, string payload = null)
