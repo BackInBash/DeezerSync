@@ -32,24 +32,25 @@ namespace Search.SoundCloud
             var playlistdata = await GetPlaylists();
             List<StandardPlaylist> pl = new List<StandardPlaylist>();
 
-            foreach (var i in playlistdata){
+            foreach (var i in playlistdata)
+            {
                 var trackinfo = i.Tracks;
                 List<StandardTitle> track = new List<StandardTitle>();
 
-                foreach(var a in trackinfo)
+                foreach (var a in trackinfo)
                 {
                     try
                     {
                         var userinfo = a.User;
-                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration/1000, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title, id = (long)i.Id });
+                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration / 1000, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title, id = (long)i.Id });
 
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         throw new Exception(e.Message);
                     }
                 }
-                
+
                 pl.Add(new StandardPlaylist { description = i.Description ?? string.Empty, title = i.Title, provider = "soundcloud", tracks = track, id = i.Id.ToString() });
             }
             return pl;

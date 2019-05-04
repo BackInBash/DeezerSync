@@ -8,8 +8,8 @@ namespace Search.SoundCloud
 {
     public class Loader
     {
-        private static string clientId = "";
-        protected static string username = "";
+        private static string clientId = Config.soundcloud_clientid;
+        protected static string username = Config.soundcloud_profile;
         protected static User user = null;
         protected ISoundCloudClient client = null;
 
