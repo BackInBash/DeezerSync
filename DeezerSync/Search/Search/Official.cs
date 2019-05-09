@@ -31,12 +31,29 @@ namespace Search
             this.duration = duration;
         }
 
+        private bool checkDuration(long dur)
+        {
+            if (this.duration == (dur - 1))
+            {
+                return true;
+            }
+            if (this.duration == dur)
+            {
+                return true;
+            }
+            if (this.duration == (dur + 1))
+            {
+                return true;
+            }
+            return false;
+        }
+
         /// <summary>
         /// Prepare Search Query String
         /// </summary>
         /// <param name="i">Query Stage</param>
         /// <returns>SearchRequest Object contains Track & Artist</returns>
-        public SearchRequest GenerateSearchRequest(int i)
+        private SearchRequest GenerateSearchRequest(int i)
         {
             SearchRequest s = new SearchRequest();
 
@@ -141,10 +158,10 @@ namespace Search
                             // Split track replace remix entry with the clean remix artist
                             string regex = Regex.Replace(trackex, @"(\(|\[).*Remix*(\)|\])", m.Value, RegexOptions.IgnoreCase).Trim();
 
+                            // Set Remix Artist as new Artist
                             s.artist = Regex.Replace(m.Value, @"[\(*\)|\[*\]]", "", RegexOptions.IgnoreCase).Trim();
                             s.artist = Regex.Replace(s.artist, @"Remix", "", RegexOptions.IgnoreCase).Trim();
-                            // Set Remix Artist as new Artist
-                            this.artist = artist;
+                            //this.artist = artist;
 
                             // Remove remaining [] ()
                             s.track = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
@@ -165,9 +182,23 @@ namespace Search
                         }
                         else
                         {
-                            s.track = this.artist + " " + Regex.Replace(this.track, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
+                            // Prevent Lable in Artist
+                            if (this.track.Contains("-"))
+                            {
+                                s.track = Regex.Replace(this.track, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
+                            }
+                            else
+                            {
+                                s.track = this.artist + " " + Regex.Replace(this.track, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
+                            }
+
                             s.track = Regex.Replace(s.track, @"&", "", RegexOptions.IgnoreCase).Trim();
                         }
+                    }
+                    if(s.artist.Split(' ').Length > 2)
+                    {
+                        // Reset if multiple artists are Detected
+                        s.artist = this.artist;
                     }
                     //Console.WriteLine("Step 3: Artist "+artist+" Track: " + track);
                     break;
@@ -181,7 +212,7 @@ namespace Search
         /// <param name="artist">The Artist to search for</param>
         /// <param name="track">The track name to search for</param>
         /// <returns>A Object contains the deserialized search Query</returns>
-        public ResultSearch.Search GetSearchResult(int i, string artist, string track)
+        private ResultSearch.Search GetSearchResult(int i, string artist, string track)
         {
             var data = (dynamic)null;
 
@@ -191,7 +222,7 @@ namespace Search
                     data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, track).Result));
                     if (data.Total == 0)
                     {
-                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(1, track).Result));
+                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(1, string.Join("-", artist,track)).Result));
                     }
 
                     break;
@@ -211,12 +242,21 @@ namespace Search
                     else
                     {
                         data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(lvl: 3, Track: track, Artist: artist).Result));
+                        if (data.Total == 0)
+                        {
+                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(1, string.Join("-", artist, track)).Result));
+                        }
                     }
 
                     break;
             }
             return data;
         }
+
+        /// <summary>
+        /// Starting the Search for a Track
+        /// </summary>
+        /// <returns>Deezer TrackID</returns>
         public long finder()
         {
             for (int i = 1; i < 4; i++)
@@ -237,13 +277,13 @@ namespace Search
                                 foreach (var found in data.Data)
                                 {
                                     //Console.WriteLine("Deezer Duration: " + found.Duration.Value + " SoundCloud Duration: " + this.duration);
-                                    if ((found.Artist.Name.Contains(artist) && found.Title.Equals(track)) || found.Duration.Value.Equals(this.duration))
+                                    if ((found.Artist.Name.Contains(artist) && found.Title.Equals(track)) || checkDuration(found.Duration.Value))
                                     {
                                         Console.WriteLine("    1 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
                                         return (long)found.Id;
                                     }
 
-                                    if ((found.Artist.Name.Contains(this.artist) && found.Title.Equals(this.track)) || found.Duration.Value.Equals(this.duration))
+                                    if ((found.Artist.Name.Contains(this.artist) && found.Title.Equals(this.track)) || checkDuration(found.Duration.Value))
                                     {
                                         Console.WriteLine("    1 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
                                         return (long)found.Id;
@@ -255,14 +295,14 @@ namespace Search
                                 foreach (var found in data.Data)
                                 {
                                     //Console.WriteLine("Deezer Duration: " + found.Duration.Value + " SoundCloud Duration: " + this.duration);
-                                    if (data.Data.Count < 5 && found.Duration.Value.Equals(this.duration))
+                                    if (data.Data.Count < 5 && checkDuration(found.Duration.Value))
                                     {
                                         Console.WriteLine("    2 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
                                         return (long)found.Id;
                                     }
                                     else
                                     {
-                                        if ((found.Artist.Name.Contains(artist) && found.Title.Contains(track)) || found.Duration.Value.Equals(this.duration))
+                                        if ((found.Artist.Name.Contains(artist) && found.Title.Contains(track)) || checkDuration(found.Duration.Value))
                                         {
                                             Console.WriteLine("    2 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
                                             return (long)found.Id;
@@ -275,13 +315,13 @@ namespace Search
                                 foreach (var found in data.Data)
                                 {
                                     //Console.WriteLine("Deezer Duration: " + found.Duration.Value + " SoundCloud Duration: " + this.duration);
-                                    if ((found.Artist.Name.Contains(artist) && found.Title.Contains(track)) || found.Duration.Value.Equals(this.duration))
+                                    if ((found.Artist.Name.Contains(artist) && found.Title.Contains(track)) || checkDuration(found.Duration.Value))
                                     {
                                         Console.WriteLine("    3 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
                                         return (long)found.Id;
                                     }
 
-                                    if ((found.Artist.Name.Contains(this.artist) && found.Title.Contains(this.track)) || found.Duration.Value.Equals(this.duration))
+                                    if ((found.Artist.Name.Contains(this.artist) && found.Title.Contains(this.track)) || checkDuration(found.Duration.Value))
                                     {
                                         Console.WriteLine("    3 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
                                         return (long)found.Id;
@@ -307,7 +347,7 @@ namespace Search
         /// <param name="artist">Artistname</param>
         /// <param name="duration">Duration</param>
         /// <returns></returns>
-        public async Task<string> Request(int lvl, string Artist = null, string Track = null, int duration = 0)
+        private async Task<string> Request(int lvl, string Artist = null, string Track = null, int duration = 0)
         {
             try
             {
@@ -359,7 +399,6 @@ namespace Search
             catch (HttpRequestException ex)
             {
                 Console.WriteLine(ex.Message);
-                //throw new HttpRequestException(ex.Message);
                 return "{\"data\": [],\"total\": 0}";
             }
             catch (Exception e)
