@@ -14,7 +14,7 @@ Application to Sync Playlists to Deezer
 + [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 + [SoundCloud.Api](https://github.com/prayzzz/SoundCloud.Api)
 
-### Build with dotNET Core 2.2 & VS 2019
+### Build with dotNET Core 3 Preview 5 & VS 2019
 
 ## Getting Started
 To run this Program a `config.json` config file is needed in the working directory.
