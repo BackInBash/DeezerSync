@@ -11,8 +11,8 @@ Application to Sync Playlists to Deezer
 + Linux (Later in a fully featured version)
 
 ## Used Libraries
-+ Newtonsoft.Json
-+ SoundCloud.Api
++ [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
++ [SoundCloud.Api](https://github.com/prayzzz/SoundCloud.Api)
 
 ### Build with dotNET Core 2.2 & VS 2019
 
