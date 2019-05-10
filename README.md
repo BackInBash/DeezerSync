@@ -8,7 +8,7 @@ Application to Sync Playlists to Deezer
 ## Supported Operating Systems
 + Windows
 + macOS
-+ Linux (Later in a fully featured version)
++ Linux
 
 ## Used Libraries
 + [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
