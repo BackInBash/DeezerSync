@@ -35,9 +35,10 @@ namespace Search
                         counter++;
                     }
                 }
-                //break;
+                Console.WriteLine("Found Tracks: " + counter + " in " + i.title);
+                break;
             }
-            Console.WriteLine("Found Tracks: "+counter);
+            
         }
     }
 }
