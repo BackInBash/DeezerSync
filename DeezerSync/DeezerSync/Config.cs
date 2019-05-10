@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using System.Reflection;
 using DeezerSync.Model;
 using Newtonsoft.Json;
 
@@ -11,7 +12,7 @@ namespace DeezerSync
         public static string soundcloud_clientid { get; private set; }
         public static string deezer_secret { get; private set; }
 
-        private string path = Path.Combine(Directory.GetCurrentDirectory(), "config.json");
+        private string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "config.json");
 
         public Config()
         {
