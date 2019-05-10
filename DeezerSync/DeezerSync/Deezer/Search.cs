@@ -7,7 +7,7 @@ namespace DeezerSync.Deezer
 {
     class Search
     {
-        protected Deezer.API.Official s = null;
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         protected Deezer.Playlist p = null;
         private List<StandardPlaylist> SoundCloud;
         private List<StandardPlaylist> Deezer;
@@ -20,7 +20,6 @@ namespace DeezerSync.Deezer
         /// <param name="Deezer">Playlist List from Deezer</param>
         public Search(List<StandardPlaylist> SoundCloud, List<StandardPlaylist> Deezer)
         {
-            //s = new Deezer.API.Official();
             p = new Deezer.Playlist();
             this.SoundCloud = SoundCloud;
             this.Deezer = Deezer;
@@ -45,7 +44,7 @@ namespace DeezerSync.Deezer
 
             foreach (var diff in different)
             {
-                Console.WriteLine("Create Playlist: " + diff);
+                logger.Info("Create Playlist: " + diff);
                 DeezerSync.Deezer.Playlist.CreatePlaylist(diff);
             }
 
@@ -64,6 +63,7 @@ namespace DeezerSync.Deezer
                     long id = o.finder();
                     if (id != 0)
                     {
+                        // True title dont exists in Deezer Playlist
                         bool NotExists = true;
                         foreach (var deezer in Deezer)
                         {
@@ -73,7 +73,9 @@ namespace DeezerSync.Deezer
                                 {
                                     if (dzloop.id.Equals(id))
                                     {
+                                        // False track exists in Deezer Playlist
                                         NotExists = false;
+                                        logger.Warn("Track: "+dzloop.username+" - "+dzloop.title+" already in Playlist "+ deezer.title);
                                     }
                                 }
                             }
@@ -83,19 +85,23 @@ namespace DeezerSync.Deezer
                             TrackIDs.ToList();
                             if (TrackIDs.Count.Equals(0))
                             {
+                                // Add Track ID to tmp list if List is empty
                                 TrackIDs.Add(id);
                             }
                             else
                             {
                                 foreach (long l in TrackIDs.ToList())
                                 {
-                                    if (l != id)
+                                    if (l == id)
                                     {
+                                        // Track exists in tmp List
                                         NotExists = false;
+                                        logger.Warn("Track: "+ track.username + " - " + track.title + " already in tmp List");
                                     }
                                 }
                                 if (NotExists == true)
                                 {
+                                    // Track dont exists in tmp List
                                     TrackIDs.Add(id);
                                 }
                             }
@@ -110,15 +116,16 @@ namespace DeezerSync.Deezer
                     {
                         if (playlist.title.Equals(did.title))
                         {
+                            // Get Playlist ID from name
                             playlistid = did.id;
                         }
                     }
                     Playlist.AddSongsToPlaylist(playlistid, TrackIDs);
-                    Console.WriteLine("Playlist " + playlist.title + " with " + TrackIDs.Count + " changes.");
+                    logger.Info("Playlist " + playlist.title + " with " + TrackIDs.Count + " changes.");
                 }
                 else
                 {
-                    Console.WriteLine("Playlist " + playlist.title + " no changes.");
+                    logger.Info("Playlist " + playlist.title + " no changes.");
                 }
             }
         }

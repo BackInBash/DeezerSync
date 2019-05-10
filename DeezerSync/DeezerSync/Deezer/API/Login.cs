@@ -8,6 +8,7 @@ namespace DeezerSync.Deezer.API
 {
     public class Login
     {
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         public Login()
         {
             GetDeezerAPILogin();
@@ -91,6 +92,7 @@ namespace DeezerSync.Deezer.API
             }
             catch (WebException we)
             {
+                logger.Warn(we);
                 // Wait before the next request
                 Thread.Sleep(1000);
                 // Converting Data
@@ -132,11 +134,13 @@ namespace DeezerSync.Deezer.API
                 }
                 else
                 {
+                    logger.Error("Wrong User Information");
                     throw new Exception("Wrong User Information");
                 }
             }
             else
             {
+                logger.Error("Cannot get Deezer API Key");
                 throw new Exception("Cannot get Deezer API Key");
             }
         }

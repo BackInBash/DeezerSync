@@ -8,7 +8,7 @@ namespace DeezerSync.SoundCloud
 {
     public class playlist : Loader
     {
-
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         public playlist()
         {
             init().Wait();
@@ -27,6 +27,7 @@ namespace DeezerSync.SoundCloud
         /// <summary>
         /// Save all Playlist Data to Standard List
         /// </summary>
+        /// <returns>Standard SoundCloud Playlist</returns>
         public async Task<List<StandardPlaylist>> GetStandardPlaylists()
         {
             var playlistdata = await GetPlaylists();
@@ -52,6 +53,7 @@ namespace DeezerSync.SoundCloud
                 }
 
                 pl.Add(new StandardPlaylist { description = i.Description ?? string.Empty, title = i.Title, provider = "soundcloud", tracks = track, id = i.Id.ToString() });
+                logger.Trace("Added Playlist "+i.Title+" with "+i.Title.Length+" Tracks to SoundCloud list");
             }
             return pl;
         }

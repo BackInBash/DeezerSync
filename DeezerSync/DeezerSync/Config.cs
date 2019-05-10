@@ -6,6 +6,7 @@ namespace DeezerSync
 {
     public class Config
     {
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         public static string soundcloud_profile { get; private set; }
         public static string soundcloud_clientid { get; private set; }
         public static string deezer_secret { get; private set; }
@@ -36,14 +37,17 @@ namespace DeezerSync
             }
             catch (FileNotFoundException)
             {
+                logger.Error("No Config File in " + path + " found.");
                 throw new FileNotFoundException("No Config File in " + path + " found.");
             }
             catch (IOException e)
             {
+                logger.Error(e);
                 throw new IOException(e.Message);
             }
             catch (JsonException ex)
             {
+                logger.Error(ex);
                 throw new JsonException(ex.Message);
             }
         }

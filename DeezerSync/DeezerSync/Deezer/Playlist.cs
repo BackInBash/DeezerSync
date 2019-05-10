@@ -10,6 +10,7 @@ namespace DeezerSync.Deezer
     class Playlist
     {
         protected static Login l = new Login();
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
 
         /// <summary>
         /// Get a List of all Playlists
@@ -35,9 +36,11 @@ namespace DeezerSync.Deezer
             }
             catch (JsonSerializationException ex)
             {
+                logger.Warn(ex);
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
+                    logger.Error(result);
                     throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
                 }
                 catch (Exception)
@@ -83,8 +86,9 @@ namespace DeezerSync.Deezer
             {
                 result = DeezerSync.Deezer.API.Model.PlaylistDataModel.Welcome.FromJson(jsonresult);
             }
-            catch (JsonSerializationException)
+            catch (JsonSerializationException e)
             {
+                logger.Warn(e);
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
@@ -92,6 +96,7 @@ namespace DeezerSync.Deezer
                 }
                 catch (Exception ex)
                 {
+                    logger.Error(ex);
                     throw new Exception(ex.Message);
                 }
             }
@@ -144,10 +149,11 @@ namespace DeezerSync.Deezer
                 }
                 catch (JsonSerializationException ex)
                 {
+                    logger.Error(ex);
                     try
                     {
                         result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                        Console.WriteLine("ERROR: " + result.error);
+                        logger.Warn(result.error);
                     }
                     catch (Exception)
                     {
@@ -183,12 +189,13 @@ namespace DeezerSync.Deezer
             {
                 result = JsonConvert.DeserializeObject<CreatePlaylistResponse>(jsonresult);
             }
-            catch (JsonSerializationException)
+            catch (JsonSerializationException e)
             {
+                logger.Warn(e);
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                    throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
+                    logger.Error(result.error.VALID_TOKEN_REQUIRED);
                 }
                 catch (Exception ex)
                 {

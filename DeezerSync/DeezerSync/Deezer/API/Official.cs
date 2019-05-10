@@ -15,7 +15,8 @@ namespace DeezerSync.Deezer.API
     }
     class Official
     {
-        private readonly string Official_api = "https://api.deezer.com/search?q=";
+        private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+        private const string Official_api = "https://api.deezer.com/search?q=";
 
         private string artist;
         private string track;
@@ -76,7 +77,7 @@ namespace DeezerSync.Deezer.API
                     {
                         s.track = this.track;
                     }
-                    //Console.WriteLine("Step 1: Artist: "+artist+ " Track: "+track);
+                    logger.Trace("GenerateSearchRequest: Step 1: Artist: " + artist + " Track: " + track);
                     break;
 
                 case 2:
@@ -126,13 +127,13 @@ namespace DeezerSync.Deezer.API
                             s.track = split[1];
                             s.track = Regex.Replace(s.track, @"\[.*\]", "", RegexOptions.IgnoreCase).Trim();
                         }
-                        //Console.WriteLine("Step 2: Artist: " + artist + " Track: " + track);
+                        logger.Trace("GenerateSearchRequest: Step 2: Artist: " + artist + " Track: " + track);
                     }
                     else
                     {
                         s.track = tmptrack;
                         s.track = Regex.Replace(s.track, @"\[.*\]", "", RegexOptions.IgnoreCase).Trim();
-                        //Console.WriteLine("Step 2: Artist: "+artist+ " Track: "+track);
+                        logger.Trace("GenerateSearchRequest: Step 2: Artist: " + artist + " Track: " + track);
                     }
                     break;
 
@@ -160,7 +161,6 @@ namespace DeezerSync.Deezer.API
                             // Set Remix Artist as new Artist
                             s.artist = Regex.Replace(m.Value, @"[\(*\)|\[*\]]", "", RegexOptions.IgnoreCase).Trim();
                             s.artist = Regex.Replace(s.artist, @"Remix", "", RegexOptions.IgnoreCase).Trim();
-                            //this.artist = artist;
 
                             // Remove remaining [] ()
                             s.track = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
@@ -199,7 +199,7 @@ namespace DeezerSync.Deezer.API
                         // Reset if multiple artists are Detected
                         s.artist = this.artist;
                     }
-                    //Console.WriteLine("Step 3: Artist "+artist+" Track: " + track);
+                    logger.Trace("GenerateSearchRequest: Step 3: Artist " + artist + " Track: " + track);
                     break;
             }
             return s;
@@ -267,7 +267,8 @@ namespace DeezerSync.Deezer.API
                 {
                     var data = GetSearchResult(c, artist, track);
 
-                    Console.WriteLine("Search: Artist: " + artist + " Track: " + track);
+                    logger.Debug("Search: Artist: " + artist + " Track: " + track);
+
                     if (data.Data != null)
                     {
                         switch (c)
@@ -275,16 +276,15 @@ namespace DeezerSync.Deezer.API
                             case 1:
                                 foreach (var found in data.Data)
                                 {
-                                    //Console.WriteLine("Deezer Duration: " + found.Duration.Value + " SoundCloud Duration: " + this.duration);
                                     if ((found.Artist.Name.Contains(artist) && found.Title.Equals(track)) || checkDuration(found.Duration.Value))
                                     {
-                                        Console.WriteLine("    1 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
+                                        logger.Debug("GenerateSearchRequest: Stage 1 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri + "\n");
                                         return (long)found.Id;
                                     }
 
                                     if ((found.Artist.Name.Contains(this.artist) && found.Title.Equals(this.track)) || checkDuration(found.Duration.Value))
                                     {
-                                        Console.WriteLine("    1 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
+                                        logger.Trace("GenerateSearchRequest: Stage 1 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri + "\n");
                                         return (long)found.Id;
                                     }
                                 }
@@ -293,17 +293,16 @@ namespace DeezerSync.Deezer.API
                             case 2:
                                 foreach (var found in data.Data)
                                 {
-                                    //Console.WriteLine("Deezer Duration: " + found.Duration.Value + " SoundCloud Duration: " + this.duration);
                                     if (data.Data.Count < 5 && checkDuration(found.Duration.Value))
                                     {
-                                        Console.WriteLine("    2 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
+                                        logger.Debug("GenerateSearchRequest: Stage 2 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri + "\n");
                                         return (long)found.Id;
                                     }
                                     else
                                     {
                                         if ((found.Artist.Name.Contains(artist) && found.Title.Contains(track)) || checkDuration(found.Duration.Value))
                                         {
-                                            Console.WriteLine("    2 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
+                                            logger.Debug("GenerateSearchRequest: Stage 2 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri + "\n");
                                             return (long)found.Id;
                                         }
                                     }
@@ -313,16 +312,15 @@ namespace DeezerSync.Deezer.API
                             case 3:
                                 foreach (var found in data.Data)
                                 {
-                                    //Console.WriteLine("Deezer Duration: " + found.Duration.Value + " SoundCloud Duration: " + this.duration);
                                     if ((found.Artist.Name.Contains(artist) && found.Title.Contains(track)) || checkDuration(found.Duration.Value))
                                     {
-                                        Console.WriteLine("    3 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
+                                        logger.Debug("GenerateSearchRequest: Stage 3 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri + "\n");
                                         return (long)found.Id;
                                     }
 
                                     if ((found.Artist.Name.Contains(this.artist) && found.Title.Contains(this.track)) || checkDuration(found.Duration.Value))
                                     {
-                                        Console.WriteLine("    3 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri);
+                                        logger.Debug("GenerateSearchRequest: Stage 3 FOUND " + data.Total + ": Artist: " + found.Artist.Name + " Track: " + found.Title + " Link: " + found.Link.AbsoluteUri + "\n");
                                         return (long)found.Id;
                                     }
                                 }
@@ -331,7 +329,7 @@ namespace DeezerSync.Deezer.API
                     }
                     else
                     {
-                        Console.WriteLine("     Empty Dataset");
+                        logger.Debug("GenerateSearchRequest: Empty Dataset\n");
                     }
                 }
             }
@@ -397,12 +395,12 @@ namespace DeezerSync.Deezer.API
             }
             catch (HttpRequestException ex)
             {
-                Console.WriteLine(ex.Message);
+                logger.Error(ex);
                 return "{\"data\": [],\"total\": 0}";
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                logger.Error(e);
                 return "{\"data\": [],\"total\": 0}";
             }
         }
