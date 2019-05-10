@@ -1,5 +1,4 @@
-﻿
-namespace DeezerSync.Model
+﻿namespace DeezerSync.Model
 {
     public partial class ConfigModel
     {

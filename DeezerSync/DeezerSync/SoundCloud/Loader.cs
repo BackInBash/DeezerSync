@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using SoundCloud.Api;
 using SoundCloud.Api.Entities;
 
@@ -19,7 +17,7 @@ namespace DeezerSync.SoundCloud
         protected async Task init()
         {
             client = SoundCloudClient.CreateUnauthorized(clientId);
-            var entity = await client.Resolve.GetEntityAsync("https://soundcloud.com/"+username);
+            var entity = await client.Resolve.GetEntityAsync("https://soundcloud.com/" + username);
             user = entity as User;
         }
     }

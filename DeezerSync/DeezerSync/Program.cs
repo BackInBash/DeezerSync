@@ -1,5 +1,4 @@
-﻿
-namespace DeezerSync
+﻿namespace DeezerSync
 {
     class Program
     {

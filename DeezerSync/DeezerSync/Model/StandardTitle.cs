@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DeezerSync.Model
+﻿namespace DeezerSync.Model
 {
     public partial class StandardTitle
     {

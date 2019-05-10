@@ -3,7 +3,6 @@ using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 
 namespace DeezerSync.Deezer.API.Model
 {

@@ -36,13 +36,13 @@ namespace DeezerSync
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException("No Config File in "+path+" found.");
+                throw new FileNotFoundException("No Config File in " + path + " found.");
             }
             catch (IOException e)
             {
                 throw new IOException(e.Message);
             }
-            catch(JsonException ex)
+            catch (JsonException ex)
             {
                 throw new JsonException(ex.Message);
             }

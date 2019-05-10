@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace DeezerSync.Deezer.API.Model
 {
-   public partial class AllPlaylists
+    public partial class AllPlaylists
     {
         public partial class Request
         {

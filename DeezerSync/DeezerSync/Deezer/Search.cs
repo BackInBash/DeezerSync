@@ -94,7 +94,7 @@ namespace DeezerSync.Deezer
                                         NotExists = false;
                                     }
                                 }
-                                if(NotExists == true)
+                                if (NotExists == true)
                                 {
                                     TrackIDs.Add(id);
                                 }
@@ -114,7 +114,7 @@ namespace DeezerSync.Deezer
                         }
                     }
                     Playlist.AddSongsToPlaylist(playlistid, TrackIDs);
-                    Console.WriteLine("Playlist " + playlist.title + " with "+TrackIDs.Count+" changes.");
+                    Console.WriteLine("Playlist " + playlist.title + " with " + TrackIDs.Count + " changes.");
                 }
                 else
                 {

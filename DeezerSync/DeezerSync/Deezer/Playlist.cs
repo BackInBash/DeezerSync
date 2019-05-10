@@ -48,7 +48,7 @@ namespace DeezerSync.Deezer
 
             List<StandardPlaylist> playlist = new List<StandardPlaylist>();
 
-            foreach(var i in result.Results.Tab.Playlists.Data)
+            foreach (var i in result.Results.Tab.Playlists.Data)
             {
                 playlist.Add(new StandardPlaylist { description = string.Empty, provider = "deezer", title = i.Title, tracks = GetAllTracksInPlaylist(i.PlaylistId), id = i.PlaylistId });
             }
@@ -65,20 +65,20 @@ namespace DeezerSync.Deezer
         {
             RequestPlaylistData playlist = new RequestPlaylistData()
             {
-                 header = true,
-                 lang = "de",
-                 nb = 40,
-                 playlist_id = PlaylistID,
-                 start = 0,
-                 tab = 0,
-                 tags = true
+                header = true,
+                lang = "de",
+                nb = 40,
+                playlist_id = PlaylistID,
+                start = 0,
+                tab = 0,
+                tags = true
             };
 
             string json = JsonConvert.SerializeObject(playlist, Formatting.None);
             string jsonresult = l.DeezerRequest("deezer.pagePlaylist", json);
 
             var result = (dynamic)null;
-            
+
             try
             {
                 result = DeezerSync.Deezer.API.Model.PlaylistDataModel.Welcome.FromJson(jsonresult);
@@ -98,7 +98,7 @@ namespace DeezerSync.Deezer
 
             List<StandardTitle> titles = new List<StandardTitle>();
 
-            foreach(var track in result.Results.Songs.Data)
+            foreach (var track in result.Results.Songs.Data)
             {
                 titles.Add(new StandardTitle { title = track.SngTitle, description = string.Empty, duration = (int)track.Duration, genre = string.Empty, username = track.ArtName, labelname = string.Empty, id = (long)track.SngId });
             }
@@ -188,7 +188,7 @@ namespace DeezerSync.Deezer
                 try
                 {
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                    throw new Exception("ERROR: "+result.error.VALID_TOKEN_REQUIRED);
+                    throw new Exception("ERROR: " + result.error.VALID_TOKEN_REQUIRED);
                 }
                 catch (Exception ex)
                 {
