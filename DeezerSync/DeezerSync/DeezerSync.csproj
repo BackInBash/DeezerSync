@@ -14,8 +14,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NLog.Config" Version="4.6.3" />
-    <PackageReference Include="SoundCloud.Api" Version="2.0.1" />
+    <PackageReference Include="NLog.Config" Version="4.6.5" />
+    <PackageReference Include="SoundCloud.Api" Version="3.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="SoundCloud\" />
