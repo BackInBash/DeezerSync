@@ -45,7 +45,7 @@ namespace DeezerSync.Deezer
             foreach (var diff in different)
             {
                 logger.Info("Create Playlist: " + diff);
-                DeezerSync.Deezer.Playlist.CreatePlaylist(diff);
+                DeezerSync.Deezer.Playlist.CreatePlaylistasync(diff).GetAwaiter().GetResult();
             }
 
             // Playlist loop
@@ -53,14 +53,14 @@ namespace DeezerSync.Deezer
             {
                 List<long> TrackIDs = new List<long>();
                 Deezer = null;
-                Deezer = DeezerSync.Deezer.Playlist.GetAllPlaylists();
+                Deezer = DeezerSync.Deezer.Playlist.GetAllPlaylistsasync().Result;
 
                 // Track loop
                 foreach (var track in playlist.tracks)
                 {
                     // Search loop
                     Deezer.API.Official o = new Deezer.API.Official(track.username, track.title, track.duration);
-                    long id = o.finder();
+                    long id = o.finder().Result;
                     if (id != 0)
                     {
                         // True title dont exists in Deezer Playlist
@@ -120,7 +120,7 @@ namespace DeezerSync.Deezer
                             playlistid = did.id;
                         }
                     }
-                    Playlist.AddSongsToPlaylist(playlistid, TrackIDs);
+                    Playlist.AddSongsToPlaylistasync(playlistid, TrackIDs).GetAwaiter().GetResult();
                     logger.Info("Playlist " + playlist.title + " with " + TrackIDs.Count + " changes.");
                 }
                 else

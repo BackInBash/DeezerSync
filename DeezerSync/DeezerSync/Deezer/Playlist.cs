@@ -4,6 +4,7 @@ using DeezerSync.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace DeezerSync.Deezer
 {
@@ -16,8 +17,9 @@ namespace DeezerSync.Deezer
         /// Get a List of all Playlists
         /// </summary>
         /// <returns></returns>
-        public static List<StandardPlaylist> GetAllPlaylists()
+        public static async Task<List<StandardPlaylist>> GetAllPlaylistsasync()
         {
+
             RequestAllPlaylists playlists = new RequestAllPlaylists()
             {
                 nb = 40,
@@ -26,7 +28,8 @@ namespace DeezerSync.Deezer
             };
 
             string json = JsonConvert.SerializeObject(playlists, Formatting.None);
-            string jsonresult = l.DeezerRequest("deezer.pageProfile", json);
+
+            string jsonresult = await l.DeezerRequestasync("deezer.pageProfile", json);
 
             var result = (dynamic)null;
 
@@ -53,7 +56,7 @@ namespace DeezerSync.Deezer
 
             foreach (var i in result.Results.Tab.Playlists.Data)
             {
-                playlist.Add(new StandardPlaylist { description = string.Empty, provider = "deezer", title = i.Title, tracks = GetAllTracksInPlaylist(i.PlaylistId), id = i.PlaylistId });
+                playlist.Add(new StandardPlaylist { description = string.Empty, provider = "deezer", title = i.Title, tracks = await GetAllTracksInPlaylist(i.PlaylistId), id = i.PlaylistId });
             }
 
             return playlist;
@@ -64,7 +67,7 @@ namespace DeezerSync.Deezer
         /// </summary>
         /// <param name="PlaylistID">ID of an existing Playlist</param>
         /// <returns></returns>
-        private static List<StandardTitle> GetAllTracksInPlaylist(string PlaylistID)
+        private static async Task<List<StandardTitle>> GetAllTracksInPlaylist(string PlaylistID)
         {
             RequestPlaylistData playlist = new RequestPlaylistData()
             {
@@ -78,7 +81,7 @@ namespace DeezerSync.Deezer
             };
 
             string json = JsonConvert.SerializeObject(playlist, Formatting.None);
-            string jsonresult = l.DeezerRequest("deezer.pagePlaylist", json);
+            string jsonresult = await l.DeezerRequestasync("deezer.pagePlaylist", json);
 
             var result = (dynamic)null;
 
@@ -116,51 +119,59 @@ namespace DeezerSync.Deezer
         /// <param name="PlaylistID">ID of an existing Playlist</param>
         /// <param name="TrackIDs">An array filled with TrackIDs</param>
         /// <returns></returns>
-        public static bool AddSongsToPlaylist(string PlaylistID, List<long> TrackIDs)
+        public static async Task<bool> AddSongsToPlaylistasync(string PlaylistID, List<long> TrackIDs)
         {
 
             List<AddSongsToPlaylist> plst = new List<AddSongsToPlaylist>();
-            foreach (long l in TrackIDs)
+            var task1 = Task.Run(() =>
             {
-                List<List<long>> myList = new List<List<long>>
+                foreach (long l in TrackIDs)
+                {
+                    List<List<long>> myList = new List<List<long>>
                 {
                     new List<long> { l, 0 }
                 };
-                plst.Add(new AddSongsToPlaylist()
-                {
-                    playlist_id = PlaylistID,
-                    offset = -1,
-                    songs = myList
+                    plst.Add(new AddSongsToPlaylist()
+                    {
+                        playlist_id = PlaylistID,
+                        offset = -1,
+                        songs = myList
+                    }
+                    );
                 }
-                );
-            }
+            });
+            task1.Wait();
 
-            foreach (var i in plst)
+            var task2 = Task.Run(async () =>
             {
-                var result = (dynamic)null;
-                string jsonresult = string.Empty;
-                string json = JsonConvert.SerializeObject(i, Formatting.None);
-
-                jsonresult = l.DeezerRequest("playlist.addSongs", json);
-
-                try
+                foreach (var i in plst)
                 {
-                    result = JsonConvert.DeserializeObject<CreatePlaylistResponse>(jsonresult);
-                }
-                catch (JsonSerializationException ex)
-                {
-                    logger.Error(ex);
+                    var result = (dynamic)null;
+                    string jsonresult = string.Empty;
+                    string json = JsonConvert.SerializeObject(i, Formatting.None);
+
+                    jsonresult = await l.DeezerRequestasync("playlist.addSongs", json);
+
                     try
                     {
-                        result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
-                        logger.Warn(result.error);
+                        result = JsonConvert.DeserializeObject<CreatePlaylistResponse>(jsonresult);
                     }
-                    catch (Exception)
+                    catch (JsonSerializationException ex)
                     {
-                        throw new Exception(ex.Message);
+                        logger.Error(ex);
+                        try
+                        {
+                            result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
+                            logger.Warn(result.error);
+                        }
+                        catch (Exception)
+                        {
+                            throw new Exception(ex.Message);
+                        }
                     }
                 }
-            }
+            });
+            task2.Wait();
             return true;
         }
 
@@ -170,7 +181,7 @@ namespace DeezerSync.Deezer
         /// <param name="name">Playlist Name</param>
         /// <param name="description">(optional) Playlist description</param>
         /// <returns></returns>
-        public static long CreatePlaylist(string name, string description = "")
+        public static async Task<long> CreatePlaylistasync(string name, string description = "")
         {
             CreatePlaylist playlist = new CreatePlaylist()
             {
@@ -183,7 +194,7 @@ namespace DeezerSync.Deezer
             string json = JsonConvert.SerializeObject(playlist, Formatting.Indented);
 
             var result = (dynamic)null;
-            string jsonresult = l.DeezerRequest("playlist.create", json);
+            string jsonresult = await l.DeezerRequestasync("playlist.create", json);
 
             try
             {

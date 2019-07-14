@@ -211,39 +211,39 @@ namespace DeezerSync.Deezer.API
         /// <param name="artist">The Artist to search for</param>
         /// <param name="track">The track name to search for</param>
         /// <returns>A Object contains the deserialized search Query</returns>
-        private ResultSearch.Search GetSearchResult(int i, string artist, string track)
+        private async Task<ResultSearch.Search> GetSearchResult(int i, string artist, string track)
         {
             var data = (dynamic)null;
 
             switch (i)
             {
                 case 1:
-                    data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, track).Result));
+                    data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(3, artist, track)));
                     if (data.Total == 0)
                     {
-                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(1, string.Join("-", artist, track)).Result));
+                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(1, string.Join("-", artist, track))));
                     }
 
                     break;
                 case 2:
-                    data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, track).Result));
+                    data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(3, artist, track)));
                     if (data.Total == 0)
                     {
-                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(3, artist, track).Result));
+                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(3, artist, track)));
                     }
 
                     break;
                 case 3:
                     if (string.IsNullOrEmpty(artist))
                     {
-                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(lvl: 1, Track: track).Result));
+                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(lvl: 1, Track: track)));
                     }
                     else
                     {
-                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(lvl: 3, Track: track, Artist: artist).Result));
+                        data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(lvl: 3, Track: track, Artist: artist)));
                         if (data.Total == 0)
                         {
-                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((Request(1, string.Join("-", artist, track)).Result));
+                            data = JsonConvert.DeserializeObject<ResultSearch.Search>((await Request(1, string.Join("-", artist, track))));
                         }
                     }
 
@@ -256,7 +256,7 @@ namespace DeezerSync.Deezer.API
         /// Starting the Search for a Track
         /// </summary>
         /// <returns>Deezer TrackID</returns>
-        public long finder()
+        public async Task<long> finder()
         {
             for (int i = 1; i < 4; i++)
             {
@@ -265,7 +265,7 @@ namespace DeezerSync.Deezer.API
                 string track = search.track;
                 for (int c = 1; c < 4; c++)
                 {
-                    var data = GetSearchResult(c, artist, track);
+                    var data = await GetSearchResult(c, artist, track);
 
                     logger.Debug("Search: Artist: " + artist + " Track: " + track);
 

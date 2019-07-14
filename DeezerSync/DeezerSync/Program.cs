@@ -27,7 +27,7 @@ namespace DeezerSync
             // Get all Playlists and start searching
             SoundCloud.playlist pl = new SoundCloud.playlist();
 
-            Deezer.Search s = new Deezer.Search(pl.GetStandardPlaylists().Result, Deezer.Playlist.GetAllPlaylists());
+            Deezer.Search s = new Deezer.Search(pl.GetStandardPlaylists().Result, Deezer.Playlist.GetAllPlaylistsasync().Result);
             s.Title();
         }
     }

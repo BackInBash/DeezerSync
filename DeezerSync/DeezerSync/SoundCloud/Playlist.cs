@@ -11,7 +11,7 @@ namespace DeezerSync.SoundCloud
         private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         public playlist()
         {
-            init().Wait();
+            init().GetAwaiter().GetResult();
         }
 
         /// <summary>

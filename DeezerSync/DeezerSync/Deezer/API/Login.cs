@@ -1,7 +1,10 @@
-﻿using System;
+﻿using DeezerSync.Deezer.API.Model;
+using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Net;
 using System.Threading;
+using System.Threading.Tasks;
 using static DeezerSync.Deezer.API.Model.UserDataModel;
 
 namespace DeezerSync.Deezer.API
@@ -28,17 +31,17 @@ namespace DeezerSync.Deezer.API
         private string secret = Config.deezer_secret;
 
 
-        internal string DeezerRequest(string Dmethod, string payload = null)
+        internal async Task<string> DeezerRequestasync(string Dmethod, string payload = null)
         {
 
             var request = (dynamic)null;
             if (string.IsNullOrEmpty(apiKey))
             {
-                request = (HttpWebRequest)WebRequest.Create(apiurl + "?" + api_version + "&" + api_token + "&" + api_input + "&" + method + Dmethod + "&" + cid + GenCid());
+                request = (WebRequest)WebRequest.Create(apiurl + "?" + api_version + "&" + api_token + "&" + api_input + "&" + method + Dmethod + "&" + cid + GenCid());
             }
             else
             {
-                request = (HttpWebRequest)WebRequest.Create(apiurl + "?" + api_version + "&" + apiKey + "&" + api_input + "&" + method + Dmethod + "&" + cid + GenCid());
+                request = (WebRequest)WebRequest.Create(apiurl + "?" + api_version + "&" + apiKey + "&" + api_input + "&" + method + Dmethod + "&" + cid + GenCid());
             }
 
             request.Method = "POST";
@@ -69,7 +72,7 @@ namespace DeezerSync.Deezer.API
                     }
                 }
 
-                using (var response = (HttpWebResponse)request.GetResponse())
+                using (var response = await request.GetResponseAsync().ConfigureAwait(false))
                 {
                     if (string.IsNullOrEmpty(csrfsid))
                     {
@@ -119,8 +122,16 @@ namespace DeezerSync.Deezer.API
 
         protected void GetDeezerAPILogin()
         {
-            string webresult = DeezerRequest("deezer.getUserData");
-            var welcome = Welcome.FromJson(webresult);
+            string webresult = DeezerRequestasync("deezer.getUserData").Result;
+            var welcome = (dynamic)null;
+            try
+            {
+               welcome = UserDataModel.FromJson(webresult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
             // Check for Valid User ID
             if (welcome.Results.User.UserId > 0)
             {
