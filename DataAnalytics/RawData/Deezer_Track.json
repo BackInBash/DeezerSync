@@ -1,0 +1,59 @@
+{
+    "ALB_ID": "74869232",
+    "ALB_PICTURE": "fd3abebe329164c9c25b6eb0f3da20d2",
+    "ALB_TITLE": "The Edge",
+    "ART_ID": "1158610",
+    "DATE_ADD": 1557686947,
+    "ART_NAME": "grant",
+    "DURATION": "193",
+    "EXPLICIT_TRACK_CONTENT": {
+        "EXPLICIT_LYRICS_STATUS": 1,
+        "EXPLICIT_COVER_STATUS": 2
+    },
+    "HIERARCHICAL_TITLE": "",
+    "ISRC": "CA6D21800295",
+    "LYRICS_ID": 0,
+    "RANK_SNG": "354347",
+    "SMARTRADIO": 0,
+    "SNG_CONTRIBUTORS": {
+        "main_artist": [
+            "grant"
+        ],
+        "featuring": [
+            "Nevve"
+        ]
+    },
+    "SNG_ID": "564073802",
+    "SNG_TITLE": "The Edge",
+    "STATUS": 1,
+    "TRACK_NUMBER": "1",
+    "TYPE": 0,
+    "UPLOAD_ID": 0,
+    "USER_ID": 0,
+    "VERSION": "",
+    "MD5_ORIGIN": "5fb902228ab9cedabcf8093828514056",
+    "FILESIZE_AAC_64": 0,
+    "FILESIZE_MP3_64": "0",
+    "FILESIZE_MP3_128": "3100002",
+    "FILESIZE_MP3_256": 0,
+    "FILESIZE_MP3_320": "7750007",
+    "FILESIZE_FLAC": "25881551",
+    "FILESIZE": "3100002",
+    "GAIN": "-6.8",
+    "MEDIA_VERSION": "3",
+    "TRACK_TOKEN": "AAAAAV2KTC9di2Vv64t0RkFatCgF9r1WurYtnA4F0Zf0MhKLRYHPrjA-YMBxicUByUx7CYoYpFpIrBafAThy2fYzFE2KhQ3SvJtgL4HphtDrcWgfSi-8_B4dR9qWTLHuRyXeVCpfDtyYzh6G",
+    "TRACK_TOKEN_EXPIRE": 1569416559,
+    "MEDIA": [
+        {
+            "TYPE": "preview",
+            "HREF": "https://cdns-preview-f.dzcdn.net/stream/c-f0706fee4e20decce7ce9cae996d4857-3.mp3"
+        }
+    ],
+    "RIGHTS": {
+        "STREAM_ADS_AVAILABLE": true,
+        "STREAM_ADS": "2000-01-01",
+        "STREAM_SUB_AVAILABLE": true,
+        "STREAM_SUB": "2000-01-01"
+    },
+    "__TYPE__": "song"
+}

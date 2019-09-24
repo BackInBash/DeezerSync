@@ -1,0 +1,1083 @@
+{
+    "collection": [
+        {
+            "played_at": 1569151080997,
+            "track_id": 678620742,
+            "track": {
+                "comment_count": 6,
+                "full_duration": 185773,
+                "downloadable": true,
+                "created_at": "2019-09-09T19:11:51Z",
+                "description": "New bass heavy remix by one of the goodphellas OGs! make sure to check out his profile soundcloud.com/lookesounds",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678620742/833662ba-14ff-47e6-8148-5217b99e25d8/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 185773,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678620742/833662ba-14ff-47e6-8148-5217b99e25d8/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 185773,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678620742/22abbd19-43a5-4549-a5e0-3d4f03da5bfb/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 185685,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "Ekali - Runaway (Looke Remix) Goodphellas Premier",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678620742",
+                    "contains_music": true,
+                    "artist": "Looke",
+                    "id": 678620742
+                },
+                "duration": 185773,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595294860-do9hqr-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "goodphellas looke bass",
+                "download_url": "https://api.soundcloud.com/tracks/678620742/download",
+                "genre": "Trap",
+                "id": 678620742,
+                "reposts_count": 77,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-09T19:11:52Z",
+                "commentable": true,
+                "policy": "ALLOW",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": null,
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678620742",
+                "secret_token": null,
+                "download_count": 10,
+                "likes_count": 161,
+                "urn": "soundcloud:tracks:678620742",
+                "license": "all-rights-reserved",
+                "purchase_title": null,
+                "display_date": "2019-09-09T19:11:51Z",
+                "embeddable_by": "all",
+                "release_date": null,
+                "user_id": 194878206,
+                "monetization_model": "NOT_APPLICABLE",
+                "waveform_url": "https://wave.sndcdn.com/uPgqxq3zjNYs_m.json",
+                "permalink": "ekali-runaway-looke-remix-goodphellas-premier",
+                "permalink_url": "https://soundcloud.com/thegoodphellas/ekali-runaway-looke-remix-goodphellas-premier",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000546298434-x1o7fv-large.jpg",
+                    "first_name": "Artist",
+                    "full_name": "Artist Collective/Label",
+                    "id": 194878206,
+                    "kind": "user",
+                    "last_modified": "2019-07-27T05:04:13Z",
+                    "last_name": "Collective/Label",
+                    "permalink": "thegoodphellas",
+                    "permalink_url": "https://soundcloud.com/thegoodphellas",
+                    "uri": "https://api.soundcloud.com/users/194878206",
+                    "urn": "soundcloud:users:194878206",
+                    "username": "The Goodphellas",
+                    "verified": false,
+                    "city": "OC/LA/SD",
+                    "country_code": "US"
+                },
+                "playback_count": 1520
+            }
+        },
+        {
+            "played_at": 1569151076311,
+            "track_id": 677272254,
+            "track": {
+                "comment_count": 8,
+                "full_duration": 187028,
+                "downloadable": false,
+                "created_at": "2019-09-06T17:03:19Z",
+                "description": "So about a year ago, I got inspired to remix a song. Right from the jump I knew it was going to be an up hill battle taking on a truly iconic and timeless classic. As time went on, the project evolved from just a remix to a full on original interpretation. I eventually had the vocal re-sung, swapped out the famous melody for one I created and so on. The result is an original production I am beyond proud to have made & what is probably my best work to date.\n\nLike the track? Click the [↻ Repost] button!\n\nDjrickwonder@gmail.com\n\nFollow @rickwonder\nfacebook.com/rickwonderofficial\ninstagram.com/rickwonder\ntwitter.com/rickwonder",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:677272254/4b743402-c1a6-41a7-afa6-b625d30064f9/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 187028,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:677272254/4b743402-c1a6-41a7-afa6-b625d30064f9/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 187028,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:677272254/20a56bcf-fd7b-47bd-91b1-c106834b3ca6/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 186965,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "Take On Me",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:677272254",
+                    "contains_music": true,
+                    "artist": "Rick Wonder",
+                    "id": 677272254,
+                    "album_title": "Take On Me (Single)"
+                },
+                "duration": 187028,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000593839599-7nd6j2-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "\"Future Bass\"",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 677272254,
+                "reposts_count": 221,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-06T17:03:21Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://open.spotify.com/track/2oBRCwZ67ColXmT3iyEqTZ?si=_aooWr20R4WXx6jSEHf9bA",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/677272254",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 1428,
+                "urn": "soundcloud:tracks:677272254",
+                "license": "all-rights-reserved",
+                "purchase_title": "Spotify",
+                "display_date": "2019-09-06T17:03:19Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 807173,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/bzIMc5vdpnV4_m.json",
+                "permalink": "takeonmefinal",
+                "permalink_url": "https://soundcloud.com/rickwonder/takeonmefinal",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000532143291-281t4g-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 807173,
+                    "kind": "user",
+                    "last_modified": "2019-09-17T20:17:23Z",
+                    "last_name": "",
+                    "permalink": "rickwonder",
+                    "permalink_url": "https://soundcloud.com/rickwonder",
+                    "uri": "https://api.soundcloud.com/users/807173",
+                    "urn": "soundcloud:users:807173",
+                    "username": "Rick Wonder",
+                    "verified": false,
+                    "city": "New York City",
+                    "country_code": "US"
+                },
+                "playback_count": 13446
+            }
+        },
+        {
+            "played_at": 1569150938806,
+            "track_id": 678580026,
+            "track": {
+                "comment_count": 7,
+                "full_duration": 177178,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:42:53Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [DANKO REMIX]\n\nDANKO\nInstagram: https://www.instagram.com/isdankomusic/?hl=en \nFacebook: https://www.facebook.com/isdankomusic/\nTwitter: https://twitter.com/isdankomusic\nSoundCloud: https://soundcloud.com/isdankomusic\nSpotify: https://open.spotify.com/artist/60sVnCJWU7WHTMSzK0HzPW?si=lbTvKWI7SESS1aU-Ns9aIw\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#MyBestLifeRemix\n#Danko\n#DharmaWorldwide",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580026/84ffb376-8f38-4770-87f7-3611eb15df9a/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 177178,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580026/84ffb376-8f38-4770-87f7-3611eb15df9a/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 177178,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580026/439c81d3-083a-457e-833b-bd9fbf009a86/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 177117,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [DANKO REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580026",
+                    "contains_music": true,
+                    "artist": "KSHMR",
+                    "id": 678580026
+                },
+                "duration": 177178,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259127-ecb75w-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "danko my best life,my life danko,my remix,my kshmr,my kshmr,kshmr kshmr ft. mike waters,my life,danko,danko dharma,danko life,kshmr danko,danko dharma worldwide,kshmr,dharma,dharma worldwide,my song,best edm,edm mixes of popular songs,best edm,best remixes,electro house,edm 2019,edm,new",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580026,
+                "reposts_count": 36,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-09T21:06:54Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=NtmZngb_ahs&feature=youtu.be",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580026",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 167,
+                "urn": "soundcloud:tracks:678580026",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:19:29Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/VkdA5YPypJqf_m.json",
+                "permalink": "my-best-life-feat-mike-waters",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike-waters",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 3224
+            }
+        },
+        {
+            "played_at": 1569150934760,
+            "track_id": 678580059,
+            "track": {
+                "comment_count": 11,
+                "full_duration": 159466,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:42:55Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [NEVERGLOW REMIX]\n\nNEVERGLOW \nInstagram: https://www.instagram.com/neverglowmusic/\nFacebook: https://www.facebook.com/neverglowmusic/\nTwitter: https://twitter.com/NEVERGLOWmusic\nSoundcloud: https://soundcloud.com/neverglowmusic\nSpotify: https://open.spotify.com/artist/2K7Hlrg5cti0mVKx4l0Rwz?si=THbEFIdOSR-R7ukNFPHKfQ\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#MyBestLifeRemix\n#Neverglow\n#DharmaWorldwide",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580059/6e7ea11e-67f3-4457-9ab9-21d4c75ede60/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 159466,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580059/6e7ea11e-67f3-4457-9ab9-21d4c75ede60/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 159466,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580059/024622d0-529d-4e19-a560-6d42cb1d57e5/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 159382,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [NEVERGLOW REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580059",
+                    "contains_music": true,
+                    "artist": "KSHMR",
+                    "id": 678580059
+                },
+                "duration": 159466,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259139-q60h1c-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "neverglow my best life remix,my never glow remix,neverglow life,my neverglow,neverglow remix,neverglow,my kshmr,my kshmr kshmr,never glow,never ft. mike waters,dharma,dharma worldwide,dharma dharma,best edm,best of edm,electro house,edm 2019,new edm",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580059,
+                "reposts_count": 66,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-09T21:06:14Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=pVm0KBX73kM",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580059",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 154,
+                "urn": "soundcloud:tracks:678580059",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:17:57Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/K2zhFCi1TRMl_m.json",
+                "permalink": "my-best-life-feat-mike",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 2528
+            }
+        },
+        {
+            "played_at": 1569150908839,
+            "track_id": 678580074,
+            "track": {
+                "comment_count": 10,
+                "full_duration": 169183,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:42:58Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [KRIMSONN REMIX]\n\nKRIMSONN\nInstagram: https://www.instagram.com/krimsonndj/\nFacebook:https://www.facebook.com/krimsonndj/\nTwitter: https://twitter.com/krimsonndj?\nSoundcloud: https://soundcloud.com/krimsonndj \nSpotify: https://open.spotify.com/artist/5AmxhPl99r1cBm9WqrIuyU\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#MyBestLifeRemix\n#Krimsonn\n#DharmaWorldwide",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580074/5093d3e3-c12f-427d-af9e-aaf0a8b663dd/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 169183,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580074/5093d3e3-c12f-427d-af9e-aaf0a8b663dd/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 169183,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580074/5cd1a32a-9660-4603-88db-81645f0662af/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 169097,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [KRIMSONN REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580074",
+                    "contains_music": true,
+                    "artist": "KSHMR",
+                    "id": 678580074
+                },
+                "duration": 169183,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259166-c4k8mi-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580074,
+                "reposts_count": 20,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-19T01:09:53Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=CgHqMguTvu8&feature=youtu.be",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580074",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 117,
+                "urn": "soundcloud:tracks:678580074",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:16:10Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/WNC3ovETLO2L_m.json",
+                "permalink": "my-best-life-feat-mike-1",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike-1",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 2088
+            }
+        },
+        {
+            "played_at": 1569150816560,
+            "track_id": 678580110,
+            "track": {
+                "comment_count": 5,
+                "full_duration": 196955,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:43:01Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [BRYA REMIX]\n\nBRYA: \nInstagram: https://www.instagram.com/itsbrya/\nFacebook: https://www.facebook.com/itsbrya/\nTwitter: https://www.twitter.com/bryamusic/\nSoundcloud: https://soundcloud.com/itsbrya\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#MyBestLifeRemix\n#Brya\n#DharmaWorldwide",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580110/c6a3e306-5670-4d1b-8e75-088f6306161a/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 196955,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580110/c6a3e306-5670-4d1b-8e75-088f6306161a/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 196955,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580110/8b00a89a-6fcb-49a2-a50e-a483b9627380/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 196882,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [BRYA REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580110",
+                    "contains_music": true,
+                    "artist": "KSHMR",
+                    "id": 678580110
+                },
+                "duration": 196955,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259196-yuurm6-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "\"brya my best life\" \"my best life brya\" \"brya remix\" brya \"my best life brya remix\" \"my best life remix\" \"my best life kshmr\" \"kshmr my best life\"",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580110,
+                "reposts_count": 19,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-09T21:03:50Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=W8tOBDlcggQ",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580110",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 89,
+                "urn": "soundcloud:tracks:678580110",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:13:08Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/I3fWfVvhh7FC_m.json",
+                "permalink": "my-best-life-feat-mike-2",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike-2",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 2082
+            }
+        },
+        {
+            "played_at": 1569150813126,
+            "track_id": 678580371,
+            "track": {
+                "comment_count": 2,
+                "full_duration": 146742,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:43:31Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [7 SKIES REMIX]\n\n7SKIES: \nFacebook: https://www.facebook.com/7Skies\nTwitter: https://twitter.com/7Skies\nInstagram: https://www.instagram.com/7skies/\nSoundcloud: https://www.soundcloud.com/7skies\nSpotify: https://open.spotify.com/artist/2mmqhYDTD0weseyXUf1QJ5?si=-X2XL6nfR5OnFy19kg0pAA\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#MyBestLifeRemix\n#7skies\n#DharmaWorldwide",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580371/806a595c-c6f5-4350-8589-87498a03af23/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 146742,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580371/806a595c-c6f5-4350-8589-87498a03af23/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 146742,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580371/53d3d062-a119-4084-9a2a-11735eb475d3/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 146673,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [7 SKIES REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580371",
+                    "contains_music": true,
+                    "id": 678580371
+                },
+                "duration": 146742,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259451-w9axku-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "\"my best life 7skies remix\" \"my best life 7skies\" \"7skies my best life remix\" \"7skies my best life\" \"edm remix\" Edm 7skies dharma \"dharma world\" \"dharma worldwide\" \"7skies kshmr\" \"kshmr \" \"kshmr 7skies\"",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580371,
+                "reposts_count": 30,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-09T21:07:32Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=OP3whiQKT3w",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580371",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 126,
+                "urn": "soundcloud:tracks:678580371",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:08:14Z",
+                "embeddable_by": "all",
+                "release_date": null,
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/3EIqi76rJtRG_m.json",
+                "permalink": "my-best-life-feat-mike-waters-7skies-remix",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike-waters-7skies-remix",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 2407
+            }
+        },
+        {
+            "played_at": 1569150808606,
+            "track_id": 678580131,
+            "track": {
+                "comment_count": 0,
+                "full_duration": 296308,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:43:03Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [EDUARD KORT REMIX]\n\nEDUARD KORT:\nInstagram: http://www.instagram.com/eduardkort/\nFacebook: http://www.facebook.com/eduard.kort\nTwitter: http://www.twitter.com/eduardkort\nSoundCloud: http://soundcloud.com/eduardkort\nSpotify: https://open.spotify.com/artist/2viiXva4dZej2XyayUxA2C?si=k21sbowOS5q0alKZpEh8lQ\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#EduardKort\n#DharmaWorldwide\n#MyBestLifeRemix",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580131/95beba73-ef1f-4b9b-ad5e-5ed5291dc636/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 296308,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580131/95beba73-ef1f-4b9b-ad5e-5ed5291dc636/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 296308,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580131/69de1309-3cbd-4e45-ad69-8e47abdcf97a/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 296223,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [EDUARD KORT REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580131",
+                    "contains_music": true,
+                    "artist": "KSHMR",
+                    "id": 678580131
+                },
+                "duration": 296308,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259214-j8kaeo-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "\"edm remix\" \"eduard kort\" \"eduard kort remix\" \"dance music\" edm \"my best life\" \"my best life kshmr\" \"my best life remix\" \"my best life kshmr remix\" \"my best life eduard kort remix\" \"eduard kort my best life remix\"",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580131,
+                "reposts_count": 18,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-09T21:02:00Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=PFBJhXc5z2M",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580131",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 64,
+                "urn": "soundcloud:tracks:678580131",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:04:50Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/hcADjSgzBDFJ_m.json",
+                "permalink": "my-best-life-feat-mike-3",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike-3",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 1562
+            }
+        },
+        {
+            "played_at": 1569150800558,
+            "track_id": 678580152,
+            "track": {
+                "comment_count": 1,
+                "full_duration": 154370,
+                "downloadable": false,
+                "created_at": "2019-09-09T17:43:05Z",
+                "description": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [22BULLETS REMIX]\n\n22BULLETS: \nInstagram: https://www.instagram.com/22bulletsmusic/\nFacebook: https://www.facebook.com/22bulletsmusic/\nTwitter: https://twitter.com/22Bulletsmusic?lang=en\nSoundcloud: https://soundcloud.com/22bullets\nSpotify: https://open.spotify.com/artist/18006kpQI473m1ICcpimQ9\n\nDHARMA:\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag\n\n#MyBestLifeRemix\n#22Bullets\n#DharmaWorldwide",
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580152/23e4f6d2-6a2f-4667-a4b8-def152811833/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 154370,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580152/23e4f6d2-6a2f-4667-a4b8-def152811833/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 154370,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:678580152/f1271d9a-b24b-4acc-8dd3-7133c169da84/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 154292,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "KSHMR - MY BEST LIFE (FEAT. MIKE WATERS) [22BULLETS REMIX]",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:678580152",
+                    "contains_music": true,
+                    "artist": "KSHMR",
+                    "id": 678580152
+                },
+                "duration": 154370,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-000595259241-8bmx1r-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "\"my best life 22bullets remix\" \"edm remix\" Remix \"my best life\" kshmr dharma \"dharma worldwide\" \"dance music\" 22bullets \"22bullets remix\" \"22bullets dharma\" \"dharma \"",
+                "download_url": null,
+                "genre": "Dance & EDM",
+                "id": 678580152,
+                "reposts_count": 30,
+                "state": "finished",
+                "label_name": null,
+                "last_modified": "2019-09-16T22:04:18Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": "https://www.youtube.com/watch?v=6ahEXKk1h_4&feature=youtu.be",
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/678580152",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 123,
+                "urn": "soundcloud:tracks:678580152",
+                "license": "all-rights-reserved",
+                "purchase_title": "Watch The Video",
+                "display_date": "2019-09-09T20:01:56Z",
+                "embeddable_by": "all",
+                "release_date": "2019-09-06T00:00:00Z",
+                "user_id": 319295181,
+                "monetization_model": "BLACKBOX",
+                "waveform_url": "https://wave.sndcdn.com/2yYxtoQhwgG8_m.json",
+                "permalink": "my-best-life-feat-mike-4",
+                "permalink_url": "https://soundcloud.com/dharmaworldwide/my-best-life-feat-mike-4",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000461941614-b8kcrk-large.jpg",
+                    "first_name": "",
+                    "full_name": "",
+                    "id": 319295181,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T04:26:13Z",
+                    "last_name": "",
+                    "permalink": "dharmaworldwide",
+                    "permalink_url": "https://soundcloud.com/dharmaworldwide",
+                    "uri": "https://api.soundcloud.com/users/319295181",
+                    "urn": "soundcloud:users:319295181",
+                    "username": "Dharma Worldwide",
+                    "verified": false,
+                    "city": null,
+                    "country_code": null
+                },
+                "playback_count": 2091
+            }
+        },
+        {
+            "played_at": 1569150793688,
+            "track_id": 668626616,
+            "track": {
+                "comment_count": 19,
+                "full_duration": 185199,
+                "downloadable": false,
+                "created_at": "2019-08-20T18:59:41Z",
+                "description": null,
+                "media": {
+                    "transcodings": [
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:668626616/d74ca5a5-96e7-4864-a942-a78901a01f4a/stream/hls",
+                            "preset": "mp3_0_0",
+                            "duration": 185199,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:668626616/d74ca5a5-96e7-4864-a942-a78901a01f4a/stream/progressive",
+                            "preset": "mp3_0_0",
+                            "duration": 185199,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "progressive",
+                                "mime_type": "audio/mpeg"
+                            },
+                            "quality": "sq"
+                        },
+                        {
+                            "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:668626616/d27ed819-bed3-49fc-8d20-2e2f612bac7c/stream/hls",
+                            "preset": "opus_0_0",
+                            "duration": 185126,
+                            "snipped": false,
+                            "format": {
+                                "protocol": "hls",
+                                "mime_type": "audio/ogg; codecs=\"opus\""
+                            },
+                            "quality": "sq"
+                        }
+                    ]
+                },
+                "title": "Try (feat. SAFE)",
+                "publisher_metadata": {
+                    "urn": "soundcloud:tracks:668626616",
+                    "explicit": false,
+                    "contains_music": true,
+                    "p_line_for_display": "℗ 2019 Disruptor Records/RCA Records",
+                    "artist": "Lost Kings feat. SAFE",
+                    "isrc": "USRC11902121",
+                    "id": 668626616,
+                    "album_title": "Try",
+                    "upc_or_ean": "886447888933",
+                    "p_line": "(P) 2019 Disruptor Records/RCA Records",
+                    "release_title": "Try (feat. SAFE)"
+                },
+                "duration": 185199,
+                "has_downloads_left": true,
+                "artwork_url": "https://i1.sndcdn.com/artworks-z0Oy1XK7wajU-0-large.jpg",
+                "public": true,
+                "streamable": true,
+                "tag_list": "",
+                "download_url": null,
+                "genre": "Electronic",
+                "id": 668626616,
+                "reposts_count": 346,
+                "state": "finished",
+                "label_name": "Disruptor Records/RCA Records",
+                "last_modified": "2019-09-14T06:15:44Z",
+                "commentable": true,
+                "policy": "MONETIZE",
+                "visuals": null,
+                "kind": "track",
+                "purchase_url": null,
+                "sharing": "public",
+                "uri": "https://api.soundcloud.com/tracks/668626616",
+                "secret_token": null,
+                "download_count": 0,
+                "likes_count": 1971,
+                "urn": "soundcloud:tracks:668626616",
+                "license": "all-rights-reserved",
+                "purchase_title": null,
+                "display_date": "2019-08-23T00:00:00Z",
+                "embeddable_by": "all",
+                "release_date": "2019-08-23T00:00:00Z",
+                "user_id": 90149759,
+                "monetization_model": "AD_SUPPORTED",
+                "waveform_url": "https://wave.sndcdn.com/ShobaPFHakVZ_m.json",
+                "permalink": "try-feat-safe",
+                "permalink_url": "https://soundcloud.com/wearelostkings/try-feat-safe",
+                "user": {
+                    "avatar_url": "https://i1.sndcdn.com/avatars-000682393961-cq1ag7-large.jpg",
+                    "first_name": "nick",
+                    "full_name": "nick & rob",
+                    "id": 90149759,
+                    "kind": "user",
+                    "last_modified": "2019-09-20T16:25:48Z",
+                    "last_name": "& rob",
+                    "permalink": "wearelostkings",
+                    "permalink_url": "https://soundcloud.com/wearelostkings",
+                    "uri": "https://api.soundcloud.com/users/90149759",
+                    "urn": "soundcloud:users:90149759",
+                    "username": "Lost Kings",
+                    "verified": false,
+                    "city": "Los Angeles",
+                    "country_code": "US"
+                },
+                "playback_count": 39719
+            }
+        }
+    ],
+    "next_href": "https://api-v2.soundcloud.com/me/play-history/tracks?limit=10&offset=287309&from=1569151080997",
+    "query_urn": null
+}

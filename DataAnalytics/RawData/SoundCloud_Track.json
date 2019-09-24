@@ -1,0 +1,103 @@
+{
+    "comment_count": 206,
+    "full_duration": 193768,
+    "downloadable": false,
+    "created_at": "2018-10-08T16:50:57Z",
+    "description": "Stream/Purchase: https://Monstercat.lnk.to/TheEdge \n\nOut now on Monstercat \n\nFollow me on YouTube: https://www.youtube.com/c/Callmegrant?sub_confirmation=1\n\nhttps://www.facebook.com/callmegrant2\nhttps://www.instagram.com/_callmegrant/\nhttps://twitter.com/callme_grant\nhttps://open.spotify.com/artist/2Hchwjfl1DioXcIwbOJkus?si=Bxvkfm5CR9Ooc7J8xYVgbA",
+    "media": {
+        "transcodings": [
+            {
+                "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:511320672/0777badf-639d-47bc-8c3f-1b0f3fad2714/stream/hls",
+                "preset": "mp3_standard",
+                "duration": 193768,
+                "snipped": false,
+                "format": {
+                    "protocol": "hls",
+                    "mime_type": "audio/mpeg"
+                },
+                "quality": "sq"
+            },
+            {
+                "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:511320672/0777badf-639d-47bc-8c3f-1b0f3fad2714/stream/progressive",
+                "preset": "mp3_standard",
+                "duration": 193768,
+                "snipped": false,
+                "format": {
+                    "protocol": "progressive",
+                    "mime_type": "audio/mpeg"
+                },
+                "quality": "sq"
+            },
+            {
+                "url": "https://api-v2.soundcloud.com/media/soundcloud:tracks:511320672/bd426288-0771-4089-9cf6-178a8981c1e9/stream/hls",
+                "preset": "opus_0_0",
+                "duration": 193768,
+                "snipped": false,
+                "format": {
+                    "protocol": "hls",
+                    "mime_type": "audio/ogg; codecs=\"opus\""
+                },
+                "quality": "sq"
+            }
+        ]
+    },
+    "title": "The Edge (feat. Nevve)",
+    "publisher_metadata": {
+        "urn": "soundcloud:tracks:511320672",
+        "contains_music": true,
+        "artist": "Grant",
+        "id": 511320672
+    },
+    "duration": 193768,
+    "has_downloads_left": true,
+    "artwork_url": "https://i1.sndcdn.com/artworks-000416634945-idz1r4-large.jpg",
+    "public": true,
+    "streamable": true,
+    "tag_list": "",
+    "download_url": null,
+    "genre": "Dance & EDM",
+    "id": 511320672,
+    "reposts_count": 1062,
+    "state": "finished",
+    "label_name": null,
+    "last_modified": "2019-08-12T17:47:00Z",
+    "commentable": true,
+    "policy": "MONETIZE",
+    "visuals": null,
+    "kind": "track",
+    "purchase_url": null,
+    "sharing": "public",
+    "uri": "https://api.soundcloud.com/tracks/511320672",
+    "secret_token": null,
+    "download_count": 0,
+    "likes_count": 9401,
+    "urn": "soundcloud:tracks:511320672",
+    "license": "all-rights-reserved",
+    "purchase_title": null,
+    "display_date": "2018-10-08T16:50:57Z",
+    "embeddable_by": "all",
+    "release_date": null,
+    "user_id": 3871229,
+    "monetization_model": "BLACKBOX",
+    "waveform_url": "https://wave.sndcdn.com/Vn2dNkmFH2uj_m.json",
+    "permalink": "the-edge-feat-nevve",
+    "permalink_url": "https://soundcloud.com/callmegrant/the-edge-feat-nevve",
+    "user": {
+        "avatar_url": "https://i1.sndcdn.com/avatars-000274989463-4ezfvw-large.jpg",
+        "first_name": "",
+        "full_name": "",
+        "id": 3871229,
+        "kind": "user",
+        "last_modified": "2019-05-03T15:44:36Z",
+        "last_name": "",
+        "permalink": "callmegrant",
+        "permalink_url": "https://soundcloud.com/callmegrant",
+        "uri": "https://api.soundcloud.com/users/3871229",
+        "urn": "soundcloud:users:3871229",
+        "username": "Grant",
+        "verified": false,
+        "city": "Los Angeles",
+        "country_code": null
+    },
+    "playback_count": 452642
+}
