@@ -1,0 +1,1414 @@
+{
+  "collaborative" : false,
+  "description" : "",
+  "external_urls" : {
+    "spotify" : "https://open.spotify.com/playlist/5DUe5GRYsI1bSducpnfvKI"
+  },
+  "followers" : {
+    "href" : null,
+    "total" : 0
+  },
+  "href" : "https://api.spotify.com/v1/playlists/5DUe5GRYsI1bSducpnfvKI",
+  "id" : "5DUe5GRYsI1bSducpnfvKI",
+  "images" : [ ],
+  "name" : "Dubstep",
+  "owner" : {
+    "display_name" : "Mensch Markus",
+    "external_urls" : {
+      "spotify" : "https://open.spotify.com/user/11144645811"
+    },
+    "href" : "https://api.spotify.com/v1/users/11144645811",
+    "id" : "11144645811",
+    "type" : "user",
+    "uri" : "spotify:user:11144645811"
+  },
+  "primary_color" : null,
+  "public" : false,
+  "snapshot_id" : "Myw1MTc2NTdhMWE5MWE4ZWM1YWQ2Y2Y5NGUyZTBkZDRmMzA5NTE1Y2E5",
+  "tracks" : {
+    "href" : "https://api.spotify.com/v1/playlists/5DUe5GRYsI1bSducpnfvKI/tracks?offset=0&limit=100&market=from_token",
+    "items" : [ {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 362000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "[Dubstep] - Going Quantum - Hello_ [Monstercat Release]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::%5BDubstep%5D+-+Going+Quantum+-+Hello_+%5BMonstercat+Release%5D:362"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 254000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "[Dubstep] - Varien - Cloak and Dagger [Monstercat Release]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::%5BDubstep%5D+-+Varien+-+Cloak+and+Dagger+%5BMonstercat+Release%5D:254"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 273000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Ungespielt Intro Song Das Lied ist von OverWerk",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Ungespielt+Intro+Song+Das+Lied+ist+von+OverWerk:273"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "Nathanael",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 208000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Barn To Rage",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:Nathanael::Barn+To+Rage:208"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 266000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "BassFly - Hypothesis (Dubstep)",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::BassFly+-+Hypothesis+%28Dubstep%29:266"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 3069000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Best Dubstep Ever [The New Generation]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Best+Dubstep+Ever+%5BThe+New+Generation%5D:3069"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "T-Mass",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 240000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Black Mountains",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:T-Mass::Black+Mountains:240"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "Feed Me",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 350000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Blood Red",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:Feed+Me::Blood+Red:350"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 281000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Dream - Go Hard (Crizzly Remix)",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Dream+-+Go+Hard+%28Crizzly+Remix%29:281"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 289000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Dubstep - Adventure Club - Retro City",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Dubstep+-+Adventure+Club+-+Retro+City:289"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 325000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Dubstep - Singularity - Alone (Au5 & Fractal Remix)",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Dubstep+-+Singularity+-+Alone+%28Au5+%26+Fractal+Remix%29:325"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 224000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Dubstep - Tom Budin & Auratic - Shape Shift",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Dubstep+-+Tom+Budin+%26+Auratic+-+Shape+Shift:224"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 275000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Dubstep - TUNEDEF - Justice",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Dubstep+-+TUNEDEF+-+Justice:275"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 270000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "EXCISION & DOWNLINK - CROWD CONTROL (DELTA HEAVY REMIX) [FULL 320 HQ]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::EXCISION+%26+DOWNLINK+-+CROWD+CONTROL+%28DELTA+HEAVY+REMIX%29+%5BFULL+320+HQ%5D:270"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "Nathanael",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 201000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "We Were Gods",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:Nathanael::We+Were+Gods:201"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 249000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Kevin Drew  - Bullseye",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Kevin+Drew++-+Bullseye:249"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 217000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Lil' Flip - The Way We Ball (Crizzly Remix)",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Lil%27+Flip+-+The+Way+We+Ball+%28Crizzly+Remix%29:217"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 308000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Liquid Stranger - Bully [HD]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Liquid+Stranger+-+Bully+%5BHD%5D:308"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 228000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "OMG & ShockWave - Something Like This [Dubstep]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::OMG+%26+ShockWave+-+Something+Like+This+%5BDubstep%5D:228"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 213000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Protohype ft. Alina Renae - Fly (Killabyte Remix)",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Protohype+ft.+Alina+Renae+-+Fly+%28Killabyte+Remix%29:213"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 219000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "SKRILLEX - Bangarang (ft. Sirah)",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::SKRILLEX+-+Bangarang+%28ft.+Sirah%29:219"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 211000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "SKRILLEX -Make It Bun Dem",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::SKRILLEX+-Make+It+Bun+Dem:211"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 377000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Spaceman",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Spaceman:377"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "Send Me Your Love",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "Taryn Manning",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 295000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Send Me Your Love [KDrew Remix]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:Taryn+Manning:Send+Me+Your+Love:Send+Me+Your+Love+%5BKDrew+Remix%5D:295"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    }, {
+      "added_at" : "2014-06-22T13:32:31Z",
+      "added_by" : {
+        "external_urls" : {
+          "spotify" : "https://open.spotify.com/user/11144645811"
+        },
+        "href" : "https://api.spotify.com/v1/users/11144645811",
+        "id" : "11144645811",
+        "type" : "user",
+        "uri" : "spotify:user:11144645811"
+      },
+      "is_local" : true,
+      "primary_color" : null,
+      "track" : {
+        "album" : {
+          "album_type" : null,
+          "artists" : [ ],
+          "available_markets" : [ ],
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "images" : [ ],
+          "name" : "",
+          "release_date" : null,
+          "release_date_precision" : null,
+          "type" : "album",
+          "uri" : null
+        },
+        "artists" : [ {
+          "external_urls" : { },
+          "href" : null,
+          "id" : null,
+          "name" : "",
+          "type" : "artist",
+          "uri" : null
+        } ],
+        "available_markets" : [ ],
+        "disc_number" : 0,
+        "duration_ms" : 249000,
+        "explicit" : false,
+        "external_ids" : { },
+        "external_urls" : { },
+        "href" : null,
+        "id" : null,
+        "is_local" : true,
+        "name" : "Whiiite & Schoolboy - Houdini (Calvertron Remix) [Dubstep]",
+        "popularity" : 0,
+        "preview_url" : null,
+        "track_number" : 0,
+        "type" : "track",
+        "uri" : "spotify:local:::Whiiite+%26+Schoolboy+-+Houdini+%28Calvertron+Remix%29+%5BDubstep%5D:249"
+      },
+      "video_thumbnail" : {
+        "url" : null
+      }
+    } ],
+    "limit" : 100,
+    "next" : null,
+    "offset" : 0,
+    "previous" : null,
+    "total" : 25
+  },
+  "type" : "playlist",
+  "uri" : "spotify:playlist:5DUe5GRYsI1bSducpnfvKI"
+}

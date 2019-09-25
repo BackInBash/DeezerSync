@@ -1,0 +1,103 @@
+{
+    "album": {
+      "album_type": "single",
+      "artists": [
+        {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai"
+          },
+          "href": "https://api.spotify.com/v1/artists/1Cs0zKBU1kc0i8ypK3B9ai",
+          "id": "1Cs0zKBU1kc0i8ypK3B9ai",
+          "name": "David Guetta",
+          "type": "artist",
+          "uri": "spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai"
+        }
+      ],
+      "available_markets": [
+        "AT",
+        "AU",
+        "CH",
+        "DE",
+        "GB",
+        "IE",
+        "NZ"
+      ],
+      "external_urls": {
+        "spotify": "https://open.spotify.com/album/4EFljID75pgTjwoqppr8EG"
+      },
+      "href": "https://api.spotify.com/v1/albums/4EFljID75pgTjwoqppr8EG",
+      "id": "4EFljID75pgTjwoqppr8EG",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/393755e5dbe2060d7334283a12ef114b1904c4f4",
+          "width": 640
+        },
+        {
+          "height": 300,
+          "url": "https://i.scdn.co/image/369910a2315cf97bb70cae26a347308547b3e33c",
+          "width": 300
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/4a3aec6fb07acdb8a1998e3e74882be1c669a349",
+          "width": 64
+        }
+      ],
+      "name": "Lovers on the Sun (feat. Sam Martin)",
+      "release_date": "2014-06-30",
+      "release_date_precision": "day",
+      "total_tracks": 1,
+      "type": "album",
+      "uri": "spotify:album:4EFljID75pgTjwoqppr8EG"
+    },
+    "artists": [
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai"
+        },
+        "href": "https://api.spotify.com/v1/artists/1Cs0zKBU1kc0i8ypK3B9ai",
+        "id": "1Cs0zKBU1kc0i8ypK3B9ai",
+        "name": "David Guetta",
+        "type": "artist",
+        "uri": "spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai"
+      },
+      {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/artist/66AE89GQTx88zLYhXn1wFK"
+        },
+        "href": "https://api.spotify.com/v1/artists/66AE89GQTx88zLYhXn1wFK",
+        "id": "66AE89GQTx88zLYhXn1wFK",
+        "name": "Sam Martin",
+        "type": "artist",
+        "uri": "spotify:artist:66AE89GQTx88zLYhXn1wFK"
+      }
+    ],
+    "available_markets": [
+      "AT",
+      "AU",
+      "CH",
+      "DE",
+      "GB",
+      "IE",
+      "NZ"
+    ],
+    "disc_number": 1,
+    "duration_ms": 203520,
+    "explicit": false,
+    "external_ids": {
+      "isrc": "GB28K1400016"
+    },
+    "external_urls": {
+      "spotify": "https://open.spotify.com/track/5qB6XYfzI1ZeZPbWJgsF0a"
+    },
+    "href": "https://api.spotify.com/v1/tracks/5qB6XYfzI1ZeZPbWJgsF0a",
+    "id": "5qB6XYfzI1ZeZPbWJgsF0a",
+    "is_local": false,
+    "name": "Lovers on the Sun (feat. Sam Martin)",
+    "popularity": 44,
+    "preview_url": "https://p.scdn.co/mp3-preview/d75995bf85e148184588f9067c483a31f4d4a5ba?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+    "track_number": 1,
+    "type": "track",
+    "uri": "spotify:track:5qB6XYfzI1ZeZPbWJgsF0a"
+  }

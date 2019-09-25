@@ -9,9 +9,17 @@ Track Model
 {
     "artist": "string",
     "track": "string",
+    "label": "string",
     "duration": "int",
+    "description": "string",
+    "genre": "string",
+
     "featuring": "string",
     "isRemix": "bool",
+
+    "id": "int",
+    "username": "string",
+
     "search_stage": "int"
 }
 
