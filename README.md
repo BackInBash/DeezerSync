@@ -29,4 +29,4 @@ The `config.json` requires the following entries:
 ```
 
 ## Application Architecture
-!["arch"]("overview.png")
+!["arch"](overview.png)
