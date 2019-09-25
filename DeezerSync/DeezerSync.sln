@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.DeezerAPI", "Dee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Test", "DeezerSync.Test\DeezerSync.Test.csproj", "{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Core", "DeezerSync.Models\DeezerSync.Core.csproj", "{4D485E32-370A-408D-AD65-FC8061493186}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeezerSync.Core", "DeezerSync.Core\DeezerSync.Core.csproj", "{79B2D98D-3D48-41CC-8DC1-718A36C4F785}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D485E32-370A-408D-AD65-FC8061493186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D485E32-370A-408D-AD65-FC8061493186}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D485E32-370A-408D-AD65-FC8061493186}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D485E32-370A-408D-AD65-FC8061493186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B2D98D-3D48-41CC-8DC1-718A36C4F785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B2D98D-3D48-41CC-8DC1-718A36C4F785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B2D98D-3D48-41CC-8DC1-718A36C4F785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B2D98D-3D48-41CC-8DC1-718A36C4F785}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

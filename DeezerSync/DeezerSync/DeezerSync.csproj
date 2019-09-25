@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DeezerSync.DeezerAPI\DeezerSync.DeezerAPI.csproj" />
-    <ProjectReference Include="..\DeezerSync.Models\DeezerSync.Core.csproj" />
     <ProjectReference Include="..\DeezerSync.MusicProvider\DeezerSync.MusicProvider.csproj" />
   </ItemGroup>
 

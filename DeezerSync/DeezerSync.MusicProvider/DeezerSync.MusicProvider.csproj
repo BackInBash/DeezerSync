@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DeezerSync.Models\DeezerSync.Core.csproj" />
+    <ProjectReference Include="..\DeezerSync.Core\DeezerSync.Core.csproj" />
   </ItemGroup>
 
 </Project>
