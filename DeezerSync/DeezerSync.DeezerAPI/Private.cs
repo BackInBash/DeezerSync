@@ -1,5 +1,5 @@
-﻿using DeezerSync.Models;
-using DeezerSync.Models.API;
+﻿using DeezerSync.Core.Models;
+using DeezerSync.Core.Models.API;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

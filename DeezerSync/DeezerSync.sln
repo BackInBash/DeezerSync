@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.DeezerAPI", "Dee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Test", "DeezerSync.Test\DeezerSync.Test.csproj", "{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Models", "DeezerSync.Models\DeezerSync.Models.csproj", "{4D485E32-370A-408D-AD65-FC8061493186}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Core", "DeezerSync.Models\DeezerSync.Core.csproj", "{4D485E32-370A-408D-AD65-FC8061493186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

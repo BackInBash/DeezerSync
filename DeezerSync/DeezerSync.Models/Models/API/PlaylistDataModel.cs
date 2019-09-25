@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace DeezerSync.Models.API
+namespace DeezerSync.Core.Models.API
 {
     public partial class PlaylistDataModel
     {

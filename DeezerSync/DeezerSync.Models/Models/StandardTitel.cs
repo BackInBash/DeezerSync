@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DeezerSync.Models
+namespace DeezerSync.Core.Models
 {
     public partial class StandardTitle
     {

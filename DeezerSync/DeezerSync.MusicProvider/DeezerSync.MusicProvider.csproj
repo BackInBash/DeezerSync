@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DeezerSync.Models\DeezerSync.Models.csproj" />
+    <ProjectReference Include="..\DeezerSync.Models\DeezerSync.Core.csproj" />
   </ItemGroup>
 
 </Project>

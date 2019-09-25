@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DeezerSync.Models.API
+namespace DeezerSync.Core.Models.API
 {
     public partial class CreatePlaylist
     {

@@ -39,8 +39,8 @@ __Is the entrypoint CLI Application__
 ## DeezerSync.DeezerAPI
 __API Client for Public and Private Deezer API__
 
-## DeezerSync.Models
-__Contains all Data Models for Objects and Data manipulation__
+## DeezerSync.Core
+__Contains all Data Models for Objects, Data manipulation and compare logic__
 
 ## DeezerSync.MusicProvider
 __Contains logic for all Music Providers (SoundCloud, Spotify, ...) and an interface to cast all data to a standard object.__

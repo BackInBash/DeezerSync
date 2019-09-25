@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
+using DeezerSync.Core.Models;
 
 namespace DeezerSync.Test.MusicProvider
 {
@@ -15,7 +16,7 @@ namespace DeezerSync.Test.MusicProvider
             DeezerSync.MusicProvider.SoundCloud sc = new DeezerSync.MusicProvider.SoundCloud(username);
             var res = await sc.GetStandardPlaylists();
 
-            Assert.IsType<List<Models.StandardPlaylist>>(res);
+            Assert.IsType<List<StandardPlaylist>>(res);
         }
     }
 }
