@@ -17,7 +17,8 @@ namespace DeezerSync.DeezerAPI
             GetDeezerAPILogin().GetAwaiter().GetResult();
         }
 
-        private readonly string UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36";
+        // User Agent: Chrome Version 77.0.3865.90
+        private readonly string UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36";
         private readonly string apiurl = "https://www.deezer.com/ajax/gw-light.php";
         private readonly string actionurl = "https://www.deezer.com/ajax/action.php";
         private readonly string api_version = "api_version=1.0";
@@ -51,8 +52,7 @@ namespace DeezerSync.DeezerAPI
             {
                 request.ContentType = "application/json; charset=utf-8";
             }
-
-            // User Agent: Chrome Version 72.0.3626.121
+ 
             request.UserAgent = this.UserAgent;
             request.Headers["User-Agent"] = this.UserAgent;
             request.Headers["Cache-Control"] = "max-age=0";
@@ -120,6 +120,10 @@ namespace DeezerSync.DeezerAPI
             return rnd.Next(100000000, 999999999);
         }
 
+        /// <summary>
+        /// Get Deezer API Creds
+        /// </summary>
+        /// <returns></returns>
         private async Task GetDeezerAPILogin()
         {
             string webresult = await Requestasync("deezer.getUserData");
@@ -153,6 +157,30 @@ namespace DeezerSync.DeezerAPI
                 throw new Exception("Cannot get Deezer API Key");
             }
         }
+
+        /// <summary>
+        /// Execute Search Query on Deezer Private API
+        /// </summary>
+        /// <param name="query">Deezer Private Search Query</param>
+        /// <returns></returns>
+        public async Task<List<StandardTitle>> SearchQuery(string query)
+        {
+            SearchResult searchResult = new SearchResult();
+            List<StandardTitle> Track = new List<StandardTitle>();
+            searchResult = JsonConvert.DeserializeObject<SearchResult>(await Requestasync("deezer.pageSearch", "{\"query\":\""+query+"\",\"start\":0,\"nb\":40,\"suggest\":true,\"artist_suggest\":true,\"top_tracks\":true}"));
+
+            foreach(TrackDatum t in searchResult.Results.Track.Data)
+            {
+                try
+                {
+                    Track.Add(new StandardTitle { id = (long)t.SngId, title = t.SngTitle, duration = (int)t.Duration, genre = string.Empty, description = string.Empty, username = t.ArtName, labelname = t.Version });
+                }
+                catch(Exception) { }
+            }
+
+            return Track;
+        }
+
 
         /// <summary>
         /// Get a List of all Playlists
@@ -254,7 +282,7 @@ namespace DeezerSync.DeezerAPI
         /// Add multiple Songs to a Playlist
         /// </summary>
         /// <param name="PlaylistID">ID of an existing Playlist</param>
-        /// <param name="TrackIDs">An array filled with TrackIDs</param>
+        /// <param name="TrackIDs">An List filled with TrackIDs</param>
         /// <returns></returns>
         public async Task<bool> AddSongsToPlaylistasync(string PlaylistID, List<long> TrackIDs)
         {
