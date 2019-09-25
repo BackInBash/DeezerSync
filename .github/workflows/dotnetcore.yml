@@ -14,6 +14,6 @@ jobs:
       with:
         dotnet-version: 3.0.100
     - name: Test with dotnet
-      run: dotnet test DeezerSync\DeezerSync.Test\DeezerSync.Test.csproj
+      run: dotnet test DeezerSync/DeezerSync.Test/DeezerSync.Test.csproj
     - name: Build with dotnet
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Release DeezerSync/DeezerSync.sln
