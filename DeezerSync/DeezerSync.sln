@@ -1,7 +1,17 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync", "DeezerSync\DeezerSync.csproj", "{B6052AF0-EC5B-48B5-8B03-0B561102B186}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29318.209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync", "DeezerSync\DeezerSync.csproj", "{8F573A1D-0068-4731-B373-8230AF552B35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.MusicProvider", "DeezerSync.MusicProvider\DeezerSync.MusicProvider.csproj", "{155A1404-2D2C-4247-BF1D-C57EFB1D78EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.DeezerAPI", "DeezerSync.DeezerAPI\DeezerSync.DeezerAPI.csproj", "{8743648C-D447-4565-99E8-6AAFC14CF117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Test", "DeezerSync.Test\DeezerSync.Test.csproj", "{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Models", "DeezerSync.Models\DeezerSync.Models.csproj", "{4D485E32-370A-408D-AD65-FC8061493186}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,9 +19,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6052AF0-EC5B-48B5-8B03-0B561102B186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6052AF0-EC5B-48B5-8B03-0B561102B186}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6052AF0-EC5B-48B5-8B03-0B561102B186}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6052AF0-EC5B-48B5-8B03-0B561102B186}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F573A1D-0068-4731-B373-8230AF552B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F573A1D-0068-4731-B373-8230AF552B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F573A1D-0068-4731-B373-8230AF552B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F573A1D-0068-4731-B373-8230AF552B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{155A1404-2D2C-4247-BF1D-C57EFB1D78EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155A1404-2D2C-4247-BF1D-C57EFB1D78EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155A1404-2D2C-4247-BF1D-C57EFB1D78EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155A1404-2D2C-4247-BF1D-C57EFB1D78EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8743648C-D447-4565-99E8-6AAFC14CF117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8743648C-D447-4565-99E8-6AAFC14CF117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8743648C-D447-4565-99E8-6AAFC14CF117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8743648C-D447-4565-99E8-6AAFC14CF117}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DB631D-5029-4FD7-A26E-0F980EFE3F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D485E32-370A-408D-AD65-FC8061493186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D485E32-370A-408D-AD65-FC8061493186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D485E32-370A-408D-AD65-FC8061493186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D485E32-370A-408D-AD65-FC8061493186}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EAFB9B5-EC09-4728-B449-8EFE60221204}
 	EndGlobalSection
 EndGlobal
