@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DeezerSync.Core.Models.API
+namespace DeezerSync.Models.API
 {
     class ResultSearch
     {

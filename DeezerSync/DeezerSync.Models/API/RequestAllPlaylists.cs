@@ -1,4 +1,4 @@
-﻿namespace DeezerSync.Core.Models.API
+﻿namespace DeezerSync.Models.API
 {
     public partial class RequestAllPlaylists
     {

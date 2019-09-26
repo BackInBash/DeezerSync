@@ -1,5 +1,6 @@
-﻿using DeezerSync.Core.Models;
-using DeezerSync.Core.Models.API;
+﻿using DeezerSync.Core.Models.API;
+using DeezerSync.Models;
+using DeezerSync.Models.API;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.IO;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using UserDataModel = DeezerSync.Models.API.UserDataModel;
 
 namespace DeezerSync.DeezerAPI
 {
@@ -14,7 +16,13 @@ namespace DeezerSync.DeezerAPI
     {
         public Private()
         {
-            GetDeezerAPILogin().GetAwaiter().GetResult();
+            GetDeezerAPILogin().Wait();
+        }
+
+        public Private(string secret)
+        {
+            Private.secret = secret;
+            GetDeezerAPILogin().Wait();
         }
 
         // User Agent: Chrome Version 77.0.3865.90
@@ -30,7 +38,7 @@ namespace DeezerSync.DeezerAPI
         internal string userid;
         private string apiKey;
         private string csrfsid;
-        private string secret = string.Empty;
+        public static string secret = "";
 
 
         internal async Task<string> Requestasync(string Dmethod, string payload = null)
@@ -167,13 +175,14 @@ namespace DeezerSync.DeezerAPI
         {
             SearchResult searchResult = new SearchResult();
             List<StandardTitle> Track = new List<StandardTitle>();
-            searchResult = JsonConvert.DeserializeObject<SearchResult>(await Requestasync("deezer.pageSearch", "{\"query\":\""+query+"\",\"start\":0,\"nb\":40,\"suggest\":true,\"artist_suggest\":true,\"top_tracks\":true}"));
+            var request = await Requestasync("deezer.pageSearch", "{\"query\":\"" + query + "\",\"start\":0,\"nb\":40,\"suggest\":true,\"artist_suggest\":true,\"top_tracks\":true}");
+            searchResult = JsonConvert.DeserializeObject<SearchResult>(request);
 
             foreach(TrackDatum t in searchResult.Results.Track.Data)
             {
                 try
                 {
-                    Track.Add(new StandardTitle { id = (long)t.SngId, title = t.SngTitle, duration = (int)t.Duration, genre = string.Empty, description = string.Empty, username = t.ArtName, labelname = t.Version });
+                    Track.Add(new StandardTitle { id = (long)t.SngId, title = t.SngTitle, duration = (int)t.Duration, genre = string.Empty, description = string.Empty, username = t.ArtName.ToString(), labelname = t.Version });
                 }
                 catch(Exception) { }
             }

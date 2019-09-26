@@ -6,7 +6,7 @@
 //
 //    var userDataModel = UserDataModel.FromJson(jsonString);
 
-namespace DeezerSync.Core.Models.API
+namespace DeezerSync.Models.API
 {
     using System;
     using System.Collections.Generic;
@@ -38,15 +38,15 @@ namespace DeezerSync.Core.Models.API
 
     public partial class UserDataModel
     {
-        public static UserDataModel FromJson(string json) => JsonConvert.DeserializeObject<UserDataModel>(json, Converter.Settings);
+        public static UserDataModel FromJson(string json) => JsonConvert.DeserializeObject<UserDataModel>(json, Converterr.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this UserDataModel self) => JsonConvert.SerializeObject(self, Converter.Settings);
+        public static string ToJson(this UserDataModel self) => JsonConvert.SerializeObject(self, Converterr.Settings);
     }
 
-    internal static class Converter
+    internal static class Converterr
     {
         public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
         {

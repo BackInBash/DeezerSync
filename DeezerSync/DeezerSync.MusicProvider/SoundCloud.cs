@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using DeezerSync.Core.Models;
+using DeezerSync.Models;
 
 namespace DeezerSync.MusicProvider
 {
@@ -35,7 +35,7 @@ namespace DeezerSync.MusicProvider
         public SoundCloud(string username)
         {
             this.username = username;
-            client = SoundCloudClient.CreateUnauthorized(getClientID().GetAwaiter().GetResult());
+            client = SoundCloudClient.CreateUnauthorized(getClientID().Result);
             var entity = client.Resolve.GetEntityAsync("https://soundcloud.com/" + username).GetAwaiter().GetResult();
             user = entity as User;
         }
