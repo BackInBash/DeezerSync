@@ -60,7 +60,7 @@ namespace DeezerSync.DeezerAPI
             {
                 request.ContentType = "application/json; charset=utf-8";
             }
- 
+
             request.UserAgent = this.UserAgent;
             request.Headers["User-Agent"] = this.UserAgent;
             request.Headers["Cache-Control"] = "max-age=0";
@@ -178,13 +178,13 @@ namespace DeezerSync.DeezerAPI
             var request = await Requestasync("deezer.pageSearch", "{\"query\":\"" + query + "\",\"start\":0,\"nb\":40,\"suggest\":true,\"artist_suggest\":true,\"top_tracks\":true}");
             searchResult = JsonConvert.DeserializeObject<SearchResult>(request);
 
-            foreach(TrackDatum t in searchResult.Results.Track.Data)
+            foreach (TrackDatum t in searchResult.Results.Track.Data)
             {
                 try
                 {
-                    Track.Add(new StandardTitle { id = (long)t.SngId, title = t.SngTitle, duration = (int)t.Duration, genre = string.Empty, description = string.Empty, username = t.ArtName.ToString(), labelname = t.Version });
+                    Track.Add(new StandardTitle { id = (long)t.SngId, title = t.SngTitle, duration = (int)t.Duration, genre = string.Empty, description = string.Empty, username = t.ArtName.ToString(), labelname = t.Version.ToString() });
                 }
-                catch(Exception) { }
+                catch (Exception) { }
             }
 
             return Track;

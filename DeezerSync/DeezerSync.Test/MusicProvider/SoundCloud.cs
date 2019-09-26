@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Xunit;
-using DeezerSync.Core.Models;
+using DeezerSync.Models;
 
 namespace DeezerSync.Test.MusicProvider
 {
