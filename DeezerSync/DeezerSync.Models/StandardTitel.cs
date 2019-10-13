@@ -6,15 +6,42 @@ namespace DeezerSync.Models
 {
     public partial class StandardTitle
     {
-        public string description { get; set; }             // Description of this track
-        public int duration { get; set; }                   // The track duration
-        public string genre { get; set; }                   // The track genre
-        public string title { get; set; }                   // The track title
-        public string username { get; set; }                // The username from the uploader
-        public string labelname { get; set; }               // The lable of the uploader
-        public long id { get; set; }                        // Track ID
-        public bool isRemix { get; set; }                   // is Track a Remix
-        public int search_stage { get; set; }               // set search stage
+        /// <summary>
+        /// Description
+        /// </summary>
+        public string description { get; set; }
+        /// <summary>
+        /// Duration in Sec.
+        /// </summary>
+        public int duration { get; set; }
+        /// <summary>
+        /// Genre
+        /// </summary>
+        public string genre { get; set; }
+        /// <summary>
+        /// Track Titel
+        /// </summary>
+        public string title { get; set; }
+        /// <summary>
+        /// Username or Artist
+        /// </summary>
+        public string username { get; set; }
+        /// <summary>
+        /// Artists Label
+        /// </summary>
+        public string labelname { get; set; }
+        /// <summary>
+        /// Music Providers Track ID
+        /// </summary>
+        public long id { get; set; }
+        /// <summary>
+        /// If Track is a Remix (Different Artist)
+        /// </summary>
+        public bool isRemix { get; set; }
+        /// <summary>
+        /// Marks filter stage in queue
+        /// </summary>
+        public int search_stage { get; set; }
 
     }
 }

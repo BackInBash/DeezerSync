@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DeezerSync.Models.API
 {
-    class ResultSearch
+    public partial class ResultSearch
     {
         public partial class Search
         {

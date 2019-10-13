@@ -1,4 +1,5 @@
 ﻿using DeezerSync.Models;
+using DeezerSync.Models.API;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -149,12 +150,27 @@ namespace DeezerSync.Core
         {
             try
             {
+                /*
                 DeezerAPI.Private api = new DeezerAPI.Private();
                 if (query.isRemix)
                 {
                     return await api.SearchQuery(query.username + " " + query.title + " " + query.labelname);
                 }
                 return await api.SearchQuery(query.username + " " + query.title);
+                */
+
+                DeezerAPI.Official api = new DeezerAPI.Official(query);
+                ResultSearch.Search res = await api.Search();
+                if(res.Data.Count > 0)
+                {
+                    List<StandardTitle> tracks = new List<StandardTitle>();
+                    foreach(var i in res.Data)
+                    {
+                        tracks.Add(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, isRemix = false, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name  });
+                    }
+                    return tracks;
+                }
+                return new List<StandardTitle>();
             }
             catch (Exception)
             {
