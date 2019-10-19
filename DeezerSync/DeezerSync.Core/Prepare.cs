@@ -1,4 +1,6 @@
 ﻿using DeezerSync.Models;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +12,20 @@ namespace DeezerSync.Core
 {
     class Prepare
     {
+        public NLogger log;
+        public Prepare()
+        {
+            var config = new ConfigurationBuilder()
+            .SetBasePath(System.IO.Directory.GetCurrentDirectory()) //From NuGet Package Microsoft.Extensions.Configuration.Json
+            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            .Build();
 
+            var servicesProvider = DeezerSync.Core.Search.BuildDi(config);
+            using (servicesProvider as IDisposable)
+            {
+                log = servicesProvider.GetRequiredService<NLogger>();
+            }
+        }
         /// <summary>
         /// Create Missing Playlists on Deezer
         /// </summary>
@@ -41,6 +56,7 @@ namespace DeezerSync.Core
             // Create mising playlists
             foreach (var diff in different)
             {
+                log.Info("Create Deezer Playlist: " + diff);
                 await api.CreatePlaylistasync(diff);
             }
         }
@@ -55,17 +71,20 @@ namespace DeezerSync.Core
             // Remove unsearchable Char
             if (input.title.Contains("&"))
             {
+                log.Debug("Remove '&' from Title");
                 input.title = Regex.Replace(input.title, "&", "", RegexOptions.IgnoreCase).Trim();
             }
 
             if (input.username.Contains("&"))
             {
+                log.Debug("Remove '&' from Artist");
                 input.username = Regex.Replace(input.username, "&", "", RegexOptions.IgnoreCase).Trim();
             }
 
             // Remix Detection + Set Remix Artist as label
             if (Regex.Match(input.title, @"Remix", RegexOptions.IgnoreCase).Success)
             {
+                log.Info(input.title + "is Remix");
                 input.isRemix = true;
                 Match m = Regex.Match(input.title, @"(\(|\[).*Remix*(\)|\])", RegexOptions.IgnoreCase);
                 if (m.Success)
@@ -76,6 +95,7 @@ namespace DeezerSync.Core
                     // Set Remix Artist as new Artist
                     input.labelname = Regex.Replace(m.Value, @"[\(*\)|\[*\]]", "", RegexOptions.IgnoreCase).Trim();
                     input.labelname = Regex.Replace(input.labelname, @"Remix", "", RegexOptions.IgnoreCase).Trim();
+                    log.Debug("Set Remix Artist " + input.labelname + " as new main Artist " + input.username + " (labelname)");
 
                     // Remove remaining [] ()
                     input.title = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
@@ -96,6 +116,7 @@ namespace DeezerSync.Core
             // Remove unsearchable chars
             if (input.title.Contains("<") && input.title.Contains(">"))
             {
+                log.Debug("Remove '< >' from Title");
                 input.title = Regex.Replace(input.title, @"(<.*>)", "", RegexOptions.IgnoreCase).Trim();
             }
 
@@ -104,10 +125,10 @@ namespace DeezerSync.Core
             {
                 if (input.title.Contains("-"))
                 {
+                    log.Debug("Remove Artist from Titel");
                     input.title = input.title.Split('-')[1].Trim();
                 }
             }
-
             return input;
         }
     }

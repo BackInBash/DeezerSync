@@ -1,5 +1,10 @@
 ﻿using DeezerSync.Models;
 using DeezerSync.Models.API;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using NLog;
+using NLog.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +13,52 @@ using System.Threading.Tasks;
 
 namespace DeezerSync.Core
 {
+    /// <summary>
+    /// Log Class
+    /// </summary>
+    public class NLogger
+    {
+        private readonly ILogger<NLogger> _logger;
+
+        public NLogger(ILogger<NLogger> logger)
+        {
+            _logger = logger;
+        }
+
+        /// <summary>
+        /// Debug Log
+        /// </summary>
+        /// <param name="name"></param>
+        public void Debug(string name)
+        {
+            _logger.LogDebug(20, "{Action}", name);
+        }
+        /// <summary>
+        /// Info Log
+        /// </summary>
+        /// <param name="name"></param>
+        public void Info(string name)
+        {
+            _logger.LogInformation(20, "{Action}", name);
+        }
+        /// <summary>
+        /// Error Log
+        /// </summary>
+        /// <param name="name"></param>
+        public void Error(string name)
+        {
+            _logger.LogError(20, "{Action}", name);
+        }
+        /// <summary>
+        /// Warning Log
+        /// </summary>
+        /// <param name="name"></param>
+        public void Warning(string name)
+        {
+            _logger.LogWarning(20, "{Action}", name);
+        }
+    }
+
     public class Search
     {
         private List<StandardPlaylist> MusicProvider;
@@ -19,85 +70,133 @@ namespace DeezerSync.Core
         }
 
         /// <summary>
+        /// Private Logger Injector
+        /// </summary>
+        /// <param name="config"></param>
+        /// <returns></returns>
+        public static IServiceProvider BuildDi(IConfiguration config)
+        {
+            return new ServiceCollection()
+               .AddTransient<NLogger>()
+               .AddLogging(loggingBuilder =>
+               {
+                   // configure Logging with NLog
+                   loggingBuilder.ClearProviders();
+                   loggingBuilder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+                   loggingBuilder.AddNLog(config);
+               })
+               .BuildServiceProvider();
+        }
+
+        /// <summary>
         /// Start the Search routine
         /// </summary>
         /// <returns></returns>
         public async Task Start()
         {
-            // Create Deezer Playlists
-            Prepare prepare = new Prepare();
-            await prepare.CreateMissingPlaylists(MusicProvider, Deezer);
 
-            // Apply Filter on Track Data
-            foreach (var playlist in MusicProvider)
+            // Setup Logging
+
+            var logger = LogManager.GetCurrentClassLogger();
+            try
             {
-                List<long> TrackIDs = new List<long>();
+                var config = new ConfigurationBuilder()
+                   .SetBasePath(System.IO.Directory.GetCurrentDirectory()) //From NuGet Package Microsoft.Extensions.Configuration.Json
+                   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                   .Build();
 
-                foreach (var track in playlist.tracks)
+                var servicesProvider = BuildDi(config);
+                using (servicesProvider as IDisposable)
                 {
-                    var query = await prepare.PrepareDeezerQuery(track);
-                    var result = await ExecuteQuery(query);
-                    long id = await search(result, track);
+                    var log = servicesProvider.GetRequiredService<NLogger>();
 
-                    if (id != 0)
+                    // Create Deezer Playlists
+                    Prepare prepare = new Prepare();
+                    await prepare.CreateMissingPlaylists(MusicProvider, Deezer);
+
+                    // Apply Filter on Track Data
+                    foreach (var playlist in MusicProvider)
                     {
-                        // True title dont exists in Deezer Playlist
-                        bool NotExists = true;
-                        foreach (var deezer in Deezer)
+                        List<long> TrackIDs = new List<long>();
+
+                        foreach (var track in playlist.tracks)
                         {
-                            if (deezer.title.Equals(playlist.title))
+                            var query = await prepare.PrepareDeezerQuery(track);
+                            var result = await ExecuteQuery(query);
+                            long id = await search(result, track);
+
+                            if (id != 0)
                             {
-                                foreach (var dzloop in deezer.tracks)
+                                // True title dont exists in Deezer Playlist
+                                bool NotExists = true;
+                                foreach (var deezer in Deezer)
                                 {
-                                    if (dzloop.id.Equals(id))
+                                    if (deezer.title.Equals(playlist.title))
                                     {
-                                        // False track exists in Deezer Playlist
-                                        NotExists = false;
-                                    }
-                                }
-                            }
-                        }
-                        if (NotExists == true)
-                        {
-                            TrackIDs.ToList();
-                            if (TrackIDs.Count.Equals(0))
-                            {
-                                // Add Track ID to tmp list if List is empty
-                                TrackIDs.Add(id);
-                            }
-                            else
-                            {
-                                foreach (long l in TrackIDs.ToList())
-                                {
-                                    if (l == id)
-                                    {
-                                        // Track exists in tmp List
-                                        NotExists = false;
+                                        foreach (var dzloop in deezer.tracks)
+                                        {
+                                            if (dzloop.id.Equals(id))
+                                            {
+                                                // False track exists in Deezer Playlist
+                                                NotExists = false;
+                                            }
+                                        }
                                     }
                                 }
                                 if (NotExists == true)
                                 {
-                                    // Track dont exists in tmp List
-                                    TrackIDs.Add(id);
+                                    TrackIDs.ToList();
+                                    if (TrackIDs.Count.Equals(0))
+                                    {
+                                        // Add Track ID to tmp list if List is empty
+                                        TrackIDs.Add(id);
+                                    }
+                                    else
+                                    {
+                                        foreach (long l in TrackIDs.ToList())
+                                        {
+                                            if (l == id)
+                                            {
+                                                // Track exists in tmp List
+                                                NotExists = false;
+                                            }
+                                        }
+                                        if (NotExists == true)
+                                        {
+                                            // Track dont exists in tmp List
+                                            TrackIDs.Add(id);
+                                        }
+                                    }
                                 }
                             }
                         }
-                    }
-                }
 
-                if (TrackIDs.Count != 0)
-                {
-                    string playlistid = null;
-                    foreach (var did in Deezer)
-                    {
-                        if (playlist.title.Equals(did.title))
+                        if (TrackIDs.Count != 0)
                         {
-                            // Get Playlist ID from name
-                            playlistid = did.id;
+                            string playlistid = null;
+                            foreach (var did in Deezer)
+                            {
+                                if (playlist.title.Equals(did.title))
+                                {
+                                    // Get Playlist ID from name
+                                    playlistid = did.id;
+                                }
+                            }
+                            await AddSongToPlaylist(playlistid, TrackIDs);
                         }
                     }
-                    await AddSongToPlaylist(playlistid, TrackIDs);
                 }
+            }
+            catch (Exception ex)
+            {
+                // NLog: catch any exception and log it.
+                logger.Error(ex, "Stopped program because of exception");
+                throw;
+            }
+            finally
+            {
+                // Ensure to flush and stop internal timers/threads before application-exit (Avoid segmentation fault on Linux)
+                LogManager.Shutdown();
             }
         }
 
@@ -161,12 +260,12 @@ namespace DeezerSync.Core
 
                 DeezerAPI.Official api = new DeezerAPI.Official(query);
                 ResultSearch.Search res = await api.Search();
-                if(res.Data.Count > 0)
+                if (res.Data.Count > 0)
                 {
                     List<StandardTitle> tracks = new List<StandardTitle>();
-                    foreach(var i in res.Data)
+                    foreach (var i in res.Data)
                     {
-                        tracks.Add(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, isRemix = false, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name  });
+                        tracks.Add(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, isRemix = false, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name });
                     }
                     return tracks;
                 }
