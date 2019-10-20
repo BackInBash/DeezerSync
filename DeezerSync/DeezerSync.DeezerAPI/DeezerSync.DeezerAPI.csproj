@@ -5,6 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeezerSync.Log\DeezerSync.Log.csproj" />
     <ProjectReference Include="..\DeezerSync.Models\DeezerSync.Models.csproj" />
   </ItemGroup>
 

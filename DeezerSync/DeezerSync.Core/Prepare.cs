@@ -1,4 +1,5 @@
-﻿using DeezerSync.Models;
+﻿using DeezerSync.Log;
+using DeezerSync.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -20,7 +21,7 @@ namespace DeezerSync.Core
             .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
             .Build();
 
-            var servicesProvider = DeezerSync.Core.Search.BuildDi(config);
+            var servicesProvider = DeezerSync.Log.Logging.BuildDi(config);
             using (servicesProvider as IDisposable)
             {
                 log = servicesProvider.GetRequiredService<NLogger>();
@@ -71,20 +72,20 @@ namespace DeezerSync.Core
             // Remove unsearchable Char
             if (input.title.Contains("&"))
             {
-                log.Debug("Remove '&' from Title");
+                log.Debug("Remove '&' from Title " + input.title);
                 input.title = Regex.Replace(input.title, "&", "", RegexOptions.IgnoreCase).Trim();
             }
 
             if (input.username.Contains("&"))
             {
-                log.Debug("Remove '&' from Artist");
+                log.Debug("Remove '&' from Artist" + input.username);
                 input.username = Regex.Replace(input.username, "&", "", RegexOptions.IgnoreCase).Trim();
             }
 
             // Remix Detection + Set Remix Artist as label
             if (Regex.Match(input.title, @"Remix", RegexOptions.IgnoreCase).Success)
             {
-                log.Info(input.title + "is Remix");
+                log.Info(input.title + " is Remix");
                 input.isRemix = true;
                 Match m = Regex.Match(input.title, @"(\(|\[).*Remix*(\)|\])", RegexOptions.IgnoreCase);
                 if (m.Success)
@@ -100,17 +101,20 @@ namespace DeezerSync.Core
                     // Remove remaining [] ()
                     input.title = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
                     input.title = Regex.Replace(input.title, @"&", "", RegexOptions.IgnoreCase).Trim();
+                    log.Debug("New Title is: " + input.title);
                 }
                 else
                 {
                     input.title = Regex.Replace(input.title, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
                     input.title = Regex.Replace(input.title, @"&", "", RegexOptions.IgnoreCase).Trim();
+                    log.Debug("New Title is: " + input.title);
                 }
             }
             else
             {
                 input.title = Regex.Replace(input.title, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
                 input.title = Regex.Replace(input.title, @"&", "", RegexOptions.IgnoreCase).Trim();
+                log.Debug("New Title is: " + input.title);
             }
 
             // Remove unsearchable chars
@@ -129,6 +133,7 @@ namespace DeezerSync.Core
                     input.title = input.title.Split('-')[1].Trim();
                 }
             }
+            log.Debug("Prepared Serach Query is Artist: " + input.username + " Titel: " + input.title);
             return input;
         }
     }

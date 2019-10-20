@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeezerSync.Test", "DeezerSy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeezerSync.Core", "DeezerSync.Core\DeezerSync.Core.csproj", "{79B2D98D-3D48-41CC-8DC1-718A36C4F785}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Models", "DeezerSync.Models\DeezerSync.Models.csproj", "{EA5C7E8E-2587-4392-9FB5-BE634FC59B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeezerSync.Models", "DeezerSync.Models\DeezerSync.Models.csproj", "{EA5C7E8E-2587-4392-9FB5-BE634FC59B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeezerSync.Log", "DeezerSync.Log\DeezerSync.Log.csproj", "{FDA20B91-0D41-46A5-9EE8-E0D09D30F012}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{EA5C7E8E-2587-4392-9FB5-BE634FC59B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA5C7E8E-2587-4392-9FB5-BE634FC59B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA5C7E8E-2587-4392-9FB5-BE634FC59B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA20B91-0D41-46A5-9EE8-E0D09D30F012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA20B91-0D41-46A5-9EE8-E0D09D30F012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA20B91-0D41-46A5-9EE8-E0D09D30F012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA20B91-0D41-46A5-9EE8-E0D09D30F012}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,63 +2,15 @@
 using DeezerSync.Models.API;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using NLog;
-using NLog.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using DeezerSync.Log;
 
 namespace DeezerSync.Core
 {
-    /// <summary>
-    /// Log Class
-    /// </summary>
-    public class NLogger
-    {
-        private readonly ILogger<NLogger> _logger;
-
-        public NLogger(ILogger<NLogger> logger)
-        {
-            _logger = logger;
-        }
-
-        /// <summary>
-        /// Debug Log
-        /// </summary>
-        /// <param name="name"></param>
-        public void Debug(string name)
-        {
-            _logger.LogDebug(20, "{Action}", name);
-        }
-        /// <summary>
-        /// Info Log
-        /// </summary>
-        /// <param name="name"></param>
-        public void Info(string name)
-        {
-            _logger.LogInformation(20, "{Action}", name);
-        }
-        /// <summary>
-        /// Error Log
-        /// </summary>
-        /// <param name="name"></param>
-        public void Error(string name)
-        {
-            _logger.LogError(20, "{Action}", name);
-        }
-        /// <summary>
-        /// Warning Log
-        /// </summary>
-        /// <param name="name"></param>
-        public void Warning(string name)
-        {
-            _logger.LogWarning(20, "{Action}", name);
-        }
-    }
-
     public class Search
     {
         private List<StandardPlaylist> MusicProvider;
@@ -69,24 +21,7 @@ namespace DeezerSync.Core
             this.Deezer = Deezer;
         }
 
-        /// <summary>
-        /// Private Logger Injector
-        /// </summary>
-        /// <param name="config"></param>
-        /// <returns></returns>
-        public static IServiceProvider BuildDi(IConfiguration config)
-        {
-            return new ServiceCollection()
-               .AddTransient<NLogger>()
-               .AddLogging(loggingBuilder =>
-               {
-                   // configure Logging with NLog
-                   loggingBuilder.ClearProviders();
-                   loggingBuilder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
-                   loggingBuilder.AddNLog(config);
-               })
-               .BuildServiceProvider();
-        }
+        public NLogger log;
 
         /// <summary>
         /// Start the Search routine
@@ -105,10 +40,10 @@ namespace DeezerSync.Core
                    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                    .Build();
 
-                var servicesProvider = BuildDi(config);
+                var servicesProvider = DeezerSync.Log.Logging.BuildDi(config);
                 using (servicesProvider as IDisposable)
                 {
-                    var log = servicesProvider.GetRequiredService<NLogger>();
+                    log = servicesProvider.GetRequiredService<NLogger>();
 
                     // Create Deezer Playlists
                     Prepare prepare = new Prepare();
@@ -121,6 +56,7 @@ namespace DeezerSync.Core
 
                         foreach (var track in playlist.tracks)
                         {
+                            log.Info("Start Searching for Track: " + track.title + " Artist: " + track.username + " Label: " + track.labelname);
                             var query = await prepare.PrepareDeezerQuery(track);
                             var result = await ExecuteQuery(query);
                             long id = await search(result, track);
@@ -169,6 +105,7 @@ namespace DeezerSync.Core
                                     }
                                 }
                             }
+                            log.Info("");
                         }
 
                         if (TrackIDs.Count != 0)
@@ -224,18 +161,22 @@ namespace DeezerSync.Core
             {
                 if ((result.username.Contains(Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
                 {
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
                 if ((result.username.Contains(Searching.username) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration))
                 {
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
                 if ((result.username.Contains(Searching.username) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration))
                 {
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
+                log.Info("Could not find Track: " + result.title + " Artist: " + result.username + "Original Track: " + Searching.title + " Artist: " + Searching.username);
             }
             return 0;
         }
@@ -249,6 +190,7 @@ namespace DeezerSync.Core
         {
             try
             {
+                // Deezer Private API
                 /*
                 DeezerAPI.Private api = new DeezerAPI.Private();
                 if (query.isRemix)
@@ -258,8 +200,10 @@ namespace DeezerSync.Core
                 return await api.SearchQuery(query.username + " " + query.title);
                 */
 
+                // Deezer Public API
                 DeezerAPI.Official api = new DeezerAPI.Official(query);
                 ResultSearch.Search res = await api.Search();
+                log.Info("Found " + res.Data.Count + " Tracks");
                 if (res.Data.Count > 0)
                 {
                     List<StandardTitle> tracks = new List<StandardTitle>();
@@ -271,8 +215,9 @@ namespace DeezerSync.Core
                 }
                 return new List<StandardTitle>();
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                log.Warning("Search Query Exception: ", e);
                 return new List<StandardTitle>();
             }
         }
@@ -288,24 +233,30 @@ namespace DeezerSync.Core
         {
             if (actual == (found - 2))
             {
+                log.Debug("Same Duration TRUE");
                 return true;
             }
             if (actual == (found - 1))
             {
+                log.Debug("Same Duration TRUE");
                 return true;
             }
             if (actual == found)
             {
+                log.Debug("Same Duration TRUE");
                 return true;
             }
             if (actual == (found + 1))
             {
+                log.Debug("Same Duration TRUE");
                 return true;
             }
             if (actual == (found + 2))
             {
+                log.Debug("Same Duration TRUE");
                 return true;
             }
+            log.Debug("Duration check FALSE");
             return false;
         }
     }
