@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DeezerSync.Core
 {
-    class Prepare
+    public class Prepare
     {
         public NLogger log;
         public Prepare()
@@ -27,6 +27,12 @@ namespace DeezerSync.Core
                 log = servicesProvider.GetRequiredService<NLogger>();
             }
         }
+
+        public Prepare(NLogger log)
+        {
+            this.log = log;
+        }
+
         /// <summary>
         /// Create Missing Playlists on Deezer
         /// </summary>
@@ -67,7 +73,7 @@ namespace DeezerSync.Core
         /// </summary>
         /// <param name="input">StandardTitel Object</param>
         /// <returns></returns>
-        internal async Task<StandardTitle> PrepareDeezerQuery(StandardTitle input)
+        public async Task<StandardTitle> PrepareDeezerQuery(StandardTitle input)
         {
             // Remove unsearchable Char
             if (input.title.Contains("&"))
