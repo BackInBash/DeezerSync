@@ -23,9 +23,17 @@ namespace DeezerSync.Models
         /// </summary>
         public string title { get; set; }
         /// <summary>
-        /// Username or Artist
+        /// Username
         /// </summary>
         public string username { get; set; }
+        /// <summary>
+        /// Artist
+        /// </summary>
+        public string artist { get; set; }
+        /// <summary>
+        /// Remix Artist
+        /// </summary>
+        public string remixArtist { get; set; }
         /// <summary>
         /// Artists Label
         /// </summary>

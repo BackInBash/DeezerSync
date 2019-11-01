@@ -27,7 +27,7 @@ namespace DeezerSync.MusicProvider
             Data.AddRange(getData(sc).Result);
         }
 
-        public main(string[] SoundCloudUsername, string SoundCloudClientID = null)
+        public main(string SoundCloudClientID = null, params string[] SoundCloudUsername)
         {
             Spotify s = null;
             SoundCloud sc = null;

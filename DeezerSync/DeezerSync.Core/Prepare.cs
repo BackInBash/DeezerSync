@@ -85,7 +85,7 @@ namespace DeezerSync.Core
             if (input.username.Contains("&"))
             {
                 log.Debug("Remove '&' from Artist" + input.username);
-                input.username = Regex.Replace(input.username, "&", "", RegexOptions.IgnoreCase).Trim();
+                input.username = Regex.Replace(input.username, "&", "", RegexOptions.IgnoreCase);
             }
 
             // Remix Detection + Set Remix Artist as label
@@ -100,9 +100,9 @@ namespace DeezerSync.Core
                     string regex = Regex.Replace(input.title, @"(\(|\[).*Remix*(\)|\])", m.Value, RegexOptions.IgnoreCase).Trim();
 
                     // Set Remix Artist as new Artist
-                    input.labelname = Regex.Replace(m.Value, @"[\(*\)|\[*\]]", "", RegexOptions.IgnoreCase).Trim();
-                    input.labelname = Regex.Replace(input.labelname, @"Remix", "", RegexOptions.IgnoreCase).Trim();
-                    log.Debug("Set Remix Artist " + input.labelname + " as new main Artist " + input.username + " (labelname)");
+                    input.remixArtist = Regex.Replace(m.Value, @"[\(*\)|\[*\]]", "", RegexOptions.IgnoreCase).Trim();
+                    input.remixArtist = Regex.Replace(input.remixArtist, @"Remix", "", RegexOptions.IgnoreCase).Trim();
+                    log.Debug("Set Remix Artist " + input.remixArtist + " as new main Artist " + input.username + " (labelname)");
 
                     // Remove remaining [] ()
                     input.title = Regex.Replace(regex, @"(\(.*\)|\[.*\])", "", RegexOptions.IgnoreCase).Trim();
@@ -131,12 +131,35 @@ namespace DeezerSync.Core
             }
 
             // Remove artist name in titel
+            Match cleanTitel = Regex.Match(input.title, @"\s(-)\s", RegexOptions.IgnoreCase);
             if (input.title.Contains(input.username))
             {
-                if (input.title.Contains("-"))
+                if (cleanTitel.Success)
                 {
-                    log.Debug("Remove Artist from Titel");
-                    input.title = input.title.Split('-')[1].Trim();
+                    log.Debug("Remove same Artist from Titel");
+                    string[] tmp = Regex.Split(input.title, @"\s(-)\s", RegexOptions.IgnoreCase);
+                    input.artist = tmp[0].Trim();
+                    input.title = tmp[2].Trim();
+                }
+            }
+            else
+            {
+                if (cleanTitel.Success)
+                {
+                    log.Debug("Remove Artist from Title");
+                    string[] tmp = Regex.Split(input.title, @"\s(-)\s", RegexOptions.IgnoreCase);
+                    input.title = tmp[2].Trim();
+
+                    // Check if contains two whitespaces can come from an previeous char removal
+                    if(Regex.Match(tmp[0], @"\s\s", RegexOptions.IgnoreCase).Success)
+                    {
+                        string[] art = Regex.Split(tmp[0], @"\s\s", RegexOptions.IgnoreCase);
+                        input.artist = art[0].Trim();
+                    }
+                    else
+                    {
+                        input.artist = tmp[0].Trim();
+                    }
                 }
             }
             log.Debug("Prepared Serach Query is Artist: " + input.username + " Titel: " + input.title);

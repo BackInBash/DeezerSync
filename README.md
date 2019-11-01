@@ -7,8 +7,8 @@ Application to Sync Playlists to Deezer
 
 ## Supported Operating Systems
 + Windows
++ Linux (x86 & arm)
 + macOS
-+ Linux
 
 ## Used Libraries
 + [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
@@ -24,7 +24,7 @@ The `config.json` requires the following entries:
 ```console
 {
   "SoundCloud_Username": "",    // SoundCloud User Name (These are the playlists to sync)
-  "SoundCloud_ClientID": "",	// SoundCloud ClientID (leave empty for automatic setup)
+  "SoundCloud_ClientID": "",	  // SoundCloud ClientID (leave empty for automatic setup)
   "Deezer_Secret": ""           // Login to Deezer and search in the dev console for an arl Cookie
 }
 ```
@@ -32,6 +32,16 @@ The `config.json` requires the following entries:
 ## Application Architecture
 !["arch"](overview.png)
 
+## The Staging System
+
+The Deezer Search is build up in three stages.
+Every stage is a indipendent search query you have to get an empty result in order to jump through the stages.
+
+1. Prepare search query remove unsearchable chars such as (`&`  `<`  `>`  `(`  `)`  `[`  `]`) and detect if the song is a remix and save the remix artist as an extra artist
+
+1. Artist changes, split song title at first `-` char and replace it with the possible remix artist or with the SoundCloud user name.
+
+1. Search only with song name (without the artist name) and duration
 
 ## DeezerSync
 __Is the entrypoint CLI Application__

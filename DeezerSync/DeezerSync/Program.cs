@@ -36,7 +36,6 @@ namespace DeezerSync
             }
 
             // Start Search
-
             DeezerSync.Core.Search core = new DeezerSync.Core.Search(musicprovider_playlist.Data, await api.GetAllPlaylistsasync());
             await core.Start();
 
