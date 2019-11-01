@@ -3,7 +3,7 @@ Application to Sync Playlists to Deezer
 
 ## Supported Platforms
 + SoundCloud
-+ Spotify (later on)
++ Spotify
 
 ## Supported Operating Systems
 + Windows
