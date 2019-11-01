@@ -14,6 +14,7 @@ Application to Sync Playlists to Deezer
 + [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 + [SoundCloud.Api](https://github.com/prayzzz/SoundCloud.Api)
 + [NLog](https://github.com/NLog/NLog)
++ [SpotifyAPI-NET](https://github.com/JohnnyCrazy/SpotifyAPI-NET)
 
 ### Build with dotNET Core 3 & VS 2019
 
