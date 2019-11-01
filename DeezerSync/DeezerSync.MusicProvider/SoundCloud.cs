@@ -16,7 +16,6 @@ namespace DeezerSync.MusicProvider
         private User user = null;
         private string ClientID = string.Empty;
         private ISoundCloudClient client = null;
-        private HttpClient http = new HttpClient();
 
         /// <summary>
         /// Gets a SoundCloud client ID from the config. If it isn´t set try to pull it from the webapp.
@@ -24,6 +23,7 @@ namespace DeezerSync.MusicProvider
         /// <returns>SoundCloud Client ID</returns>
         private async Task<string> getClientID()
         {
+            HttpClient http = new HttpClient();
             Match m = Regex.Match(await http.GetStringAsync(SOUNDCLOUD_CLIENTID), ",client_id:\"[a-zA-Z_0-9]*\"");
             Match m1 = Regex.Match(m.Value, "\"[a-zA-Z_0-9]*\"");
             return Regex.Replace(m1.Value, "[(^\") + (?=\"\\n)]", "").Trim();
@@ -35,7 +35,7 @@ namespace DeezerSync.MusicProvider
         public SoundCloud(string username)
         {
             this.username = username;
-            client = SoundCloudClient.CreateUnauthorized(getClientID().Result);
+            client = SoundCloudClient.CreateUnauthorized(getClientID().GetAwaiter().GetResult());
             var entity = client.Resolve.GetEntityAsync("https://soundcloud.com/" + username).GetAwaiter().GetResult();
             user = entity as User;
         }

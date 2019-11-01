@@ -12,12 +12,16 @@ namespace DeezerSync
         public string SoundCloud_Username;
         public string SoundCloud_ClientID;
         public string Deezer_Secret;
+        public string Spotify_Username;
+        public string Spotify_Secret;
     }
     class Config
     {
         public string soundcloud_profile { get; private set; }
         public string soundcloud_clientid { get; private set; }
         public string deezer_secret { get; private set; }
+        public string spotify_profile { get; private set; }
+        public string spotify_secret { get; private set; }
 
         private string path = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "config.json");
 
@@ -42,6 +46,8 @@ namespace DeezerSync
                 soundcloud_profile = result.SoundCloud_Username;
                 soundcloud_clientid = result.SoundCloud_ClientID;
                 deezer_secret = result.Deezer_Secret;
+                spotify_profile = result.Spotify_Username;
+                spotify_secret = result.Spotify_Secret;
 
             }
             catch (FileNotFoundException)

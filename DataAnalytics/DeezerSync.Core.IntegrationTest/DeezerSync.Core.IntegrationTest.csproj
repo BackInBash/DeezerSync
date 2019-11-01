@@ -25,10 +25,4 @@
     <ProjectReference Include="..\..\DeezerSync\DeezerSync.Models\DeezerSync.Models.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="IntegrationTestSoundCloud.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

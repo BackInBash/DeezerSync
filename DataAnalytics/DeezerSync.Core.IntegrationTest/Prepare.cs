@@ -16,7 +16,8 @@ namespace DeezerSync.Core.IntegrationTest
 
         public Prepare()
         {
-            SoundCloud = JsonConvert.DeserializeObject<List<StandardPlaylist>>(File.ReadAllText(@"IntegrationTestSoundCloud.json"));
+            SoundCloud = JsonConvert.DeserializeObject<List<StandardPlaylist>>(File.ReadAllText(@"../../../../../DataAnalytics/RawData/IntegrationTestSoundCloud.json"));
+            SoundCloud.AddRange(JsonConvert.DeserializeObject<List<StandardPlaylist>>(File.ReadAllText(@"../../../../../DataAnalytics/RawData/IntegrationTestSpotify.json")));
         }
 
         [Fact]

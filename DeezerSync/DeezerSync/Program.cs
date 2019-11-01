@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.IO;
 
 namespace DeezerSync
 {
@@ -28,13 +30,13 @@ namespace DeezerSync
 
             if (string.IsNullOrEmpty(config.soundcloud_clientid))
             {
-                musicprovider_playlist = new MusicProvider.main(config.soundcloud_profile);
+                musicprovider_playlist = new MusicProvider.main(config.soundcloud_profile, config.spotify_profile, config.spotify_secret);
             }
             else
             {
-                musicprovider_playlist = new MusicProvider.main(config.soundcloud_profile, config.soundcloud_clientid);
+                musicprovider_playlist = new MusicProvider.main(config.soundcloud_profile, config.spotify_profile, config.spotify_secret, config.soundcloud_clientid);
             }
-
+            File.WriteAllText("spotify.json", JsonConvert.SerializeObject(musicprovider_playlist.Data, Formatting.Indented));
             // Start Search
             DeezerSync.Core.Search core = new DeezerSync.Core.Search(musicprovider_playlist.Data, await api.GetAllPlaylistsasync());
             await core.Start();

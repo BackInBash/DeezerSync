@@ -25,7 +25,9 @@ The `config.json` requires the following entries:
 {
   "SoundCloud_Username": "",    // SoundCloud User Name (These are the playlists to sync)
   "SoundCloud_ClientID": "",	  // SoundCloud ClientID (leave empty for automatic setup)
-  "Deezer_Secret": ""           // Login to Deezer and search in the dev console for an arl Cookie
+  "Deezer_Secret": "",          // Login to Deezer and search in the dev console for an arl Cookie
+  "Spotify_Username" : "",      // Spotify User Name (These are the playlists to sync)
+  "Spotify_Secret" : ""         // Spotify Bearer API Key
 }
 ```
 

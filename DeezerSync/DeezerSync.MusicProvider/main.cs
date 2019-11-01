@@ -11,10 +11,12 @@ namespace DeezerSync.MusicProvider
 
         public List<StandardPlaylist> Data = new List<StandardPlaylist>();
 
-        public main(string SoundCloudUsername, string SoundCloudClientID = null)
+        public main(string SoundCloudUsername, string SpotifyUserID, string SpotifyAPIKey, string SoundCloudClientID = null)
         {
             Spotify s = null;
             SoundCloud sc = null;
+
+            // SoundCloud
 
             if (!string.IsNullOrEmpty(SoundCloudClientID))
             {
@@ -24,26 +26,12 @@ namespace DeezerSync.MusicProvider
             {
                 sc = new SoundCloud(SoundCloudUsername);
             }
-            Data.AddRange(getData(sc).Result);
-        }
+            Data.AddRange(getData(sc).GetAwaiter().GetResult());
 
-        public main(string SoundCloudClientID = null, params string[] SoundCloudUsername)
-        {
-            Spotify s = null;
-            SoundCloud sc = null;
+            // Spotify
 
-            foreach (string scu in SoundCloudUsername)
-            {
-                if (!string.IsNullOrEmpty(SoundCloudClientID))
-                {
-                    sc = new SoundCloud(scu, SoundCloudClientID);
-                }
-                else
-                {
-                    sc = new SoundCloud(scu);
-                }
-                Data.AddRange(getData(sc).GetAwaiter().GetResult());
-            }
+            s = new Spotify(SpotifyAPIKey, SpotifyUserID);
+            Data.AddRange(getData(s).GetAwaiter().GetResult());
 
         }
 
