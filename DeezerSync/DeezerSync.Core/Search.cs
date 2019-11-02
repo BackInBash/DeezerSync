@@ -202,7 +202,7 @@ namespace DeezerSync.Core
 
                 // Deezer Public API
                 DeezerAPI.Official api = new DeezerAPI.Official(query);
-                ResultSearch.Search res = await api.Search();
+                dynamic res = await api.Search();
                 log.Info("Found " + res.Data.Count + " Tracks");
                 if (res.Data.Count > 0)
                 {
