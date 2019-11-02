@@ -9,6 +9,10 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.0.0" />
   </ItemGroup>
 
+  <PropertyGroup>
+   <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\DeezerSync.Log\DeezerSync.Log.csproj" />
     <ProjectReference Include="..\DeezerSync.Models\DeezerSync.Models.csproj" />

@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+   <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="SoundCloud.Api" Version="3.0.0" />
     <PackageReference Include="SpotifyAPI.Web" Version="4.2.2" />

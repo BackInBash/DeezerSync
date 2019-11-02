@@ -5,6 +5,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup>
+     <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\DeezerSync.Core\DeezerSync.Core.csproj" />
     <ProjectReference Include="..\DeezerSync.DeezerAPI\DeezerSync.DeezerAPI.csproj" />
