@@ -14,7 +14,6 @@ namespace DeezerSync.DeezerAPI
     public class Official
     {
         private const string Official_api = "https://api.deezer.com/search?q=";
-        private readonly HttpClient client = new HttpClient();
         private StandardTitle title = null;
         private string Request_Query = string.Empty;
         public NLogger log;
@@ -33,24 +32,32 @@ namespace DeezerSync.DeezerAPI
             }
 
             this.title = title;
-            if (!string.IsNullOrWhiteSpace(title.username) || string.IsNullOrWhiteSpace(title.title) || title.duration != 0)
+            if (title.search_stage == 1)
             {
-                log.Debug("Send Request with Artist: " + title.username + " Track: " + title.title + " Duration: " + title.duration);
-                Request_Query = Official_api + "artist:" + "\"" + title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
+                Request_Query = Official_api + "artist:" + "\"" + title.artist ?? title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
             }
             else
             {
-                if (!string.IsNullOrWhiteSpace(title.username) || string.IsNullOrWhiteSpace(title.title))
+                if (title.search_stage == 2)
                 {
-                    log.Debug("Send Request with Artist: " + title.username + " Track: " + title.title);
-                    Request_Query = Official_api + "artist:" + "\"" + title.username + "\" " + "track:" + "\"" + title.title + "\"";
+                    if (title.isRemix)
+                    {
+                        log.Debug("Send Request with Remix Artist: " + title.remixArtist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
+                        Request_Query = Official_api + "artist:" + "\"" + title.remixArtist ?? title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                    }
+                    else
+                    {
+                        log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
+                        Request_Query = Official_api + "artist:" + "\"" + title.artist ?? title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                    }
                 }
                 else
                 {
-                    if (!string.IsNullOrWhiteSpace(title.title))
+                    if (title.search_stage == 3)
                     {
-                        log.Debug("Send Request with Track: " + title.title);
-                        Request_Query = Official_api + title.title;
+                        log.Debug("Send Request with Track: " + title.artist ?? title.username + " " + title.title);
+                        Request_Query = Official_api + title.artist ?? title.username + " " + title.title;
                     }
                 }
             }
@@ -63,6 +70,7 @@ namespace DeezerSync.DeezerAPI
 
         private async Task<string> request()
         {
+            HttpClient client = new HttpClient();
             string res = await client.GetStringAsync(Request_Query);
             if (res.Equals("{\"error\":{\"type\":\"Exception\",\"message\":\"Quota limit exceeded\",\"code\":4}}"))
             {

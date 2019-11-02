@@ -58,7 +58,19 @@ namespace DeezerSync.Core
                         {
                             log.Info("Start Searching for Track: " + track.title + " Artist: " + track.username + " Label: " + track.labelname);
                             var query = await prepare.PrepareDeezerQuery(track);
-                            var result = await ExecuteQuery(query);
+                            var result = new List<StandardTitle>();
+
+                            for (int i=1; i<4; i++)
+                            {
+                                log.Debug("Search Stage "+i);
+                                query.search_stage = i;
+                                result = await ExecuteQuery(query);
+                                if(result.Count != 0)
+                                {
+                                    break;
+                                }
+                            }
+                             
                             long id = await search(result, track);
 
                             if (id != 0)
@@ -105,7 +117,8 @@ namespace DeezerSync.Core
                                     }
                                 }
                             }
-                            log.Info("");
+                            log.Info("\n");
+                            Console.WriteLine();
                         }
 
                         if (TrackIDs.Count != 0)
@@ -159,9 +172,70 @@ namespace DeezerSync.Core
         {
             foreach (var result in results)
             {
+                //Artist
+                if (!string.IsNullOrEmpty(result.artist))
+                {
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Contains(Searching.title))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+                }
+                //Remix Artist
+                if (!string.IsNullOrEmpty(Searching.remixArtist))
+                {
+                    if ((result.artist.Contains(Searching.remixArtist) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.remixArtist) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.remixArtist) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.remixArtist) && result.title.Contains(Searching.title))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.artist ?? Searching.username) && (result.title.Contains(Searching.remixArtist) && (result.title.Contains(Searching.title))))
+                    {
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+                }
+                //Username
                 if ((result.username.Contains(Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
                 {
-                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
@@ -176,7 +250,14 @@ namespace DeezerSync.Core
                     log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
-                log.Info("Could not find Track: " + result.title + " Artist: " + result.username + "Original Track: " + Searching.title + " Artist: " + Searching.username);
+
+                if (result.username.Contains(Searching.username) && result.title.Contains(Searching.title))
+                {
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                    return result.id;
+                }
+
+                log.Info("Could not find Track: " + result.title + " Artist: " + result.artist ?? result.username + "Original Track: " + Searching.title + " Artist: " + Searching.artist ?? Searching.username);
             }
             return 0;
         }
@@ -207,9 +288,10 @@ namespace DeezerSync.Core
                 if (res.Data.Count > 0)
                 {
                     List<StandardTitle> tracks = new List<StandardTitle>();
+                    Prepare p = new Prepare();
                     foreach (var i in res.Data)
                     {
-                        tracks.Add(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, isRemix = false, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name });
+                        tracks.Add(await p.PrepareDeezerQuery(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name, artist = i.Artist.Name }));
                     }
                     return tracks;
                 }
@@ -217,7 +299,7 @@ namespace DeezerSync.Core
             }
             catch (Exception e)
             {
-                log.Warning("Search Query Exception: ", e);
+                log.Warning("Search Query Exception: "+e.Message, e);
                 return new List<StandardTitle>();
             }
         }
