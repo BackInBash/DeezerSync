@@ -180,7 +180,7 @@ namespace DeezerSync.Core
         {
 #if DEBUG
             int i = 0;
-            while(File.Exists(Directory.GetCurrentDirectory() + "\\results\\" + i + ".json")) { i++; }
+            do { i++; } while (File.Exists(Directory.GetCurrentDirectory() + "\\results\\" + i + ".json"));
             Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\results\\");
             await File.WriteAllTextAsync(Directory.GetCurrentDirectory() + "\\results\\" + i+".json", JsonConvert.SerializeObject(new DebugResult { Searching = Searching, Results = results }, Formatting.Indented));
 #endif
