@@ -1,0 +1,88 @@
+{
+  "Searching": {
+    "description": "Indiginis\nhttps://soundcloud.com/indiginis\nhttps://www.facebook.com/indiginis\nhttps://twitter.com/indiginismusic\nhttp://www.indiginismusic.com/\n\nDIGY\nhttps://soundcloud.com/digymusic\nhttps://www.facebook.com/digyofficial\n\nKirsch\nhttps://soundcloud.com/kirschmusic\nhttps://twitter.com/kirschmusic\nhttps://www.facebook.com/KirschMusic\n\nSheepy on Spotify\nhttp://bit.ly/MrSuicideSheepSpotify",
+    "duration": 208,
+    "genre": "Future Bass",
+    "title": "Tragedy",
+    "username": "MrSuicideSheep",
+    "artist": "DIGY",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 181253306,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/mrsuicidesheep/digy-tragedy-feat-kirsch-indiginis"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 191,
+      "genre": "",
+      "title": "2010 Pt. 2",
+      "username": "Ice Cube",
+      "artist": "Ice Cube",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 121003166,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/121003166"
+    },
+    {
+      "description": "",
+      "duration": 204,
+      "genre": "",
+      "title": "Dangote",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 491199452,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/491199452"
+    },
+    {
+      "description": "",
+      "duration": 193,
+      "genre": "",
+      "title": "ReLoaded",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 581819242,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/581819242"
+    },
+    {
+      "description": "",
+      "duration": 773,
+      "genre": "",
+      "title": "Alex Dior / Winter Scenery",
+      "username": "Alex Dior",
+      "artist": "Alex Dior",
+      "remixArtist": "The Silent Artist Digi",
+      "labelname": "",
+      "id": 594222352,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/594222352"
+    },
+    {
+      "description": "",
+      "duration": 247,
+      "genre": "",
+      "title": "Keep Dancing With Me",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 453746712,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/453746712"
+    }
+  ]
+}

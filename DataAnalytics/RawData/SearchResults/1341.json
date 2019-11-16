@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "",
+    "duration": 329,
+    "genre": "DVBBS",
+    "title": "We Know",
+    "username": "DVBBS",
+    "artist": "Swanky Tunes, DVBBS, Eitro",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 46710332,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/dvbbs/swanky-tunes-dvbbs-eitro-we"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 329,
+      "genre": "",
+      "title": "We Know",
+      "username": "Swanky Tunes",
+      "artist": "Swanky Tunes",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 479263192,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/479263192"
+    }
+  ]
+}

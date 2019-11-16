@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "",
+    "duration": 174,
+    "genre": "Dance en EDM",
+    "title": "Lullaby",
+    "username": "R3HAB",
+    "artist": "R3HAB X Mike Williams",
+    "remixArtist": "Steff Da Campo",
+    "labelname": "",
+    "id": 429180704,
+    "isRemix": true,
+    "search_stage": 2,
+    "url": "https://soundcloud.com/r3hab/r3hab-x-mike-williams-lullaby-steff-da-campo-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 464,
+      "genre": "",
+      "title": "Ready",
+      "username": "Steff Da Campo",
+      "artist": "Steff Da Campo",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 63007213,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/63007213"
+    },
+    {
+      "description": "",
+      "duration": 464,
+      "genre": "",
+      "title": "Ready",
+      "username": "Steff Da Campo",
+      "artist": "Steff Da Campo",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 68377425,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/68377425"
+    }
+  ]
+}

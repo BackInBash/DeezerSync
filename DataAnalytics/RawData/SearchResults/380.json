@@ -1,0 +1,88 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://Monstercat.lnk.to/TheStorm\n\n▼ Follow Monstercat\nSpotify: https://monster.cat/2biZbkd\nApple: https://apple.co/2xiKWTO\nFacebook: https://facebook.com/monstercat\nTwitter: https://twitter.com/monstercat\nInstagram: https://instagram.com/monstercat\n\n▼ Follow Notaker\nFacebook: https://facebook.com/notakermusic\nTwitter: https://twitter.com/notakermusic\nInstagram: https://instagram.com/notakermusic\nSoundCloud: https://soundcloud.com/notakermusic\n\nGenre: #Electronic\n\n▼ Want some new Merchandise?\nhttps://monster.cat/MonstercatShop\n\n▼ Download with Gold!\nhttps://monster.cat/goldyt\n\n▼ Submit to Monstercat!\nhttp://monster.cat/demo-submissions",
+    "duration": 294,
+    "genre": "Electronic",
+    "title": "The Storm",
+    "username": "Monstercat",
+    "artist": "Notaker",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 429178700,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/notaker-the-storm"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 355,
+      "genre": "",
+      "title": "Infinite",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852037,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852037"
+    },
+    {
+      "description": "",
+      "duration": 286,
+      "genre": "",
+      "title": "Shimmer",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 142502053,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/142502053"
+    },
+    {
+      "description": "",
+      "duration": 189,
+      "genre": "",
+      "title": "Too Smooth",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 518853192,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/518853192"
+    },
+    {
+      "description": "",
+      "duration": 211,
+      "genre": "",
+      "title": "Who I Am",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 440766552,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/440766552"
+    },
+    {
+      "description": "",
+      "duration": 211,
+      "genre": "",
+      "title": "Who I Am",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 422794222,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/422794222"
+    }
+  ]
+}

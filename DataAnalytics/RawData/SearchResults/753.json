@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "T-MASS\n@t-mass\ninstagram.com/TMassOfficial\ntwitter.com/TMassOfficial\nfacebook.com/TMassOfficial\n\nFREE DOWNLOAD: http://click.dj/t-mass/longwayhome\n\nTWO FRIENDS\n@two-friends\ntwitter.com/twofriendsmusic\nfacebook.com/twofriendsmusic/\n",
+    "duration": 182,
+    "genre": "Trap",
+    "title": "Long Way Home",
+    "username": "T-Mass",
+    "artist": "Two Friends ft. Breach The Summit",
+    "remixArtist": "T-Mass",
+    "labelname": "",
+    "id": 182388157,
+    "isRemix": true,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/t-mass/longwayhome"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 268,
+      "genre": "",
+      "title": "Long Way Home",
+      "username": "Two Friends",
+      "artist": "Two Friends",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 91425424,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/91425424"
+    },
+    {
+      "description": "",
+      "duration": 210,
+      "genre": "",
+      "title": "Our Names in Lights",
+      "username": "Two Friends",
+      "artist": "Two Friends",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 84757155,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/84757155"
+    }
+  ]
+}

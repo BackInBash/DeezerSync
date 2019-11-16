@@ -1,0 +1,74 @@
+{
+  "Searching": {
+    "description": "KSHMR & DALLAS K present BURN. Available on iTunes NOW: http://smarturl.it/SPBURNiTunes",
+    "duration": 225,
+    "genre": "Electro House",
+    "title": "Burn",
+    "username": "Spinnin' Records",
+    "artist": "KSHMR, DallasK",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 46710332,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/spinninrecords/kshmr-dallask-burn-original-mix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 174,
+      "genre": "",
+      "title": "Burn",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 459401432,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/459401432"
+    },
+    {
+      "description": "",
+      "duration": 225,
+      "genre": "",
+      "title": "Burn",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 459401442,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/459401442"
+    },
+    {
+      "description": "",
+      "duration": 225,
+      "genre": "",
+      "title": "Burn",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 466987562,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/466987562"
+    },
+    {
+      "description": "",
+      "duration": 174,
+      "genre": "",
+      "title": "Burn",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 466987572,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/466987572"
+    }
+  ]
+}

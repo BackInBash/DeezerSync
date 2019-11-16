@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "Love this mashup. So happy. :)",
+    "duration": 158,
+    "genre": "Mashup",
+    "title": "Long Shot",
+    "username": "Proximity",
+    "artist": "Trademark",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 76040402,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/proximity/trademark-long-shot-cash-cash-x-clean-bandit-x-the-chainsmokers"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 140,
+      "genre": "",
+      "title": "Trademark",
+      "username": "Charttraxx Karaoke",
+      "artist": "Charttraxx Karaoke",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 7477153,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/7477153"
+    },
+    {
+      "description": "",
+      "duration": 139,
+      "genre": "",
+      "title": "Trademark",
+      "username": "Karaoke Diamonds",
+      "artist": "Karaoke Diamonds",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 139895855,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/139895855"
+    }
+  ]
+}

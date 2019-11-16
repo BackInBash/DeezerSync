@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "Bassjackers & TWIIG - Memento is out now!\n\nGet it here: https://spinninrecords.release.link/memento!SC",
+    "duration": 158,
+    "genre": "Dance & EDM",
+    "title": "Memento",
+    "username": "Spinnin' Records",
+    "artist": "Bassjackers",
+    "remixArtist": null,
+    "labelname": "SpinninRecords.com",
+    "id": 703645755,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/spinninrecords/bassjackers-twiig-memento-out-now"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 358,
+      "genre": "",
+      "title": "Stronger",
+      "username": "Bassjackers",
+      "artist": "Bassjackers",
+      "remixArtist": "feat. Bizzey Ralvero",
+      "labelname": "",
+      "id": 506825852,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/506825852"
+    },
+    {
+      "description": "",
+      "duration": 288,
+      "genre": "",
+      "title": "Bang Like A",
+      "username": "Bassjackers",
+      "artist": "Bassjackers",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 506825802,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/506825802"
+    }
+  ]
+}

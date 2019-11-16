@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "",
+    "duration": 230,
+    "genre": "Drum & Bass",
+    "title": "Time To Say Goodbye",
+    "username": "Killabyte.",
+    "artist": "Mr. FijiWiji, Direct, Aruna",
+    "remixArtist": "Killabyte",
+    "labelname": "",
+    "id": 289434056,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/killabytemusic/timetosaygoodbye"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 259,
+      "genre": "",
+      "title": "Time to Say Goodbye",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904737,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904737"
+    },
+    {
+      "description": "",
+      "duration": 259,
+      "genre": "",
+      "title": "Time to Say Goodbye",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852027,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852027"
+    }
+  ]
+}

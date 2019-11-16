@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "",
+    "duration": 204,
+    "genre": "Electronic",
+    "title": "Lights Out",
+    "username": "GHASTLY",
+    "artist": "Zomboy",
+    "remixArtist": "Ghastly",
+    "labelname": "",
+    "id": 309018194,
+    "isRemix": true,
+    "search_stage": 2,
+    "url": "https://soundcloud.com/ghastly/lights-out-ghastly-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 141,
+      "genre": "",
+      "title": "House on Haunted Hill",
+      "username": "Various Artist-Skully Records",
+      "artist": "The Ghastly Ones",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 1812895,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/1812895"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://Monstercat.lnk.to/Axis\n\n▼ Follow Monstercat\nSpotify: https://monster.cat/2biZbkd\nApple: https://apple.co/2xiKWTO\nFacebook: https://facebook.com/monstercat\nTwitter: https://twitter.com/monstercat\nInstagram: https://instagram.com/monstercat\n\n▼ Follow Trivecta\nFacebook: http://facebook.com/trivectamusic\nTwitter: http://twitter.com/trivectamusic\nInstagram: https://instagram.com/trivectamusic\nSoundCloud: https://soundcloud.com/trivectamusic\n\nGenre: #Dubstep\n\n▼ Want some new Merchandise?\nhttps://monster.cat/MonstercatShop\n\n▼ Download with Gold!\nhttps://monster.cat/goldyt\n\n▼ Submit to Monstercat!\nhttp://monster.cat/demo-submissions",
+    "duration": 307,
+    "genre": "Dubstep",
+    "title": "Axis",
+    "username": "Monstercat",
+    "artist": "Trivecta",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 429178700,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/trivecta-axis"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 270,
+      "genre": "",
+      "title": "Into the Limelight",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852053,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852053"
+    },
+    {
+      "description": "",
+      "duration": 289,
+      "genre": "",
+      "title": "Drift Away",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 105697538,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/105697538"
+    }
+  ]
+}

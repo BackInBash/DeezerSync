@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "↻ Hit Repost ↻ If you dig it! ↻\n\nFacebook: www.facebook.com/deliriousalexk\nSoundcloud: @deliriousalexkmusic\nInstagram: www.instagram.com/deliriousalexk\nTwitter: www.twitter.com/deliriousalexk",
+    "duration": 227,
+    "genre": "major lazer",
+    "title": "Too Original",
+    "username": "Delirious  Alex K",
+    "artist": "Major Lazer feat. Elliphant",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 85497378,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/deliriousalexkmusic/major-lazer-too-original-delirious-alex-k-mix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 207,
+      "genre": "",
+      "title": "Too Original",
+      "username": "Major Lazer",
+      "artist": "Major Lazer",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 113876564,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/113876564"
+    },
+    {
+      "description": "",
+      "duration": 199,
+      "genre": "",
+      "title": "Too Original",
+      "username": "Major Lazer",
+      "artist": "Major Lazer",
+      "remixArtist": "feat. Elliphant  Jovi Rockwell TJR",
+      "labelname": "",
+      "id": 445800092,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/445800092"
+    }
+  ]
+}

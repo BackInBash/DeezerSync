@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "@IAMLICK\ntwitter.com/iamlick\nwww.instagram.com/iamlick\nwww.facebook.com/iamlick",
+    "duration": 217,
+    "genre": "Dance & EDM",
+    "title": "RED LIPS",
+    "username": "LICK",
+    "artist": "GTA",
+    "remixArtist": "LICK",
+    "labelname": "",
+    "id": 703645755,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/iamlick/redlips-v2"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 209,
+      "genre": "",
+      "title": "Step It Up",
+      "username": "GTA  Baauer",
+      "artist": "GTA & Baauer",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 454820762,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/454820762"
+    },
+    {
+      "description": "",
+      "duration": 329,
+      "genre": "",
+      "title": "GTA",
+      "username": "Dwill_the_artist",
+      "artist": "Dwill_the_artist",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 613260062,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/613260062"
+    }
+  ]
+}

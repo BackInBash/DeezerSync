@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "Download soon...\n\nLendrox\nhttps://soundcloud.com/imlendrox\nhttps://www.facebook.com/iamlesko\nhttps://twitter.com/LSLesko?lang=de\n\nNoctilucent\nhttps://soundcloud.com/noctilucentmusic\nhttp://facebook.com/noctilucentmusic\nhttps://twitter.com/_Noctilucent\n\nArtwork by Mocha\nhttp://www.pixiv.net/member_illust.php?mode=medium&illust_id=53473372\n\nSheepy on Spotify\nhttp://bit.ly/MrSuicideSheepSpotify",
+    "duration": 224,
+    "genre": "Chillout",
+    "title": "All Alone",
+    "username": "MrSuicideSheep",
+    "artist": "Noctilucent",
+    "remixArtist": "Lendrox",
+    "labelname": "",
+    "id": 76374542,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/mrsuicidesheep/noctilucent-all-alone-lendrox-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 263,
+      "genre": "",
+      "title": "Curious",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 113526280,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/113526280"
+    },
+    {
+      "description": "",
+      "duration": 280,
+      "genre": "",
+      "title": "Hypothermia",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 113526284,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/113526284"
+    }
+  ]
+}

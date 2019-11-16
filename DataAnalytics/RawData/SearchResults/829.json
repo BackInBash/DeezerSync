@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "Donna Summer’s legendary Hot Stuff with the signature sound of Dutch duo Vicetone, how much better do you want it? The guys provide uplifting chords with a vintage sound and the well-known catchy lyrics will turn every dance floor into a disco soiree. Hit!",
+    "duration": 182,
+    "genre": "House",
+    "title": "Hawt Stuff",
+    "username": "Spinnin' Records",
+    "artist": "Vicetone",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 182383245,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/spinninrecords/vicetone-hawt-stuff"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 158,
+      "genre": "",
+      "title": "I Hear You",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 394033072,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/394033072"
+    },
+    {
+      "description": "",
+      "duration": 208,
+      "genre": "",
+      "title": "Nevada",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904663,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904663"
+    },
+    {
+      "description": "",
+      "duration": 209,
+      "genre": "",
+      "title": "Way Back",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 518852872,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/518852872"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "SURPRISE @aviciiofficial",
+    "duration": 194,
+    "genre": "Deep House",
+    "title": "Without You Ft. Sandro Cavazza",
+    "username": "The Him",
+    "artist": "Avicii",
+    "remixArtist": "The Him",
+    "labelname": "",
+    "id": 429178226,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/thehim/avicii-without-you-ft-sandro-cavazza-the-him-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 300,
+      "genre": "",
+      "title": "Simple Avicii",
+      "username": "Biskvit",
+      "artist": "Biskvit",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 132002784,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/132002784"
+    },
+    {
+      "description": "",
+      "duration": 300,
+      "genre": "",
+      "title": "Simple Avicii",
+      "username": "Biskvit",
+      "artist": "Biskvit",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 128384633,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/128384633"
+    }
+  ]
+}

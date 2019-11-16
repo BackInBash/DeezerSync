@@ -1,0 +1,88 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://monster.cat/sttropez\n\n▼ Follow Monstercat\nSpotify: https://monster.cat/2biZbkd\nApple: https://apple.co/2xiKWTO\nFacebook: https://facebook.com/monstercat\nTwitter: https://twitter.com/monstercat\nInstagram: https://instagram.com/monstercat\n\n▼ Follow Tony Romera\nFacebook: https://facebook.com/TonyRomera\nTwitter: https://twitter.com/TonyRomera\nInstagram: https://instagram.com/tonyromera\nSoundCloud: https://soundcloud.com/tonyromera\n\n▼ Follow SQWAD\nFacebook: https://facebook.com/sqwadmusic\nTwitter: https://twitter.com/LeSqwad\nInstagram: https://instagram.com/sqwadmusic\nSoundCloud: https://soundcloud.com/sqwadmusic \n\nGenre: #House\n\n▼ Want some new Merchandise?\nhttps://monster.cat/MonstercatShop\n\n▼ Download with Gold!\nhttps://monster.cat/goldyt\n\n▼ Submit to Monstercat!\nhttp://monster.cat/demo-submissions",
+    "duration": 224,
+    "genre": "House",
+    "title": "St Tropez",
+    "username": "Monstercat",
+    "artist": "Tony Romera",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 686517423,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/tony-romera-sqwad-st-tropez"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 380,
+      "genre": "",
+      "title": "Knock On Your Heart",
+      "username": "Tune Brothers",
+      "artist": "Tune Brothers",
+      "remixArtist": "Tony Romera",
+      "labelname": "",
+      "id": 69926096,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/69926096"
+    },
+    {
+      "description": "",
+      "duration": 393,
+      "genre": "",
+      "title": "Roya",
+      "username": "Tony Romera  Jordan Viviant",
+      "artist": "Tony Romera & Jordan Viviant",
+      "remixArtist": "Asino Di Medico",
+      "labelname": "",
+      "id": 19561311,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/19561311"
+    },
+    {
+      "description": "",
+      "duration": 393,
+      "genre": "",
+      "title": "Roya",
+      "username": "Tony Romera  Jordan Viviant",
+      "artist": "Tony Romera & Jordan Viviant",
+      "remixArtist": "Asino Di Medico",
+      "labelname": "",
+      "id": 35470961,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/35470961"
+    },
+    {
+      "description": "",
+      "duration": 361,
+      "genre": "",
+      "title": "Roya",
+      "username": "Tony Romera  Jordan Viviant",
+      "artist": "Tony Romera & Jordan Viviant",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 34710691,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/34710691"
+    },
+    {
+      "description": "",
+      "duration": 340,
+      "genre": "",
+      "title": "Kill You",
+      "username": "Tony Romera  Jordan Viviant",
+      "artist": "Tony Romera & Jordan Viviant",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 34710581,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/34710581"
+    }
+  ]
+}

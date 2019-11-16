@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "My official remix of Boom is out now! \n\nConnect with Snavs: \nwww.facebook.com/SNAVSMUSIC\ntwitter.com/SnavsDK\nwww.instagram.com/snavs\n\nConnect with Tiësto: \nwww.facebook.com/tiesto/ \ntwitter.com/tiesto \nwww.instagram.com/tiesto/ \n@tiesto\n\nConnect with Sevenn: \nwww.facebook.com/sevennofficial \ntwitter.com/sevenn \nwww.instagram.com/sevenn/ @whoareseven\n\nConnect with Musical Freedom: \ntwitter.com/musicalfreedom\nwww.facebook.com/musicalfreedom/\nwww.instagram.com/musicalfreedom/\nwww.youtube.com/user/musicalfreedomrecs\n@musical-freedom",
+    "duration": 164,
+    "genre": "Dance & EDM",
+    "title": "Boom",
+    "username": "Snavs",
+    "artist": "Tiësto",
+    "remixArtist": "Snavs",
+    "labelname": "",
+    "id": 309018194,
+    "isRemix": true,
+    "search_stage": 2,
+    "url": "https://soundcloud.com/snavs/tiesto-sevenn-boom-snavs-remix-1"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 186,
+      "genre": "",
+      "title": "Time",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137936899,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137936899"
+    },
+    {
+      "description": "",
+      "duration": 186,
+      "genre": "",
+      "title": "Time",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 117402854,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/117402854"
+    },
+    {
+      "description": "",
+      "duration": 200,
+      "genre": "",
+      "title": "The Problem",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 768351632,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/768351632"
+    }
+  ]
+}

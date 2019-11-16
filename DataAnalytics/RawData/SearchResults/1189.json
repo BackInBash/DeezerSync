@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "Out now on Monstercat!\niTunes : https://itunes.apple.com/us/artist/au5/id395824232\nBeatport : https://pro.beatport.com/artist/au5/242798\nSpotify : https://play.spotify.com/artist/40WIa01eubnEVkxUHeDZyF\nFollow https://soundcloud.com/fiora\nCover art by : http://everydayswiss.tumblr.com/",
+    "duration": 384,
+    "genre": "House",
+    "title": "Guardians feat. Fiora",
+    "username": "Au5",
+    "artist": "Au5",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 76374542,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/au5/au5-guardians-feat-fiora"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 289,
+      "genre": "",
+      "title": "Inside",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 117402850,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/117402850"
+    },
+    {
+      "description": "",
+      "duration": 289,
+      "genre": "",
+      "title": "Inside",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 105697524,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/105697524"
+    },
+    {
+      "description": "",
+      "duration": 343,
+      "genre": "",
+      "title": "The Aether",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 515372042,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/515372042"
+    }
+  ]
+}

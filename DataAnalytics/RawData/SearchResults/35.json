@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "Flaremode - Another Level (feat. Hard Lights) is out now!\n\nGet it here: https://doornrecords.release.link/another-level-feat-hard-lights!SC",
+    "duration": 195,
+    "genre": "Dance en EDM",
+    "title": "Another Level",
+    "username": "DOORN Records",
+    "artist": "Flaremode",
+    "remixArtist": null,
+    "labelname": "Doorn / SpinninRecords.com",
+    "id": 703645755,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/doornrecords/flaremode-another-level-feat-hard-lights-out-now"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 303,
+      "genre": "",
+      "title": "L'Artista",
+      "username": "40's Mood feat. Meganoidi",
+      "artist": "40's Mood feat. Meganoidi",
+      "remixArtist": "Flaremode",
+      "labelname": "",
+      "id": 67559655,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/67559655"
+    }
+  ]
+}

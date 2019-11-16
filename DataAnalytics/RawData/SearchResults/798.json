@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "Beatport: http://bit.ly/LCVBotnekRmxBeatport\r\niTunes: http://bit.ly/LCVBotnekRmxiTunes",
+    "duration": 96,
+    "genre": "scrEDMo",
+    "title": "Raise The Dead",
+    "username": "botnek",
+    "artist": "Le Castle Vania",
+    "remixArtist": "Botnek",
+    "labelname": "",
+    "id": 182383245,
+    "isRemix": true,
+    "search_stage": 2,
+    "url": "https://soundcloud.com/botnek/le-castle-vania-raise-the-dead-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 253,
+      "genre": "",
+      "title": "Deeper Love",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 117402876,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/117402876"
+    }
+  ]
+}

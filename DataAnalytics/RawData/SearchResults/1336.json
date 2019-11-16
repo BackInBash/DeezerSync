@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "Get the track here: http://www.beatport.com/track/lamour-original-mix/3289661",
+    "duration": 289,
+    "genre": "Electro",
+    "title": "L'Amour",
+    "username": "Bingo Players",
+    "artist": "Bingo Players",
+    "remixArtist": null,
+    "labelname": "Hysteria Records",
+    "id": 46710332,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/bingoplayers/bingo-players-lamour"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 409,
+      "genre": "",
+      "title": "It's the Music",
+      "username": "Josh The Funky 1",
+      "artist": "Josh The Funky 1",
+      "remixArtist": "Bingo Players",
+      "labelname": "",
+      "id": 19561211,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/19561211"
+    }
+  ]
+}

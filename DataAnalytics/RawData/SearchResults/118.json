@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "",
+    "duration": 203,
+    "genre": "Electronic",
+    "title": "Places We Don't Know",
+    "username": "ford.",
+    "artist": "Kasbo",
+    "remixArtist": "ford.",
+    "labelname": "Foreign Family Collective / Counter Records",
+    "id": 686517678,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/ford/kasbo-places-we-dont-know-ford-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 229,
+      "genre": "",
+      "title": "Again",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 105697532,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/105697532"
+    }
+  ]
+}

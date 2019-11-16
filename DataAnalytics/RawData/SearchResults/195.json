@@ -1,0 +1,88 @@
+{
+  "Searching": {
+    "description": "Summer vibes\nSpotify: https://open.spotify.com/track/3eByREgGt0zoV9mswoinac",
+    "duration": 197,
+    "genre": "Drum & Bass",
+    "title": "Fly",
+    "username": "Melano",
+    "artist": "Melano",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 429181013,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/melanomusic/melano-fly-4"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 252,
+      "genre": "",
+      "title": "Don't Fight It",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852025,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852025"
+    },
+    {
+      "description": "",
+      "duration": 209,
+      "genre": "",
+      "title": "Traveller",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852055,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852055"
+    },
+    {
+      "description": "",
+      "duration": 230,
+      "genre": "",
+      "title": "On Fire",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904709,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904709"
+    },
+    {
+      "description": "",
+      "duration": 289,
+      "genre": "",
+      "title": "El Bodeguero",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 563353482,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/563353482"
+    },
+    {
+      "description": "",
+      "duration": 183,
+      "genre": "",
+      "title": "Un Mundo Lleno de Amor",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 431719942,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/431719942"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "Another surprise giveaway! This time from KSHMR together with Dzeko & Torres presenting the amazing 'Imaginate'!\r\n\r\nFollow KSHMR\r\nhttps://www.facebook.com/KSHMRmusic\r\nhttps://twitter.com/kshmrmusic\r\nhttps://instagram.com/kshmr\r\nhttps://soundcloud.com/kshmr\r\nhttps://www.youtube.com/KSHMRmusic\r\n\r\nFollow Dzeko & Torres\r\nwww.dzekoandtorres.com\r\nwww.facebook.com/dzekoandtorres\r\nwww.twitter.com/dzekoandtorres\r\nwww.instagram.com/dzekoandtorres\r\nwww.soundcloud.com/dzekoandtorres\r\nwww.youtube.com/dzekoandtorres",
+    "duration": 192,
+    "genre": "Dance",
+    "title": "Imaginate",
+    "username": "Spinnin' Records",
+    "artist": "KSHMR, Dzeko",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 46710332,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/spinninrecords/kshmr-dzeko-torres-imaginate-original-mix-free-download"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 313,
+      "genre": "",
+      "title": "Imaginate",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 450535402,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/450535402"
+    },
+    {
+      "description": "",
+      "duration": 242,
+      "genre": "",
+      "title": "Imaginate",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": "feat. Dzeko  Torres Matías Rodrgz",
+      "labelname": "",
+      "id": 358329021,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/358329021"
+    }
+  ]
+}

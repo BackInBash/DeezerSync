@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "LTC X Whethan European Tour: \nlouisthechild.com/pages/european-tour\n\nDownload:\nbit.ly/ltcwhethanhoney",
+    "duration": 185,
+    "genre": "",
+    "title": "Chop It Up",
+    "username": "Whethan",
+    "artist": "Louis The Child  Whethan",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 429181013,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/whethan/chopitup"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 200,
+      "genre": "",
+      "title": "Hurts",
+      "username": "Wafia",
+      "artist": "Wafia",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 744231802,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/744231802"
+    },
+    {
+      "description": "",
+      "duration": 197,
+      "genre": "",
+      "title": "Hurts",
+      "username": "Wafia",
+      "artist": "Wafia",
+      "remixArtist": "feat. Louis The Child  Whethan MELVV",
+      "labelname": "",
+      "id": 755729122,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/755729122"
+    }
+  ]
+}

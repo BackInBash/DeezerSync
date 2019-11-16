@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "Billie Eilish - Bad Guy [Krunk! Remix] \n\nKRUNK!\nInstagram: https://www.instagram.com/djkrunk/\nFacebook: https://www.facebook.com/djkrunkofficial/\nTwitter: https://www.twitter.com/dj_krunk\nSoundCloud: https://soundcloud.com/krunk\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag",
+    "duration": 197,
+    "genre": "Dance & EDM",
+    "title": "Bad Guy",
+    "username": "Dharma Worldwide",
+    "artist": "Billie Eilish",
+    "remixArtist": "Krunk!",
+    "labelname": "",
+    "id": 703645755,
+    "isRemix": true,
+    "search_stage": 2,
+    "url": "https://soundcloud.com/dharmaworldwide/billie-eilish-bad-guy-krunk-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 282,
+      "genre": "",
+      "title": "Hip Hop Artist",
+      "username": "Samroc",
+      "artist": "Samroc",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 551389452,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/551389452"
+    }
+  ]
+}

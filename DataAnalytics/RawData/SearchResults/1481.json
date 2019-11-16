@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "First track release!&#13;\nBuy it at <a href=\"http://itunes.apple.com/ca/album/monstercat-001-launch-week/id450533017\" rel=\"nofollow\" target=\"_blank\">http://music.monstercat.com/album/monstercat-001-launch-week</a>&#13;\n",
+    "duration": 362,
+    "genre": "Dubstep",
+    "title": "Hello",
+    "username": "Going Quantum",
+    "artist": "Going Quantum",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 46707185,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/goingquantum/going-quantum-hello"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 247,
+      "genre": "",
+      "title": "Rare",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137936919,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137936919"
+    },
+    {
+      "description": "",
+      "duration": 247,
+      "genre": "",
+      "title": "Rare",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904717,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904717"
+    }
+  ]
+}

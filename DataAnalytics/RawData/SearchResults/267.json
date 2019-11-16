@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://Monstercat.lnk.to/Disarray\n\nSubscribe to our new Monstercat: Instinct channel: http://monster.cat/subscribe-instinct\n\n▼ Follow Monstercat\nSpotify: http://monster.cat/2biZbkd\nApple Music: http://apple.co/2xiKWTO\nFacebook: http://facebook.com/Monstercat\nTwitter: http://twitter.com/Monstercat\nInstagram: http://instagram.com/monstercat\nSnapchat: https://www.snapchat.com/add/monstercat\nSoundCloud: http://soundcloud.com/Monstercat\n\n💥 Follow Bad Computer\nFacebook: https://www.facebook.com/BadComputer/\nTwitter: https://twitter.com/badcmptr\nSoundcloud: https://soundcloud.com/badcomputer\nInstagram: https://www.instagram.com/badcmptr/\n\nGenre: House\n\n▼ Want some new Merchandise?\nhttp://monster.cat/MonstercatShop",
+    "duration": 247,
+    "genre": "House",
+    "title": "Disarray",
+    "username": "Monstercat",
+    "artist": "Bad Computer",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 429180704,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/bad-computer-disarray"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 264,
+      "genre": "",
+      "title": "Silhouette",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 496746082,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/496746082"
+    },
+    {
+      "description": "",
+      "duration": 307,
+      "genre": "",
+      "title": "New Dawn",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 422794302,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/422794302"
+    },
+    {
+      "description": "",
+      "duration": 308,
+      "genre": "",
+      "title": "New Dawn",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 440766502,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/440766502"
+    }
+  ]
+}

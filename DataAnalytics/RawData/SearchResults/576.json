@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "Our new remix for Seven Lions & Echos on Monstercat",
+    "duration": 227,
+    "genre": "Dubstep",
+    "title": "Cold Skin",
+    "username": "KOVEN.",
+    "artist": "Seven Lions",
+    "remixArtist": "Koven",
+    "labelname": "Monstercat",
+    "id": 289435519,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/kovenuk/seven-lions-echos-cold-skin-koven-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 272,
+      "genre": "",
+      "title": "Cold Hearted",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 422794102,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/422794102"
+    },
+    {
+      "description": "",
+      "duration": 211,
+      "genre": "",
+      "title": "Cold Skin",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904677,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904677"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "Please <3 the track on Hypem: http://hypem.com/track/21d2d/Avicii+-+You+Make+Me+(Throttle+Remix)\r\n\r\nMy official remix for Avicii - \"You Make Me\" is out today!\r\n\r\nOut now on beatport! http://www.beatport.com/track/you-make-me-throttle-remix/4995296\r\n\r\nFacebook: https://facebook.com/throttleofficial\r\nYoutube: http://youtube.com/officialthrottle\r\nTwitter: https://twitter.com/throttlemusic",
+    "duration": 285,
+    "genre": "DIRTYDISCO",
+    "title": "You Make Me",
+    "username": "Throttle",
+    "artist": "Avicii",
+    "remixArtist": "Throttle",
+    "labelname": "",
+    "id": 46710332,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/throttle/avicii-you-make-me-throttle-remix-official"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 300,
+      "genre": "",
+      "title": "Simple Avicii",
+      "username": "Biskvit",
+      "artist": "Biskvit",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 132002784,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/132002784"
+    },
+    {
+      "description": "",
+      "duration": 300,
+      "genre": "",
+      "title": "Simple Avicii",
+      "username": "Biskvit",
+      "artist": "Biskvit",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 128384633,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/128384633"
+    }
+  ]
+}

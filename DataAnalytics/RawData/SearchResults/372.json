@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "I'm pleased to present my remix of \"Ocean\" by Seven Lions and Jason Ross!\n\nGet tickets to The Journey 2 tour:  http://www.sevenlions.com/thejourney2tour/\n\nSEVEN LIONS:\nFacebook: http://facebook.com/SevenLions\nTwitter: http://twitter.com/SevenLionsMusic \nInstagram: http://instagram.com/SevenLionsMusic \nYouTube: http://youtube.com/sevenlionsofficial \n\nJASON ROSS: \nFacebook: https://www.facebook.com/JasonRossOfficial/\nInstagram: https://www.instagram.com/jasonrossofficial/\nTwitter: https://twitter.com/JasonRossOfc\nSoundcloud: https://soundcloud.com/jasonrossofficial\n\nJONATHAN MENDELSOHN\nFacebook: https://www.facebook.com/JonathanMendelsohnMusic/\nInstagram: https://www.instagram.com/jonathanmendelsohn/\nTwitter: https://twitter.com/JonMendelsohn",
+    "duration": 288,
+    "genre": "Dance & EDM",
+    "title": "Ocean",
+    "username": "Au5",
+    "artist": "Seven Lions",
+    "remixArtist": "Au5",
+    "labelname": "Ophelia",
+    "id": 429178700,
+    "isRemix": true,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/au5/seven-lions-jason-ross-feat-jonathan-mendelsohn-ocean-au5-remix"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 272,
+      "genre": "",
+      "title": "Cold Hearted",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 422794102,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/422794102"
+    },
+    {
+      "description": "",
+      "duration": 211,
+      "genre": "",
+      "title": "Cold Skin",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904677,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904677"
+    }
+  ]
+}

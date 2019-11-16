@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "Spotify: http://smarturl.it/slowly_s\niTunes: http://smarturl.it/Slowly_I\nGoogle Play: http://smarturl.it/Slowly_GP\nAmazon: http://smarturl.it/Slowly_A\n\nTake me there slowly, and hold me like you've known me (or is it Obi-Wan Kenobi?).. foreveaaa",
+    "duration": 198,
+    "genre": "EDM",
+    "title": "Slowly",
+    "username": "Proximity",
+    "artist": "Dropout",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 85497378,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/proximity/id-slowly"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 248,
+      "genre": "",
+      "title": "Beauty School Dropout in the Style of Frankie Avalon",
+      "username": "Sunfly Karaoke",
+      "artist": "Sunfly Karaoke",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 13362741,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/13362741"
+    },
+    {
+      "description": "",
+      "duration": 304,
+      "genre": "",
+      "title": "Dropout",
+      "username": "Anthony Maserati",
+      "artist": "Anthony Maserati",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 101169484,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/101169484"
+    },
+    {
+      "description": "",
+      "duration": 221,
+      "genre": "",
+      "title": "Obsidian",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 707471032,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/707471032"
+    }
+  ]
+}

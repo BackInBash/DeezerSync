@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://monster.cat/us\n\n▼ Follow Monstercat\nSpotify: https://monster.cat/2biZbkd\nApple: https://apple.co/2xiKWTO\nFacebook: https://facebook.com/monstercat\nTwitter: https://twitter.com/monstercat\nInstagram: https://instagram.com/monstercat\n\n▼ Follow Snavs\nFacebook: https://facebook.com/Snavsmusic\nTwitter: https://twitter.com/snavsdk\nSoundCloud: https://soundcloud.com/snavs\nYouTube: https://youtube.com/user/SnavsDubstep\n\nGenre: #Dubstep\n\n▼ Want some new Merchandise?\nhttps://monster.cat/MonstercatShop\n\n▼ Download with Gold!\nhttps://monster.cat/goldyt\n\n▼ Submit to Monstercat!\nhttp://monster.cat/demo-submissions",
+    "duration": 184,
+    "genre": "Dubstep",
+    "title": "Us",
+    "username": "Monstercat",
+    "artist": "Snavs",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 686526195,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/snavs-us"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 186,
+      "genre": "",
+      "title": "Time",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137936899,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137936899"
+    },
+    {
+      "description": "",
+      "duration": 186,
+      "genre": "",
+      "title": "Time",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 117402854,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/117402854"
+    },
+    {
+      "description": "",
+      "duration": 200,
+      "genre": "",
+      "title": "The Problem",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 768351632,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/768351632"
+    }
+  ]
+}

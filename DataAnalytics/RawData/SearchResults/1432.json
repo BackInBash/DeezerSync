@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "'Swanky Tunes & Sunstars - The Blitz' is now available on Beatport! Get it here: http://bit.ly/TheBlitz-BP\n\nFollow Wall Recordings\nYouTube: http://bit.ly/WallRecordingsTV\nFacebook: https://www.facebook.com/WallRecordings\nTwitter: https://twitter.com/wallrecordings\n\nFollow Swanky Tunes\nhttps://www.facebook.com/swankytunes\nhttps://twitter.com/swankytunes\n\nFollow Sunstars\nhttps://www.facebook.com/sunstarsofficial\nhttps://twitter.com/sunstarsitaly",
+    "duration": 188,
+    "genre": "Wall Recordings",
+    "title": "The Blitz",
+    "username": "Wall Recordings",
+    "artist": "Swanky Tunes",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 46710332,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/wall-recordings/swankytunes-sunstars-theblitz"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 331,
+      "genre": "",
+      "title": "Waves",
+      "username": "Swanky Tunes",
+      "artist": "Swanky Tunes",
+      "remixArtist": "Dan Lemur",
+      "labelname": "",
+      "id": 65285050,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/65285050"
+    }
+  ]
+}

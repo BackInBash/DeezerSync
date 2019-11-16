@@ -1,0 +1,32 @@
+{
+  "Searching": {
+    "description": "",
+    "duration": 174,
+    "genre": "",
+    "title": "Jigsaw",
+    "username": "The Him",
+    "artist": "Jay Hardway  The Him",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 429180704,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/thehim/jayhardway-thehim-jigsaw"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 174,
+      "genre": "",
+      "title": "Jigsaw",
+      "username": "Jay Hardway",
+      "artist": "Jay Hardway",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 477890512,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/477890512"
+    }
+  ]
+}
