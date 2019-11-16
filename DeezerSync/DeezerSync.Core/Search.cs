@@ -8,9 +8,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DeezerSync.Log;
+using System.IO;
+using System.Reflection;
+using Newtonsoft.Json;
 
 namespace DeezerSync.Core
 {
+    partial class DebugResult
+    {
+        public StandardTitle Searching;
+        public List<StandardTitle> Results;
+    }
     public class Search
     {
         private List<StandardPlaylist> MusicProvider;
@@ -170,6 +178,10 @@ namespace DeezerSync.Core
         /// <returns></returns>
         protected async Task<long> search(List<StandardTitle> results, StandardTitle Searching)
         {
+#if DEBUG
+            Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\results\\");
+            await File.WriteAllTextAsync(Directory.GetCurrentDirectory() + "\\results\\" + Searching.title+".json", JsonConvert.SerializeObject(new DebugResult { Searching = Searching, Results = results }, Formatting.Indented));
+#endif
             foreach (var result in results)
             {
                 //Artist
@@ -291,7 +303,7 @@ namespace DeezerSync.Core
                     Prepare p = new Prepare();
                     foreach (var i in res.Data)
                     {
-                        tracks.Add(await p.PrepareDeezerQuery(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name, artist = i.Artist.Name }));
+                        tracks.Add(await p.PrepareDeezerQuery(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name, artist = i.Artist.Name, url = i.Link.AbsoluteUri }));
                     }
                     return tracks;
                 }

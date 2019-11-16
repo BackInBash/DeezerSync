@@ -44,7 +44,7 @@ namespace DeezerSync.MusicProvider
                         List<StandardTitle> track = new List<StandardTitle>();
                         foreach(var trck in playlist.Tracks.Items)
                         {
-                            track.Add(new StandardTitle { username = trck.Track.Artists[0].Name, description = trck.Track.Album.Name, duration = trck.Track.DurationMs, genre = trck.Track.Type, title = trck.Track.Name});
+                            track.Add(new StandardTitle { username = trck.Track.Artists[0].Name, description = trck.Track.Album.Name, duration = trck.Track.DurationMs, genre = trck.Track.Type, title = trck.Track.Name, url = trck.Track.Uri});
                         }
                         stp.tracks = track;
                         Playlists.Add(stp);

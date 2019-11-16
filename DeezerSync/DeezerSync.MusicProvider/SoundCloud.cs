@@ -77,7 +77,7 @@ namespace DeezerSync.MusicProvider
                     try
                     {
                         var userinfo = a.User;
-                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration / 1000, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title, id = (long)i.Id });
+                        track.Add(new StandardTitle { username = userinfo.Username, description = a.Description, duration = a.Duration / 1000, genre = a.Genre, labelname = a.LabelName ?? string.Empty, title = a.Title, id = (long)i.Id, url = a.PermalinkUrl.AbsoluteUri });
 
                     }
                     catch (Exception e)

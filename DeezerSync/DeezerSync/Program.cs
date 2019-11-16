@@ -36,7 +36,6 @@ namespace DeezerSync
             {
                 musicprovider_playlist = new MusicProvider.main(config.soundcloud_profile, config.spotify_profile, config.spotify_secret, config.soundcloud_clientid);
             }
-            File.WriteAllText("spotify.json", JsonConvert.SerializeObject(musicprovider_playlist.Data, Formatting.Indented));
             // Start Search
             DeezerSync.Core.Search core = new DeezerSync.Core.Search(musicprovider_playlist.Data, await api.GetAllPlaylistsasync());
             await core.Start();

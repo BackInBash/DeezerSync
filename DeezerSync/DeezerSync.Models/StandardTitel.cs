@@ -50,6 +50,10 @@ namespace DeezerSync.Models
         /// Marks filter stage in queue
         /// </summary>
         public int search_stage { get; set; }
+        /// <summary>
+        /// Song Url
+        /// </summary>
+        public string url { get; set; }
 
     }
 }
