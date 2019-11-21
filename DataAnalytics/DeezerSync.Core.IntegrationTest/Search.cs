@@ -18,33 +18,30 @@ namespace DeezerSync.Core.IntegrationTest
     {
         public const int items = 1593;
         public int found = 0;
-
-        public void OutputAssert(Action func)
-        {
-            try
-            {
-                func();
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-        }
+        public int error = 0;
 
         [Fact]
         public async Task SearchResults()
         {
             for (int i = 1; i <= items; i++)
             {
-                var song = JsonConvert.DeserializeObject<DebugResult>(File.ReadAllText(@"../../../../../DataAnalytics/RawData/SearchResults/" + i + ".json"));
-                DeezerSync.Core.Search s = new Core.Search(new List<StandardPlaylist>(), new List<StandardPlaylist>());
-                long id = await s.search(song.Results, song.Searching);
-                if (id != 0)
+                try
                 {
-                    found++;
+                    var song = JsonConvert.DeserializeObject<DebugResult>(File.ReadAllText(@"../../../../../DataAnalytics/RawData/SearchResults/" + i + ".json"));
+                    DeezerSync.Core.Search s = new Core.Search(new List<StandardPlaylist>(), new List<StandardPlaylist>());
+                    long id = await s.search(song.Results, song.Searching);
+                    if (id != 0)
+                    {
+                        found++;
+                    }
+                }
+                catch (Exception e)
+                {
+                    error++;
                 }
             }
-            OutputAssert(() => Assert.True(true, "Found "+found+" Songs."));
+            await File.WriteAllTextAsync("SearchResult.txt", "Found " + found + " Songs. Error on " + error + " Songs.");
+           Assert.True(error > 10);
         }
     }
 }
