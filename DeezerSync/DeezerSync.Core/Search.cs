@@ -176,7 +176,7 @@ namespace DeezerSync.Core
         /// <param name="results">Deezer Query Results</param>
         /// <param name="Searching">The Track to search for</param>
         /// <returns></returns>
-        protected async Task<long> search(List<StandardTitle> results, StandardTitle Searching)
+        public async Task<long> search(List<StandardTitle> results, StandardTitle Searching)
         {
 #if DEBUG
             int i = 0;
