@@ -179,10 +179,12 @@ namespace DeezerSync.Core
         public async Task<long> search(List<StandardTitle> results, StandardTitle Searching)
         {
 #if DEBUG
+            /*
             int i = 0;
             do { i++; } while (File.Exists(Directory.GetCurrentDirectory() + "\\results\\" + i + ".json"));
             Directory.CreateDirectory(Directory.GetCurrentDirectory() + "\\results\\");
             await File.WriteAllTextAsync(Directory.GetCurrentDirectory() + "\\results\\" + i+".json", JsonConvert.SerializeObject(new DebugResult { Searching = Searching, Results = results }, Formatting.Indented));
+            */
 #endif
             foreach (var result in results)
             {
