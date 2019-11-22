@@ -11,15 +11,15 @@ for($i=1; $i -le $count; $i++){
     foreach($res in $data.Results){
 
         # Stage 1
-        if(($res.title -eq $data.Searching.title) -and (($res.artist -eq $data.Searching.artist) -or ($res.remixArtist -eq $data.Searching.remixArtist))){
-            Write-Host "FOUND  Track 1 "$res.title " Track 2: " $data.Searching.title "Artist 1" $res.artist" Artist 2:" $data.Searching.artist " One out of " $data.Results.Count
+        if(($res.title -eq $data.Searching.title) -and (($res.artist -eq $data.Searching.artist) -or ($res.remixArtist -eq $data.Searching.remixArtist)) -and (($res.duration-1 -eq $data.Searching.duration) -or ($res.duration+1 -eq $data.Searching.duration))){
+            Write-Host "FOUND EQ URL 1 "$res.url " URL 2: " $data.Searching.url
             $foundEquals++
             break
         }
         else
         {
-            if(($res.title -like $data.Searching.title) -and ($res.artist -like $data.Searching.artist)){
-                Write-Host "Contains " $res.title " " $data.Searching.title " One out of " $data.Results.Count
+            if(($res.title -like $data.Searching.title) -or (($res.artist -like $data.Searching.artist) -or ($res.remixArtist -like $data.Searching.remixArtist)) -and (($res.duration-1 -eq $data.Searching.duration) -or ($res.duration+1 -eq $data.Searching.duration))){
+                Write-Host "FOUND LIKE URL 1 "$res.url " URL 2: " $data.Searching.url
                 $foundLike++
                 break
             }
