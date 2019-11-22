@@ -45,8 +45,8 @@ namespace DeezerSync.Core.IntegrationTest
                     error++;
                 }
             }
-            await File.WriteAllTextAsync("SearchResult.txt", "Found " + found + " Songs. Error on " + error + " Songs.");
-            Assert.True((error > 10));
+            await File.AppendAllTextAsync(@"../../../../../DataAnalytics/SearchResult.csv", DateTime.Now.ToString() + ", " + items + ", " + found + ", " + error + "\n");
+            Assert.True((error < 10));
         }
     }
 }
