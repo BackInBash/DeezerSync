@@ -23,13 +23,18 @@ namespace DeezerSync.Core
     {
         private List<StandardPlaylist> MusicProvider;
         private List<StandardPlaylist> Deezer;
+
+        public NLogger log;
+
+        public Search(NLogger log)
+        {
+            this.log = log;
+        }
         public Search(List<StandardPlaylist> MusicProvider, List<StandardPlaylist> Deezer)
         {
             this.MusicProvider = MusicProvider;
             this.Deezer = Deezer;
         }
-
-        public NLogger log;
 
         /// <summary>
         /// Start the Search routine

@@ -1,5 +1,9 @@
-﻿using DeezerSync.Models;
+﻿using DeezerSync.Log;
+using DeezerSync.Models;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using Newtonsoft.Json;
+using NLog;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,12 +27,13 @@ namespace DeezerSync.Core.IntegrationTest
         [Fact]
         public async Task SearchResults()
         {
+            ILogger<Log.NLogger> logger = new Logger<Log.NLogger>(new NullLoggerFactory());
             for (int i = 1; i <= items; i++)
             {
                 try
                 {
                     var song = JsonConvert.DeserializeObject<DebugResult>(File.ReadAllText(@"../../../../../DataAnalytics/RawData/SearchResults/" + i + ".json"));
-                    DeezerSync.Core.Search s = new Core.Search(new List<StandardPlaylist>(), new List<StandardPlaylist>());
+                    DeezerSync.Core.Search s = new Core.Search(new DeezerSync.Log.NLogger(logger));
                     long id = await s.search(song.Results, song.Searching);
                     if (id != 0)
                     {
@@ -41,7 +46,7 @@ namespace DeezerSync.Core.IntegrationTest
                 }
             }
             await File.WriteAllTextAsync("SearchResult.txt", "Found " + found + " Songs. Error on " + error + " Songs.");
-           Assert.True(error > 10);
+            Assert.True((error > 10));
         }
     }
 }
