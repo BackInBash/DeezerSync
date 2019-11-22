@@ -15,10 +15,10 @@ jobs:
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 3.1.100-preview1-014459
+        dotnet-version: 3.1.100-preview3-014645
         
     - name: Build with dotnet
       run: dotnet build --configuration Release DeezerSync/DeezerSync.sln
     
     - name: Integration Tests
-      run: dotnet test --configuration Debug DataAnalytics\DeezerSync.Core.IntegrationTest
+      run: dotnet test --configuration Debug DataAnalytics/DeezerSync.Core.IntegrationTest
