@@ -19,3 +19,6 @@ jobs:
         
     - name: Build with dotnet
       run: dotnet build --configuration Release DeezerSync/DeezerSync.sln
+    
+    - name: Integration Tests
+      run: dotnet test --configuration Debug DataAnalytics\DeezerSync.Core.IntegrationTest
