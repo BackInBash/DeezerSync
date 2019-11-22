@@ -66,6 +66,12 @@ Every stage is a indipendent search query you have to get an empty result in ord
 ### The Result Search
 !["ResultSearch"](SearchFlow.png)
 
+#### Stage 1
+!["Stage1"](ResultSearch_1.png)
+
+#### Stage 2
+!["Stage2"](ResultSearch_2.png)
+
 ## DeezerSync
 __Is the entrypoint CLI Application__
 
