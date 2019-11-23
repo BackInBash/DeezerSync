@@ -33,7 +33,7 @@ The `config.json` requires the following entries:
 ```
 
 ## Application Architecture
-!["arch"](overview.png)
+!["arch"](img/overview.png)
 
 ## The Search System
 
@@ -63,14 +63,17 @@ Every stage is a indipendent search query you have to get an empty result in ord
 
 1. Search only with song name (without the artist name) and duration
 
+__Stage 1__            |  __Stage 2__
+:-------------------------:|:-------------------------:
+!["Stage1"](img/PrepareSearch_1.png)  |  !["Stage2"](img/PrepareSearch_2.png)
+
+
 ### The Result Search
-!["ResultSearch"](SearchFlow.png)
+!["ResultSearch"](img/SearchFlow.png)
 
-#### Stage 1
-!["Stage1"](ResultSearch_1.png)
-
-#### Stage 2
-!["Stage2"](ResultSearch_2.png)
+__Stage 1__            |  __Stage 2__
+:-------------------------:|:-------------------------:
+!["Stage1"](img/ResultSearch_1.png)  |  !["Stage2"](img/ResultSearch_2.png)
 
 ## DeezerSync
 __Is the entrypoint CLI Application__
