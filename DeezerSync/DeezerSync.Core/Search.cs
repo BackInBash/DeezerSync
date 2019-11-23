@@ -17,6 +17,7 @@ namespace DeezerSync.Core
     partial class DebugResult
     {
         public StandardTitle Searching;
+        public StandardTitle Reported;
         public List<StandardTitle> Results;
     }
     public class Search
@@ -175,9 +176,9 @@ namespace DeezerSync.Core
             return await api.AddSongsToPlaylistasync(id, ids);
         }
 
-        private async Task SavePreparedData(List<StandardTitle> titles, StandardTitle searched)
+        private async Task SavePreparedData(List<StandardTitle> titles, StandardTitle searched, StandardTitle reported)
         {
-            await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id+titles[0].id + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles }, Formatting.Indented));
+            await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
         }
 
         /// <summary>
@@ -203,196 +204,210 @@ namespace DeezerSync.Core
                  * Results 369 out of 1593
                  * False Positives UNKNOWN 
                  */
-                if (await checkDuration(Searching.duration, result.duration, 1))
+                /*
+               if (await checkDuration(Searching.duration, result.duration, 1))
+               {
+                   if (!string.IsNullOrEmpty(result.remixArtist))
+                   {
+                       if ((result.artist.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || result.remixArtist.Contains(Searching.remixArtist ?? (Searching.artist ?? Searching.title)) || (result.title.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || (result.title.Contains(Searching.remixArtist ?? (Searching.artist ?? Searching.username))))) && (result.title.Contains(Searching.title)))
+                       {
+                           await SavePreparedData(results, Searching, result);
+                           return result.id;
+                       }
+                   }
+                   else
+                   {
+                       if ((result.artist.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || (result.title.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || (result.title.Contains(Searching.remixArtist ?? (Searching.artist ?? Searching.username))))) && (result.title.Contains(Searching.title)))
+                       {
+                           await SavePreparedData(results, Searching, result);
+                           return result.id;
+                       }
+                   }
+                   if ( result.artist.Contains(Searching.artist ?? Searching.remixArtist ?? Searching.username) || result.title.Contains(Searching.title) && await checkDuration(Searching.duration, result.duration, 0))
+                   {
+                       await SavePreparedData(results, Searching, result);
+                       return result.id;
+                   }
+               }
+               */
+
+
+                /*
+                 * DeezerSync Result Search Filter
+                 * Results 777 songs out of 1593
+                 * False positives TRUE
+                 */
+                //Artist
+                if (!string.IsNullOrEmpty(result.artist))
                 {
-                    if (!string.IsNullOrEmpty(result.remixArtist))
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration, 0))
                     {
-                        if ((result.artist.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || result.remixArtist.Contains(Searching.remixArtist ?? (Searching.artist ?? Searching.title)) || (result.title.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || (result.title.Contains(Searching.remixArtist ?? (Searching.artist ?? Searching.username))))) && (result.title.Contains(Searching.title)))
-                        {
-                            await SavePreparedData(results, Searching);
-                            return result.id;
-                        }
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
                     }
-                    else
+
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration, 1))
                     {
-                        if ((result.artist.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || (result.title.Contains(Searching.artist ?? (Searching.remixArtist ?? Searching.username)) || (result.title.Contains(Searching.remixArtist ?? (Searching.artist ?? Searching.username))))) && (result.title.Contains(Searching.title)))
-                        {
-                            await SavePreparedData(results, Searching);
-                            return result.id;
-                        }
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
                     }
-                    if ( result.artist.Contains(Searching.artist ?? Searching.remixArtist ?? Searching.username) || result.title.Contains(Searching.title) && await checkDuration(Searching.duration, result.duration, 0))
+
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration, 2))
                     {
-                        await SavePreparedData(results, Searching);
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Contains(Searching.title))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                         return result.id;
                     }
                 }
-
-
-
-            /*
-             * DeezerSync Result Search Filter
-             * Results 777 songs out of 1593
-             * False positives TRUE
-             * 
-            //Artist
-            if (!string.IsNullOrEmpty(result.artist))
-            {
-                if ((result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
+                //Remix Artist
+                if (!string.IsNullOrEmpty(Searching.remixArtist))
                 {
+                    if ((result.artist.Contains(Searching.remixArtist) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration, 0))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.remixArtist) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration, 1))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.remixArtist) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration, 2))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.remixArtist) && result.title.Contains(Searching.title))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.artist ?? Searching.username) && (result.title.Contains(Searching.remixArtist) && (result.title.Contains(Searching.title))))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+                }
+                //Username
+                if ((result.username.Contains(Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration, 0))
+                {
+                    await SavePreparedData(results, Searching, result);
                     log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
-                if ((result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration))
+                if ((result.username.Contains(Searching.username) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration, 1))
                 {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                    await SavePreparedData(results, Searching, result);
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
-                if ((result.artist.Contains(Searching.artist ?? Searching.username) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration))
+                if ((result.username.Contains(Searching.username) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration, 2))
                 {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                    await SavePreparedData(results, Searching, result);
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
-                if (result.artist.Contains(Searching.artist ?? Searching.username) && result.title.Contains(Searching.title))
+                if (result.username.Contains(Searching.username) && result.title.Contains(Searching.title))
                 {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                    await SavePreparedData(results, Searching, result);
+                    log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
+
+                log.Info("Could not find Track: " + result.title + " Artist: " + result.artist ?? result.username + "Original Track: " + Searching.title + " Artist: " + Searching.artist ?? Searching.username);
             }
-            //Remix Artist
-            if (!string.IsNullOrEmpty(Searching.remixArtist))
-            {
-                if ((result.artist.Contains(Searching.remixArtist) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
-                {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                    return result.id;
-                }
-
-                if ((result.artist.Contains(Searching.remixArtist) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration))
-                {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                    return result.id;
-                }
-
-                if ((result.artist.Contains(Searching.remixArtist) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration))
-                {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                    return result.id;
-                }
-
-                if (result.artist.Contains(Searching.remixArtist) && result.title.Contains(Searching.title))
-                {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                    return result.id;
-                }
-
-                if (result.artist.Contains(Searching.artist ?? Searching.username) && (result.title.Contains(Searching.remixArtist) && (result.title.Contains(Searching.title))))
-                {
-                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                    return result.id;
-                }
-            }
-            //Username
-            if ((result.username.Contains(Searching.username) && result.title.Equals(Searching.title)) || await checkDuration(Searching.duration, result.duration))
-            {
-                log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                return result.id;
-            }
-
-            if ((result.username.Contains(Searching.username) && result.title.Contains(Searching.title)) || await checkDuration(Searching.duration, result.duration))
-            {
-                log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                return result.id;
-            }
-
-            if ((result.username.Contains(Searching.username) || result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration))
-            {
-                log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                return result.id;
-            }
-
-            if (result.username.Contains(Searching.username) && result.title.Contains(Searching.title))
-            {
-                log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                return result.id;
-            }
-            */
-            log.Info("Could not find Track: " + result.title + " Artist: " + result.artist ?? result.username + "Original Track: " + Searching.title + " Artist: " + Searching.artist ?? Searching.username);
-        }
             return 0;
         }
 
-    /// <summary>
-    /// Execute the Deezer Search Query
-    /// </summary>
-    /// <param name="query">Prepared StandardTitel Object</param>
-    /// <returns></returns>
-    protected async Task<List<StandardTitle>> ExecuteQuery(StandardTitle query)
-    {
-        try
+        /// <summary>
+        /// Execute the Deezer Search Query
+        /// </summary>
+        /// <param name="query">Prepared StandardTitel Object</param>
+        /// <returns></returns>
+        protected async Task<List<StandardTitle>> ExecuteQuery(StandardTitle query)
         {
-            // Deezer Private API
-            /*
-            DeezerAPI.Private api = new DeezerAPI.Private();
-            if (query.isRemix)
+            try
             {
-                return await api.SearchQuery(query.username + " " + query.title + " " + query.labelname);
-            }
-            return await api.SearchQuery(query.username + " " + query.title);
-            */
-
-            // Deezer Public API
-            DeezerAPI.Official api = new DeezerAPI.Official(query);
-            ResultSearch.Search res = await api.Search();
-            log.Info("Found " + res.Data.Count + " Tracks");
-            if (res.Data.Count > 0)
-            {
-                List<StandardTitle> tracks = new List<StandardTitle>();
-                Prepare p = new Prepare();
-                foreach (var i in res.Data)
+                // Deezer Private API
+                /*
+                DeezerAPI.Private api = new DeezerAPI.Private();
+                if (query.isRemix)
                 {
-                    tracks.Add(await p.PrepareDeezerQuery(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name, artist = i.Artist.Name, url = i.Link.AbsoluteUri }));
+                    return await api.SearchQuery(query.username + " " + query.title + " " + query.labelname);
                 }
-                return tracks;
+                return await api.SearchQuery(query.username + " " + query.title);
+                */
+
+                // Deezer Public API
+                DeezerAPI.Official api = new DeezerAPI.Official(query);
+                ResultSearch.Search res = await api.Search();
+                log.Info("Found " + res.Data.Count + " Tracks");
+                if (res.Data.Count > 0)
+                {
+                    List<StandardTitle> tracks = new List<StandardTitle>();
+                    Prepare p = new Prepare();
+                    foreach (var i in res.Data)
+                    {
+                        tracks.Add(await p.PrepareDeezerQuery(new StandardTitle { description = string.Empty, duration = (int)i.Duration, genre = string.Empty, id = i.Id.Value, labelname = string.Empty, search_stage = 0, title = i.Title, username = i.Artist.Name, artist = i.Artist.Name, url = i.Link.AbsoluteUri }));
+                    }
+                    return tracks;
+                }
+                return new List<StandardTitle>();
             }
-            return new List<StandardTitle>();
+            catch (Exception e)
+            {
+                log.Warning("Search Query Exception: " + e.Message, e);
+                return new List<StandardTitle>();
+            }
         }
-        catch (Exception e)
-        {
-            log.Warning("Search Query Exception: " + e.Message, e);
-            return new List<StandardTitle>();
-        }
-    }
 
 
-    /// <summary>
-    /// Compare the song duration to guess if it is the right one
-    /// </summary>
-    /// <param name="actual">Actual Song Duraion (MusicProvider)</param>
-    /// <param name="found">Found Song Duraion (Deezer)</param>
-    /// <returns></returns>
-    public async Task<bool> checkDuration(long actual, long found, int i)
-    {
-        if (actual == (found - i))
+        /// <summary>
+        /// Compare the song duration to guess if it is the right one
+        /// </summary>
+        /// <param name="actual">Actual Song Duraion (MusicProvider)</param>
+        /// <param name="found">Found Song Duraion (Deezer)</param>
+        /// <returns></returns>
+        public async Task<bool> checkDuration(long actual, long found, int i)
         {
-            log.Debug("Same Duration TRUE");
-            return true;
+            if (actual == (found - i))
+            {
+                log.Debug("Same Duration TRUE");
+                return true;
+            }
+            if (actual == found)
+            {
+                log.Debug("Same Duration TRUE");
+                return true;
+            }
+            if (actual == (found + i))
+            {
+                log.Debug("Same Duration TRUE");
+                return true;
+            }
+            log.Debug("Duration check FALSE");
+            return false;
         }
-        if (actual == found)
-        {
-            log.Debug("Same Duration TRUE");
-            return true;
-        }
-        if (actual == (found + i))
-        {
-            log.Debug("Same Duration TRUE");
-            return true;
-        }
-        log.Debug("Duration check FALSE");
-        return false;
     }
-}
 }

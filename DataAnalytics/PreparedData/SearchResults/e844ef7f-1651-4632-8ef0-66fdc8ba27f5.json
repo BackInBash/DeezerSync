@@ -1,0 +1,88 @@
+{
+  "Searching": {
+    "description": "Support on all platforms 🎧:  https://Monstercat.lnk.to/Good2Go\n---\n▼ Follow Monstercat\nSnapchat: https://www.snapchat.com/add/monstercat\nYouTube: http://www.youtube.com/Monstercat\nSpotify: http://monster.cat/1hGrCWk\nFacebook: http://facebook.com/Monstercat\nTwitter: http://twitter.com/Monstercat\nInstagram: http://instagram.com/monstercat\nVine: https://vine.co/monstercat\nSoundCloud: http://soundcloud.com/Monstercat\nGoogle+: https://plus.google.com/+Monstercat\nMonstercat FM: http://live.monstercat.com\n\n▼ Follow Rootkit\nFacebook: https://www.facebook.com/Rootkitmusic\nTwitter: http://twitter.com/Rootkitmusic\nSoundcloud: https://soundcloud.com/rootkitmusic\nYoutube: http://www.youtube.com/officialrootkit\n\nGenre: House\n\n▼ Want some new Merchandise?\nhttp://monster.cat/MonstercatShop",
+    "duration": 222,
+    "genre": "House",
+    "title": "Good 2 Go",
+    "username": "Monstercat",
+    "artist": "Rootkit",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 429180704,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/rootkit-good-2-go"
+  },
+  "Reported": {
+    "description": "",
+    "duration": 222,
+    "genre": "",
+    "title": "Levitate",
+    "username": "Various Artists",
+    "artist": "Various Artists",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 358158571,
+    "isRemix": false,
+    "search_stage": 0,
+    "url": "https://www.deezer.com/track/358158571"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 205,
+      "genre": "",
+      "title": "Strung Out",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852015,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852015"
+    },
+    {
+      "description": "",
+      "duration": 222,
+      "genre": "",
+      "title": "Levitate",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 358158571,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/358158571"
+    },
+    {
+      "description": "",
+      "duration": 222,
+      "genre": "",
+      "title": "Good 2 Go",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 142502065,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/142502065"
+    },
+    {
+      "description": "",
+      "duration": 293,
+      "genre": "",
+      "title": "Concrete Jungle",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 105697544,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/105697544"
+    }
+  ]
+}
