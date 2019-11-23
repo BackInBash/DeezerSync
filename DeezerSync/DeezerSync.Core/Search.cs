@@ -299,7 +299,7 @@ namespace DeezerSync.Core
                         return result.id;
                     }
 
-                    if (result.artist.Contains(Searching.artist ?? Searching.username) && (result.title.Contains(Searching.remixArtist) && (result.title.Contains(Searching.title))))
+                    if ((result.title.Contains(Searching.remixArtist) && (result.title.Contains(Searching.title)) && await checkDuration(Searching.duration, result.duration, 1)))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
