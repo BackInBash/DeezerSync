@@ -40,7 +40,7 @@ namespace DeezerSync.Core.IntegrationTest
                         found++;
                     }
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     error++;
                 }

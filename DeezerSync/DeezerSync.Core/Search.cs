@@ -193,6 +193,11 @@ namespace DeezerSync.Core
 #endif
             foreach (var result in results)
             {
+                /*
+                 * DeezerSync Result Search Filter
+                 * Results 777 songs out of 1593
+                 * False positives TRUE
+                 * 
                 //Artist
                 if (!string.IsNullOrEmpty(result.artist))
                 {
@@ -277,7 +282,7 @@ namespace DeezerSync.Core
                     log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
-
+                */
                 log.Info("Could not find Track: " + result.title + " Artist: " + result.artist ?? result.username + "Original Track: " + Searching.title + " Artist: " + Searching.artist ?? Searching.username);
             }
             return 0;
