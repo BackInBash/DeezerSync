@@ -13,7 +13,7 @@ namespace DeezerSync.DeezerAPI
 {
     public class Official
     {
-        private const string Official_api = "https://api.deezer.com/search?q=";
+        private const string Official_api = "https://api.deezer.com/search/track?strict=on&q=";
         private StandardTitle title = null;
         private string Request_Query = string.Empty;
         public NLogger log;
@@ -35,7 +35,7 @@ namespace DeezerSync.DeezerAPI
             if (title.search_stage == 1)
             {
                 log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                Request_Query = Official_api + "artist:" + "\"" + title.artist ?? title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                Request_Query = Official_api + new Uri("artist:" + "\"" + title.artist.Trim() ?? title.username.Trim() + "\" " + "track:" + "\"" + title.title.Trim() + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString()).AbsolutePath;
             }
             else
             {
@@ -44,12 +44,12 @@ namespace DeezerSync.DeezerAPI
                     if (title.isRemix)
                     {
                         log.Debug("Send Request with Remix Artist: " + title.remixArtist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                        Request_Query = Official_api + "artist:" + "\"" + title.remixArtist ?? title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                        Request_Query = Official_api + new Uri("artist:" + "\"" + title.remixArtist.Trim() ?? title.username.Trim() + "\" " + "track:" + "\"" + title.title.Trim() + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString()).AbsolutePath;
                     }
                     else
                     {
                         log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                        Request_Query = Official_api + "artist:" + "\"" + title.artist ?? title.username + "\" " + "track:" + "\"" + title.title + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                        Request_Query = Official_api + new Uri("artist:" + "\"" + title.artist.Trim() ?? title.username.Trim() + "\" " + "track:" + "\"" + title.title.Trim() + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString()).AbsolutePath;
                     }
                 }
                 else
@@ -57,7 +57,7 @@ namespace DeezerSync.DeezerAPI
                     if (title.search_stage == 3)
                     {
                         log.Debug("Send Request with Track: " + title.artist ?? title.username + " " + title.title);
-                        Request_Query = Official_api + title.artist ?? title.username + " " + title.title;
+                        Request_Query = Official_api + new Uri(title.artist.Trim() ?? title.username.Trim() + " " + title.title.Trim());
                     }
                 }
             }
