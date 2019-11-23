@@ -1,0 +1,74 @@
+{
+  "Searching": {
+    "description": "I was listening to a lot of DnB so I decided I wanted to make some.",
+    "duration": 207,
+    "genre": "Dance & EDM",
+    "title": "Hot Water",
+    "username": "3LAU",
+    "artist": "Audien  3LAU",
+    "remixArtist": "3LAU DnB",
+    "labelname": "",
+    "id": 291739524,
+    "isRemix": true,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/3lau/hotwaterdnb"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 193,
+      "genre": "",
+      "title": "Hot Water",
+      "username": "Audien",
+      "artist": "Audien",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 371627291,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/371627291"
+    },
+    {
+      "description": "",
+      "duration": 207,
+      "genre": "",
+      "title": "Hot Water",
+      "username": "Audien",
+      "artist": "Audien",
+      "remixArtist": "3LAU DNB",
+      "labelname": "",
+      "id": 389063301,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/389063301"
+    },
+    {
+      "description": "",
+      "duration": 194,
+      "genre": "",
+      "title": "Hot Water",
+      "username": "Audien",
+      "artist": "Audien",
+      "remixArtist": "Two Friends",
+      "labelname": "",
+      "id": 396476952,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/396476952"
+    },
+    {
+      "description": "",
+      "duration": 203,
+      "genre": "",
+      "title": "Hot Water",
+      "username": "Audien",
+      "artist": "Audien",
+      "remixArtist": "YOOKiE",
+      "labelname": "",
+      "id": 396476942,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/396476942"
+    }
+  ]
+}

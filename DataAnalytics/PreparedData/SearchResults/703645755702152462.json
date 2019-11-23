@@ -1,0 +1,88 @@
+{
+  "Searching": {
+    "description": "KSHMR:\nInstagram: https://www.instagram.com/kshmr/\nFacebook: https://www.facebook.com/KSHMRmusic/\nTwitter: https://twitter.com/KSHMRmusic\nSoundCloud: https://soundcloud.com/kshmr\nSpotify: https://open.spotify.com/user/kshmrmusic?si=fVfUAZZzSt-66WekFg0Eqg\nYouTube: https://www.youtube.com/user/KSHMRmusic?sub_confirmation=1\n\nTIMMY TRUMPET\nInstagram:  https://www.instagram.com/timmytrumpet/\nFacebook:  https://www.facebook.com/timmytrumpet\nTwitter: https://twitter.com/timmytrumpet\nSoundCloud: https://soundcloud.com/timmytrumpet\nYouTube: https://www.youtube.com/channel/UCd61k-5ykv_4RIbQg-Mpvrg\nSpotify: https://open.spotify.com/artist/0CbeG1224FS58EUx4tPevZ\n\nDHARMA\nInstagram:  https://www.instagram.com/dharmaworldwide/\nFacebook: https://www.facebook.com/DharmaWorldwide/?ref=br_tf\nTwitter: https://twitter.com/DharmaWorldwide?l\nSoundCloud: https://soundcloud.com/dharmaworldwide\nYouTube: https://www.youtube.com/channel/UC32W3Kpoh6T6pG5PrWm0LTQ?sub_confirmation=1\nSpotify: https://open.spotify.com/user/xsl3oxakhjw3rw7uhcp1fhtrk?si=bBtE02SPR0CXBfBgIxMoag",
+    "duration": 158,
+    "genre": "Dance & EDM",
+    "title": "The People",
+    "username": "KSHMR",
+    "artist": "KSHMR  Timmy Trumpet",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 703645755,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/kshmr/kshmr-timmy-trumpet-the-people"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 158,
+      "genre": "",
+      "title": "The People",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 702152462,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/702152462"
+    },
+    {
+      "description": "",
+      "duration": 221,
+      "genre": "",
+      "title": "Toca",
+      "username": "Carnage",
+      "artist": "Carnage",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 103094680,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/103094680"
+    },
+    {
+      "description": "",
+      "duration": 223,
+      "genre": "",
+      "title": "Toca",
+      "username": "Carnage",
+      "artist": "Carnage",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 110961228,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/110961228"
+    },
+    {
+      "description": "",
+      "duration": 158,
+      "genre": "",
+      "title": "The People",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 701716852,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/701716852"
+    },
+    {
+      "description": "",
+      "duration": 195,
+      "genre": "",
+      "title": "The People",
+      "username": "KSHMR",
+      "artist": "KSHMR",
+      "remixArtist": "Dimatik",
+      "labelname": "",
+      "id": 802383562,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/802383562"
+    }
+  ]
+}

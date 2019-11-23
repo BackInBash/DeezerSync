@@ -1,0 +1,46 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://Monstercat.lnk.to/DecoyWorld\n\n▼ Follow Monstercat\nSpotify: http://monster.cat/2l5Exb6\nApple Music: http://applemusic.com/Monstercat\nFacebook: http://facebook.com/Monstercat\nTwitter: http://twitter.com/Monstercat\nInstagram: http://instagram.com/monstercat\nSnapchat: https://www.snapchat.com/add/monstercat\nSoundCloud: http://soundcloud.com/Monstercat\n\n💥 Follow INTERCOM\nFacebook: https://www.facebook.com/intercommusic\nTwitter: https://twitter.com/Intercom_Music\nSoundcloud: https://soundcloud.com/intercommusic\nInstagram: https://www.instagram.com/intercom_music\n\n💥 Follow Park Avenue\nFacebook: http://facebook.com/ParkeAvenueMusic\nSoundCloud: http://soundcloud.com/parkeavenuemusic\nTwitter: http://twitter.com/ImParkAvenue\n\nGenre: Electronic\n\n▼ Want some new Merchandise?\nhttp://monster.cat/MonstercatShop",
+    "duration": 231,
+    "genre": "Electronic",
+    "title": "Decoy World",
+    "username": "Monstercat",
+    "artist": "INTERCOM",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 291739524,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/intercom-decoy-world"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 272,
+      "genre": "",
+      "title": "Truth and Malice",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 473695632,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/473695632"
+    },
+    {
+      "description": "",
+      "duration": 231,
+      "genre": "",
+      "title": "Decoy World",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 422794252,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/422794252"
+    }
+  ]
+}

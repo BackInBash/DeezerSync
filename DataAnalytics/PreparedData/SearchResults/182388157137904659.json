@@ -1,0 +1,60 @@
+{
+  "Searching": {
+    "description": "Listen on Spotify: http://monster.cat/27k1t6P\n\n▼ Follow Monstercat\nSpotify: http://spoti.fi/1MhL3Vz\nYouTube: http://www.youtube.com/Monstercat\nFacebook: http://facebook.com/Monstercat\nTwitter: http://twitter.com/Monstercat\nInstagram: http://instagram.com/monstercat\nVine: https://vine.co/monstercat\nSoundCloud: http://soundcloud.com/Monstercat\nGoogle+: https://plus.google.com/+Monstercat\nMonstercat FM: http://live.monstercat.com\n\n▼ Follow Marshmello\nFacebook: https://www.facebook.com/marshmellomusic\nTwitter: https://twitter.com/marshmellomusic\nSoundCloud: https://soundcloud.com/marshmellomusic\nInstagram: https://www.instagram.com/marshmellomusic\n\n▼ Want some new Merchandise?\nhttp://monster.cat/MonstercatShop",
+    "duration": 273,
+    "genre": "Melodic Trap",
+    "title": "Alone",
+    "username": "Monstercat",
+    "artist": "Marshmello",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 182388157,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/marshmello-alone"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 273,
+      "genre": "",
+      "title": "Alone",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137904659,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137904659"
+    },
+    {
+      "description": "",
+      "duration": 273,
+      "genre": "",
+      "title": "Alone",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 125852005,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/125852005"
+    },
+    {
+      "description": "",
+      "duration": 273,
+      "genre": "",
+      "title": "Alone",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 137936901,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137936901"
+    }
+  ]
+}
