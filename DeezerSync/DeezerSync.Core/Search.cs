@@ -73,19 +73,30 @@ namespace DeezerSync.Core
                             log.Info("Start Searching for Track: " + track.title + " Artist: " + track.username + " Label: " + track.labelname);
                             var query = await prepare.PrepareDeezerQuery(track);
                             var result = new List<StandardTitle>();
+                            long id = 0;
 
-                            for (int i = 1; i < 4; i++)
+                            // First Search without Filter
+                            result.AddRange(await ExecuteQuery(track));
+                            id = await search(result, track);
+
+                            if (id == 0)
                             {
-                                log.Debug("Search Stage " + i);
-                                query.search_stage = i;
-                                result = await ExecuteQuery(query);
-                                if (result.Count != 0)
+
+                                for (int i = 1; i < 4; i++)
                                 {
-                                    break;
+                                    log.Debug("Search Stage " + i);
+                                    query.search_stage = i;
+                                    result = await ExecuteQuery(query);
+                                    if (result.Count != 0)
+                                    {
+                                        id = await search(result, track);
+                                        if (id != 0)
+                                        {
+                                            break;
+                                        }
+                                    }
                                 }
                             }
-
-                            long id = await search(result, track);
 
                             if (id != 0)
                             {
@@ -178,7 +189,7 @@ namespace DeezerSync.Core
 
         private async Task SavePreparedData(List<StandardTitle> titles, StandardTitle searched, StandardTitle reported)
         {
-            await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id+"-"+System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
+            //await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id + "-" + System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
         }
 
         /// <summary>

@@ -1,4 +1,5 @@
 ﻿using DeezerSync.Models;
+using SoundCloud.Api.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -26,8 +27,25 @@ namespace DeezerSync.MusicProvider
             {
                 sc = new SoundCloud(SoundCloudUsername);
             }
-            Data.AddRange(getData(sc).GetAwaiter().GetResult());
-
+            try
+            {
+                Data.AddRange(getData(sc).GetAwaiter().GetResult());
+            }
+            catch (SoundCloudApiException)
+            {
+                do
+                {
+                    try
+                    {
+                        Data.AddRange(getData(sc).GetAwaiter().GetResult());
+                        break;
+                    }
+                    catch (SoundCloudApiException)
+                    {
+                        Data.AddRange(getData(sc).GetAwaiter().GetResult());
+                    }
+                } while (true);
+            }
             // Spotify
 
             s = new Spotify(SpotifyAPIKey, SpotifyUserID);

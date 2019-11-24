@@ -8,6 +8,7 @@ using DeezerSync.Models.API;
 using DeezerSync.Log;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Net;
 
 namespace DeezerSync.DeezerAPI
 {
@@ -35,7 +36,7 @@ namespace DeezerSync.DeezerAPI
             if (title.search_stage == 1)
             {
                 log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                Request_Query = Official_api + new Uri("artist:" + "\"" + title.artist.Trim() ?? title.username.Trim() + "\" " + "track:" + "\"" + title.title.Trim() + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString()).AbsolutePath;
+                Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
             }
             else
             {
@@ -44,12 +45,12 @@ namespace DeezerSync.DeezerAPI
                     if (title.isRemix)
                     {
                         log.Debug("Send Request with Remix Artist: " + title.remixArtist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                        Request_Query = Official_api + new Uri("artist:" + "\"" + title.remixArtist.Trim() ?? title.username.Trim() + "\" " + "track:" + "\"" + title.title.Trim() + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString()).AbsolutePath;
+                        Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.remixArtist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
                     }
                     else
                     {
                         log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                        Request_Query = Official_api + new Uri("artist:" + "\"" + title.artist.Trim() ?? title.username.Trim() + "\" " + "track:" + "\"" + title.title.Trim() + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString()).AbsolutePath;
+                        Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
                     }
                 }
                 else
@@ -57,7 +58,7 @@ namespace DeezerSync.DeezerAPI
                     if (title.search_stage == 3)
                     {
                         log.Debug("Send Request with Track: " + title.artist ?? title.username + " " + title.title);
-                        Request_Query = Official_api + new Uri(title.artist.Trim() ?? title.username.Trim() + " " + title.title.Trim());
+                        Request_Query = Official_api + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim() + " " + title.title.Trim());
                     }
                 }
             }
@@ -71,7 +72,15 @@ namespace DeezerSync.DeezerAPI
         private async Task<string> request()
         {
             HttpClient client = new HttpClient();
-            string res = await client.GetStringAsync(Request_Query);
+            string res = string.Empty;
+            try
+            {
+                res = await client.GetStringAsync(Request_Query);
+            }
+            catch (Exception e)
+            {
+                log.Error(e.Message + " Link: " + Request_Query);
+            }
             if (res.Equals("{\"error\":{\"type\":\"Exception\",\"message\":\"Quota limit exceeded\",\"code\":4}}"))
             {
                 log.Info("API Rate Limit waiting 2 sec.");
