@@ -16,6 +16,7 @@ namespace DeezerSync.Core.IntegrationTest
     partial class DebugResult
     {
         public StandardTitle Searching;
+        public StandardTitle Reported;
         public List<StandardTitle> Results;
     }
     public class Search

@@ -1,0 +1,74 @@
+{
+  "Searching": {
+    "description": "I am hugely proud to announce that my new album ‘Tesla’ is out today. I honestly couldn't have put this together without all of the support that I've had over the past seven years from you guys. You kept me going and kept me writing and I feel blessed to have such a dedicated bunch of fans. I hope you enjoy listening to it as much as I have writing it. \n\nBuy Tesla:\niTunes: hyperurl.co/TeslaiTunes\nApple Music: hyperurl.co/TeslaAMusic\n\nGoogle Play: http://bit.ly/TeslaGP\nAmazon: hyperurl.co/TeslaAmazon\nBeatport: http://bit.ly/TeslaBeatport\nJuno: http://bit.ly/TeslaJuno\nSpotify: http://bit.ly/TeslaSP\n\nFollow Flux Pavilion:\nFacebook: on.fb.me/11wwPDx\nTwitter: bit.ly/FluxPTwitter\nInstagram: bit.ly/FluxPInstagram\nFollow Circus Records:\nFacebook: on.fb.me/17iNrpW\nTwitter: bit.ly/XJaMIo\nSoundcloud: bit.ly/WdqIS9\nInstagram: bit.ly/1mNkBmY\nBeatport: btprt.dj/1p670qf",
+    "duration": 235,
+    "genre": "tesla",
+    "title": "Emotional",
+    "username": "Flux Pavilion",
+    "artist": "Flux Pavilion and Matthew Koma",
+    "remixArtist": null,
+    "labelname": "Circus Records",
+    "id": 182388157,
+    "isRemix": false,
+    "search_stage": 3,
+    "url": "https://soundcloud.com/flux-pavilion/flux-pavilion-and-matthew-koma-emotional"
+  },
+  "Reported": {
+    "description": "",
+    "duration": 268,
+    "genre": "",
+    "title": "Emotional",
+    "username": "Flux Pavilion",
+    "artist": "Flux Pavilion",
+    "remixArtist": "Virtual Riot",
+    "labelname": "",
+    "id": 135485282,
+    "isRemix": true,
+    "search_stage": 0,
+    "url": "https://www.deezer.com/track/135485282"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 268,
+      "genre": "",
+      "title": "Emotional",
+      "username": "Flux Pavilion",
+      "artist": "Flux Pavilion",
+      "remixArtist": "Virtual Riot",
+      "labelname": "",
+      "id": 135485282,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/135485282"
+    },
+    {
+      "description": "",
+      "duration": 268,
+      "genre": "",
+      "title": "Emotional",
+      "username": "Flux Pavilion  Matthew Koma",
+      "artist": "Flux Pavilion & Matthew Koma",
+      "remixArtist": "Virtual Riot",
+      "labelname": "",
+      "id": 137262602,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/137262602"
+    },
+    {
+      "description": "",
+      "duration": 243,
+      "genre": "",
+      "title": "Emotional",
+      "username": "Flux Pavilion  Matthew Koma",
+      "artist": "Flux Pavilion & Matthew Koma",
+      "remixArtist": "Must Die!",
+      "labelname": "",
+      "id": 131964148,
+      "isRemix": true,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/131964148"
+    }
+  ]
+}
