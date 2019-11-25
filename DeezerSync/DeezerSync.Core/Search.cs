@@ -189,7 +189,7 @@ namespace DeezerSync.Core
 
         private async Task SavePreparedData(List<StandardTitle> titles, StandardTitle searched, StandardTitle reported)
         {
-            await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id + "-" + System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
+            //await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id + "-" + System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
         }
 
         /// <summary>
@@ -246,7 +246,7 @@ namespace DeezerSync.Core
                 /*
                  * DeezerSync Result Search Filter
                  * Results 722 songs out of 1593
-                 * False positives < 30
+                 * False positives > 30
                  */
                 //Artist
                 if (!string.IsNullOrEmpty(result.artist))
