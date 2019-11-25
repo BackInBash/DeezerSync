@@ -33,24 +33,29 @@ namespace DeezerSync.DeezerAPI
             }
 
             this.title = title;
-            if (title.search_stage == 1)
+            if (title.search_stage == 0)
             {
                 log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim());
             }
             else
             {
+                if (title.search_stage == 1)
+                {
+                    log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
+                    Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() ?? "0" + " dur_max:" + (title.duration + 1).ToString() ?? "999";
+                }
                 if (title.search_stage == 2)
                 {
                     if (title.isRemix)
                     {
                         log.Debug("Send Request with Remix Artist: " + title.remixArtist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                        Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.remixArtist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                        Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.remixArtist.Trim() ?? title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() ?? "0" + " dur_max:" + (title.duration + 1).ToString() ?? "999";
                     }
                     else
                     {
                         log.Debug("Send Request with Artist: " + title.artist ?? title.username + " Track: " + title.title + " Duration: " + title.duration);
-                        Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() + " dur_max:" + (title.duration + 1).ToString();
+                        Request_Query = Official_api + "artist:" + "\"" + WebUtility.UrlEncode(title.artist.Trim() ?? title.username.Trim()) + "\" " + "track:" + "\"" + WebUtility.UrlEncode(title.title.Trim()) + "\" " + "dur_min:" + (title.duration - 1).ToString() ?? "0" + " dur_max:" + (title.duration + 1).ToString() ?? "999";
                     }
                 }
                 else
@@ -77,16 +82,22 @@ namespace DeezerSync.DeezerAPI
             {
                 res = await client.GetStringAsync(Request_Query);
             }
+            catch(ArgumentNullException)
+            {
+                log.Error("Request Query is Empty");
+            }
             catch (Exception e)
             {
                 log.Error(e.Message + " Link: " + Request_Query);
             }
+
             if (res.Equals("{\"error\":{\"type\":\"Exception\",\"message\":\"Quota limit exceeded\",\"code\":4}}"))
             {
                 log.Info("API Rate Limit waiting 2 sec.");
                 Thread.Sleep(2000);
                 res = await request();
             }
+
             if (string.IsNullOrWhiteSpace(res))
             {
                 log.Info("Response is Empty");
