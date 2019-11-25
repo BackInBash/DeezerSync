@@ -1,0 +1,74 @@
+{
+  "Searching": {
+    "description": "🎧 Support on all platforms: https://Monstercat.lnk.to/Eclipse\n\n▼ Follow Monstercat\nSpotify: http://monster.cat/2l5Exb6\nApple Music: http://applemusic.com/Monstercat\nFacebook: http://facebook.com/Monstercat\nTwitter: http://twitter.com/Monstercat\nInstagram: http://instagram.com/monstercat\nSnapchat: https://www.snapchat.com/add/monstercat\nSoundCloud: http://soundcloud.com/Monstercat\n\n💥 Follow Lookas\nFacebook: https://www.facebook.com/LookasMusic/\nTwitter: https://twitter.com/Lookas\nSoundcloud: https://soundcloud.com/lookasmusic\n\nGenre: Trap\n\n▼ Want some new Merchandise?\nhttp://monster.cat/MonstercatShop",
+    "duration": 193,
+    "genre": "Trap",
+    "title": "Eclipse",
+    "username": "Monstercat",
+    "artist": "Lookas",
+    "remixArtist": null,
+    "labelname": "Monstercat",
+    "id": 289435519,
+    "isRemix": false,
+    "search_stage": 1,
+    "url": "https://soundcloud.com/monstercat/lookas-eclipse"
+  },
+  "Reported": {
+    "description": "",
+    "duration": 193,
+    "genre": "",
+    "title": "Eclipse",
+    "username": "Various Artists",
+    "artist": "Various Artists",
+    "remixArtist": null,
+    "labelname": "",
+    "id": 422794172,
+    "isRemix": false,
+    "search_stage": 0,
+    "url": "https://www.deezer.com/track/422794172"
+  },
+  "Results": [
+    {
+      "description": "",
+      "duration": 225,
+      "genre": "",
+      "title": "Alarm",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 518852852,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/518852852"
+    },
+    {
+      "description": "",
+      "duration": 193,
+      "genre": "",
+      "title": "On My Own",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 518853092,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/518853092"
+    },
+    {
+      "description": "",
+      "duration": 193,
+      "genre": "",
+      "title": "Eclipse",
+      "username": "Various Artists",
+      "artist": "Various Artists",
+      "remixArtist": null,
+      "labelname": "",
+      "id": 422794172,
+      "isRemix": false,
+      "search_stage": 0,
+      "url": "https://www.deezer.com/track/422794172"
+    }
+  ]
+}

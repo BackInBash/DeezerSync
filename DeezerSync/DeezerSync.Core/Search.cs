@@ -189,7 +189,7 @@ namespace DeezerSync.Core
 
         private async Task SavePreparedData(List<StandardTitle> titles, StandardTitle searched, StandardTitle reported)
         {
-            //await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id + "-" + System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
+            await File.WriteAllTextAsync(@"../../../../../DataAnalytics/PreparedData/SearchResults/" + searched.id + "-" + System.Guid.NewGuid() + ".json", JsonConvert.SerializeObject(new DebugResult { Searching = searched, Results = titles, Reported = reported }, Formatting.Indented));
         }
 
         /// <summary>
@@ -245,27 +245,20 @@ namespace DeezerSync.Core
 
                 /*
                  * DeezerSync Result Search Filter
-                 * Results 777 songs out of 1593
-                 * False positives TRUE
+                 * Results 722 songs out of 1593
+                 * False positives < 30
                  */
                 //Artist
                 if (!string.IsNullOrEmpty(result.artist))
                 {
-                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)) || await checkDuration(Searching.duration, result.duration, 0))
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                         return result.id;
                     }
 
-                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) || await checkDuration(Searching.duration, result.duration, 1))
-                    {
-                        await SavePreparedData(results, Searching, result);
-                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                        return result.id;
-                    }
-
-                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) || result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) && await checkDuration(Searching.duration, result.duration, 2))
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
@@ -282,14 +275,14 @@ namespace DeezerSync.Core
                 //Remix Artist
                 if (!string.IsNullOrEmpty(Searching.remixArtist))
                 {
-                    if ((result.artist.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)) || await checkDuration(Searching.duration, result.duration, 0))
+                    if ((result.artist.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                         return result.id;
                     }
 
-                    if ((result.artist.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) || await checkDuration(Searching.duration, result.duration, 1))
+                    if ((result.artist.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
@@ -310,7 +303,7 @@ namespace DeezerSync.Core
                         return result.id;
                     }
 
-                    if ((result.title.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && (result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) && await checkDuration(Searching.duration, result.duration, 1)))
+                    if ((result.title.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && (result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase))))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
@@ -318,21 +311,21 @@ namespace DeezerSync.Core
                     }
                 }
                 //Username
-                if ((result.username.Contains(Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)) || await checkDuration(Searching.duration, result.duration, 0))
+                if ((result.username.Contains(Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)))
                 {
                     await SavePreparedData(results, Searching, result);
                     log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
-                if ((result.username.Contains(Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) || await checkDuration(Searching.duration, result.duration, 1))
+                if ((result.username.Contains(Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)))
                 {
                     await SavePreparedData(results, Searching, result);
                     log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
-                if ((result.username.Contains(Searching.username, StringComparison.OrdinalIgnoreCase) || result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) && await checkDuration(Searching.duration, result.duration, 2))
+                if ((result.username.Contains(Searching.username, StringComparison.OrdinalIgnoreCase) || result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)) && await checkDuration(Searching.duration, result.duration, 0))
                 {
                     await SavePreparedData(results, Searching, result);
                     log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
@@ -343,6 +336,12 @@ namespace DeezerSync.Core
                 {
                     await SavePreparedData(results, Searching, result);
                     log.Info("Found Song Artist: " + result.username + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                    return result.id;
+                }
+                if (result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase) && await checkDuration(Searching.duration, result.duration, 0))
+                {
+                    await SavePreparedData(results, Searching, result);
+                    log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
                     return result.id;
                 }
 
@@ -360,8 +359,9 @@ namespace DeezerSync.Core
         {
             try
             {
-                // Deezer Private API
                 /*
+                 * Deezer Private API
+                 * 
                 DeezerAPI.Private api = new DeezerAPI.Private();
                 if (query.isRemix)
                 {
@@ -404,20 +404,16 @@ namespace DeezerSync.Core
         {
             if (actual == (found - i))
             {
-                log.Debug("Same Duration TRUE");
                 return true;
             }
             if (actual == found)
             {
-                log.Debug("Same Duration TRUE");
                 return true;
             }
             if (actual == (found + i))
             {
-                log.Debug("Same Duration TRUE");
                 return true;
             }
-            log.Debug("Duration check FALSE");
             return false;
         }
     }
