@@ -248,30 +248,6 @@ namespace DeezerSync.Core
                  * Results 722 songs out of 1593
                  * False positives > 30
                  */
-                //Artist
-                if (!string.IsNullOrEmpty(result.artist))
-                {
-                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)))
-                    {
-                        await SavePreparedData(results, Searching, result);
-                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                        return result.id;
-                    }
-
-                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)))
-                    {
-                        await SavePreparedData(results, Searching, result);
-                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                        return result.id;
-                    }
-
-                    if (result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase))
-                    {
-                        await SavePreparedData(results, Searching, result);
-                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
-                        return result.id;
-                    }
-                }
                 //Remix Artist
                 if (!string.IsNullOrEmpty(Searching.remixArtist))
                 {
@@ -304,6 +280,30 @@ namespace DeezerSync.Core
                     }
 
                     if ((result.title.Contains(Searching.remixArtist, StringComparison.OrdinalIgnoreCase) && (result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase))))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+                }
+                //Artist
+                if (!string.IsNullOrEmpty(result.artist))
+                {
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Equals(Searching.title, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if ((result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase)))
+                    {
+                        await SavePreparedData(results, Searching, result);
+                        log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
+                        return result.id;
+                    }
+
+                    if (result.artist.Contains(Searching.artist ?? Searching.username, StringComparison.OrdinalIgnoreCase) && result.title.Contains(Searching.title, StringComparison.OrdinalIgnoreCase))
                     {
                         await SavePreparedData(results, Searching, result);
                         log.Info("Found Song Artist: " + result.artist + " Track: " + result.title + " https://www.deezer.com/us/track/" + result.id);
