@@ -47,9 +47,11 @@ namespace DeezerSync.MusicProvider
                 } while (true);
             }
             // Spotify
-
-            s = new Spotify(SpotifyAPIKey, SpotifyUserID);
-            Data.AddRange(getData(s).GetAwaiter().GetResult());
+            if (!string.IsNullOrEmpty(SpotifyAPIKey) && !string.IsNullOrEmpty(SpotifyUserID))
+            {
+                s = new Spotify(SpotifyAPIKey, SpotifyUserID);
+                Data.AddRange(getData(s).GetAwaiter().GetResult());
+            }
 
         }
 
