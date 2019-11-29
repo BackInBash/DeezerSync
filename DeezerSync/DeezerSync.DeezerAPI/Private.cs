@@ -376,6 +376,21 @@ namespace DeezerSync.DeezerAPI
             {
                 try
                 {
+                    if (jsonresult.Contains("QUOTA_ERROR"))
+                    {
+                        var _i = 0;
+                        try
+                        {
+                            _i = int.Parse(description);
+                            if (_i > 5)
+                            {
+                                throw new JsonSerializationException(e.Message);
+                            }
+                        }
+                        catch (Exception) { }
+
+                        _ = await CreatePlaylistasync(name, (_i+=1).ToString());
+                    }
                     result = JsonConvert.DeserializeObject<dynamic>(jsonresult);
                 }
                 catch (Exception ex)
