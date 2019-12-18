@@ -36,6 +36,20 @@ namespace DeezerSync
             {
                 musicprovider_playlist = new MusicProvider.main(config.soundcloud_profile, config.spotify_profile, config.spotify_secret, config.soundcloud_clientid);
             }
+            // Save to DB
+            if(!string.IsNullOrEmpty(config.db_port) && !string.IsNullOrEmpty(config.db_ip))
+            {
+                DB.Mongo db = new DB.Mongo(config.db_ip, config.db_port);
+
+                db.connect();
+                await db.dropDatabase("SoundCloud");
+                db.createDatabase("SoundCloud");
+
+                foreach (var i in musicprovider_playlist.Data)
+                {
+                    await db.addPlaylist(i);
+                }
+            }
             // Start Search
             DeezerSync.Core.Search core = new DeezerSync.Core.Search(musicprovider_playlist.Data, await api.GetAllPlaylistsasync());
             await core.Start();
