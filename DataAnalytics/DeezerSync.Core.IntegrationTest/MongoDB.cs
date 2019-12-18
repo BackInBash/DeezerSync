@@ -35,7 +35,7 @@ namespace DeezerSync.Core.IntegrationTest
                     await db.addPlaylist(i);
                 }
             }
-            catch (ArgumentNullException)
+            catch (TimeoutException)
             {
                 Assert.IsType<List<StandardPlaylist>>(SoundCloud);
             }
