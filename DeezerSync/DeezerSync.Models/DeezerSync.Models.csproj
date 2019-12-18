@@ -6,6 +6,7 @@
 
   <PropertyGroup>
    <LangVersion>8.0</LangVersion>
+   <Authors>BackInBash</Authors>
   </PropertyGroup>
 
   <ItemGroup>
