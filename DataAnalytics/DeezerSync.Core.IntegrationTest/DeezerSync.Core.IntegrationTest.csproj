@@ -4,8 +4,6 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
-
-    <Authors>BackInBash</Authors>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\DeezerSync\DeezerSync.Core\DeezerSync.Core.csproj" />
-    <ProjectReference Include="..\..\DeezerSync\DeezerSync.DB\DeezerSync.DB.csproj" />
     <ProjectReference Include="..\..\DeezerSync\DeezerSync.Log\DeezerSync.Log.csproj" />
     <ProjectReference Include="..\..\DeezerSync\DeezerSync.Models\DeezerSync.Models.csproj" />
   </ItemGroup>
