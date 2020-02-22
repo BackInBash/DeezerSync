@@ -286,6 +286,21 @@ namespace DeezerSync.Core
                         return result.id;
                     }
                 }
+                // if Result song is Remix but Searching Song isnt
+                if (!Searching.isRemix)
+                {
+                    if (result.isRemix)
+                    {
+                        continue;
+                    }
+                }
+                if (Searching.isRemix)
+                {
+                    if (!result.isRemix)
+                    {
+                        continue;
+                    }
+                }
                 //Artist
                 if (!string.IsNullOrEmpty(result.artist))
                 {
