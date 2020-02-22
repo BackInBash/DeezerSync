@@ -25,8 +25,8 @@ namespace DeezerSync.DeezerAPI
             GetDeezerAPILogin().Wait();
         }
 
-        // User Agent: Chrome Version 77.0.3865.90
-        private readonly string UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36";
+        // User Agent: Chrome Version 80.0.3987.116
+        private readonly string UserAgent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36";
         private readonly string apiurl = "https://www.deezer.com/ajax/gw-light.php";
         private readonly string actionurl = "https://www.deezer.com/ajax/action.php";
         private readonly string api_version = "api_version=1.0";
