@@ -11,7 +11,7 @@ namespace DeezerSync.MusicProvider
 {
     public class SoundCloud
     {
-        private static readonly string SOUNDCLOUD_CLIENTID = "https://a-v2.sndcdn.com/assets/app-e56f488-d5a2fcb-3.js";
+        private static readonly string SOUNDCLOUD_CLIENTID = "https://a-v2.sndcdn.com/assets/48-c9b6f63b-3.js";
         private string username = string.Empty;
         private User user = null;
         private string ClientID = string.Empty;
